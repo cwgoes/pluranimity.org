@@ -1,0 +1,9 @@
+main:
+  - title: "About"
+    url: /about/
+  - title: "Contact"
+    url: /contact/
+  - title: "Archives"
+    url: /archives/
+  - title: "GitHub"
+    url: https://github.com/cwgoes/pluranimity.com

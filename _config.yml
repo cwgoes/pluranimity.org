@@ -1,0 +1,38 @@
+title: Pluranimity
+description: >-
+  Pluranimity - the personal blog of Christopher Goes.
+baseurl: ""
+url: "https://pluranimity.com"
+author: Christopher Goes
+twitter_username: cwgoes
+github_username:  cwgoes
+
+markdown: kramdown
+theme: jekyll-whiteglass
+plugins:
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+permalink: /:year/:month/:day/:title/
+paginate_path: /posts/:num/
+paginate: 5
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category_archives
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
