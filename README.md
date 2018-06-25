@@ -1,1 +1,1 @@
-Published to [pluranimity.com](https://pluranimity.com).
+Published to [pluranimity.org](https://pluranimity.org).
