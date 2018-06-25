@@ -1,1 +1,1 @@
-Sitemap: https://pluranimity.com/sitemap.xml
+Sitemap: https://pluranimity.org/sitemap.xml

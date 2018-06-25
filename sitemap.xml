@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://pluranimity.com/2018/02/09/welcome-to-jekyll/</loc>
+<loc>https://pluranimity.org/2018/02/09/welcome-to-jekyll/</loc>
 <lastmod>2018-02-09T01:38:55+01:00</lastmod>
 </url>
 <url>
-<loc>https://pluranimity.com/404/</loc>
+<loc>https://pluranimity.org/404/</loc>
 </url>
 <url>
-<loc>https://pluranimity.com/about/</loc>
+<loc>https://pluranimity.org/about/</loc>
 </url>
 <url>
-<loc>https://pluranimity.com/archives/</loc>
+<loc>https://pluranimity.org/archives/</loc>
 </url>
 <url>
-<loc>https://pluranimity.com/contact/</loc>
+<loc>https://pluranimity.org/contact/</loc>
 </url>
 <url>
-<loc>https://pluranimity.com/</loc>
+<loc>https://pluranimity.org/</loc>
 </url>
 <url>
-<loc>https://pluranimity.com/categories/jekyll/</loc>
+<loc>https://pluranimity.org/categories/jekyll/</loc>
 </url>
 <url>
-<loc>https://pluranimity.com/categories/update/</loc>
+<loc>https://pluranimity.org/categories/update/</loc>
 </url>
 </urlset>
