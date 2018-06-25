@@ -10,8 +10,8 @@ permalink: /contact/
 
 #### Email
 
-[twitter handle]@protonmail.ch
+[twitter handle] @ [this domain]
 
 #### PGP
 
-Use <a target="_blank" href="https://keybase.io/cwgoes">Keybase</a>, or search by fingerprint <a target="_blank" href="https://pgp.mit.edu/pks/lookup?op=vindex&search=0xE828D98232D328D3">E828 D982 32D3 28D3</a>.
+Use <a target="_blank" href="https://keybase.io/cwgoes">Keybase</a>, or search by fingerprint <a target="_blank" href="https://pgp.mit.edu/pks/lookup?op=vindex&search=0x3FA86FADE75678DEFA46">3FA8 6FAD E756 78DE FA46</a>.
