@@ -8,7 +8,7 @@ permalink: /about/
 
 ### Work
 
-I presently work for [Cosmos](https://cosmos.network) in Berlin. Previously I cofounded [Stash.ai](https://stash.ai) and led [CUAUV](http://cuauv.org).
+I presently work for [Cosmos](https://cosmos.network) in Berlin, and I co-founded and co-operate [Cryptium Labs](https://cryptium.ch/). Previously I co-founded [Stash.ai](https://stash.ai) and led [CUAUV](http://cuauv.org).
 
 ### Projects
 
