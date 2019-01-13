@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <generator uri="http://jekyllrb.com" version="3.7.2">Jekyll</generator>
+  <generator uri="http://jekyllrb.com" version="3.8.5">Jekyll</generator>
   
   
   <link href="https://pluranimity.org/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://pluranimity.org/" rel="alternate" type="text/html" />
-  <updated>2018-07-09T00:00:16+02:00</updated>
+  <updated>2019-01-13T01:05:56+01:00</updated>
   <id>https://pluranimity.org//</id>
 
   
@@ -13,7 +13,7 @@
   
 
   
-    <subtitle>Pluranimity is the personal blog of Christopher Goes.&lt;br /&gt; As befitting the name, I explicitly disavow any topical continuity.&lt;br /&gt; Opinions expressed herein are my own.</subtitle>
+    <subtitle>Pluranimity is the personal blog of Christopher Goes.&lt;br /&gt; &lt;br /&gt; As befitting the name, I explicitly disavow any topical continuity.&lt;br /&gt; Check your guess of cultural reference against `b1f23e6c01` (SHA256, first ten characters).&lt;br/&gt; &lt;br /&gt; Opinions expressed herein are my own.&lt;br /&gt;</subtitle>
   
 
   
@@ -30,7 +30,9 @@
       
       <title type="html">Welcome to Jekyll!</title>
       
+      
       <link href="https://pluranimity.org/2018/02/09/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" />
+      
       <published>2018-02-09T01:38:55+01:00</published>
       <updated>2018-02-09T01:38:55+01:00</updated>
       <id>https://pluranimity.org/2018/02/09/welcome-to-jekyll</id>
