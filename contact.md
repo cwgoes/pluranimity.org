@@ -8,6 +8,10 @@ permalink: /contact/
 
 <a target="_blank" href="https://twitter.com/cwgoes">@cwgoes</a>
 
+#### GitHub
+
+<a target="_blank" href="https://github.com/cwgoes">cwgoes</a>
+
 #### Email
 
 [twitter handle] @ [this domain]

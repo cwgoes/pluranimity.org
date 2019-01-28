@@ -12,5 +12,5 @@ I presently work for [Cosmos](https://cosmos.network) in Berlin, and I co-founde
 
 ### Projects
 
-[Juvix](https://github.com/cwgoes/juvix) - Optimizing Haskell-to-Michelson smart contract transpiler<br />
+[Juvix](https://github.com/cwgoes/juvix) - Optimizing Idris-to-Michelson smart contract compiler<br />
 [Wyvern](https://projectwyvern.com) - Representation-agnostic decentralized asset exchange protocol
