@@ -11,16 +11,9 @@ categories: dlt blockchain economics
 
 Why develop distributed ledgers<sup>[1](#1)</sup>?
 
-For the purposes of this analysis, I define distributed ledgers as state transition functions {% ihighlight haskell %} (S, T) -> S {% endihighlight %}, where all parties with a modicum of compute and network bandwidth have oracle access to {% ihighlight haskell %} S {% endihighlight %} and the ability to cheaply submit transactions {% ihighlight haskell %} T {% endihighlight %}, where the subset of parties responsible for executing {% ihighlight haskell %} F {% endihighlight %} cannot cheaply instead execute some {% ihighlight haskell %} F' {% endihighlight %}, meaningfully censor any subset of transactions `t ⊂ T`, or cause disjoint sets of other parties to view unequal states `S'` and `S''` (agreement). None of these properties are yet satisfactorily provided by existing implementations, but we have reason to expect they may be in time.
+For the purposes of this analysis, let distributed ledgers be state transition functions {% ihighlight haskell %} F :: (S, T) -> S {% endihighlight %} executed in a consensus algorithm<sup>[2](#2)</sup> by a distributed set {% ihighlight haskell %} P {% end ihighlight %} of parties with arbitrary state complexity<sup>[3](#3)</sup>, unbounded transaction throughput<sup>[4](#4)</sup>, perfect censorship resistance<sup>[5](#5)</sup>, bandwidth-inexpensive queryability<sup>[6](#6)</sup>, oracle access to elapsed time<sup>[7](#7)</sup>, and private data / public ruleset segmentation<sup>[8](#8)</sup>. None of these properties are yet satisfactorily provided by existing implementations, but we have reason to expect they may be in time (see references). The present developmental efforts justifiably focus on satisficing these properties, in of itself a challenging and interesting task - but assume we largely succeed - what then?
 
-- oracle access to elapsed time (PoW, VDF with difficulty adjustment) (cite: Wachowski VDF paper)
-Distributed ledgers have *rules*, codified as predicates on the set `T` as a function of a particular `S`.
-
-The present efforts justifiably focus on satisficing these properties, in of itself a challenging and interesting task - but assume we largely succeed, what then?
-
-In this post, I outline five broad areas of system design where I think we have reason to believe that distributed ledgers may substially alter the available components for system designers and thereby enable the creation of radically different systems from what we have today.
-
-For each area, I explain the system reference class, why we might benefit from such systems, where distributed ledgers may provide an advantage, then attempt to address the best arguments against desirability and feasibility.
+In this post, I outline five broad areas of systems design where I think we have reason to believe that distributed ledgers may increase the available component set for mechanism designers and thereby enable the creation of radically different systems from what we have today: public commons, benevolent totalitarianism, polycentric law, threshold commitment, and contingent payments. For each area, I explain the system reference class, why we might benefit from such systems, and in what way distributed ledgers may provide an advantage, then attempt to articulate & address the best arguments against desirability and feasibility.
 
 ### Public Commons
 
@@ -259,14 +252,23 @@ objections to feasibility
 
 ----
 
-This analysis is certainly incomplete, but it covers several areas in which I think we have reason to believe that distributed ledger technology may enable implementation of widely beneficial but previously economically infeasible systems. Did I miss any? [Let me know][contact].
+This analysis omits many more mundane usecases for which DLT may be able to accomplish roughly the same functionality at a lower cost or with higher efficacy than existing solutions, including cross-border remittances, internet payments, derivative settlement, data notarization, censorship-resistant communication, and mesh-networked state synchronization, not for lack of potential comparative advantage but rather because I am primarily interested in investigating systems which present technology cannot realize at all.
 
-Thanks to XYZ.
+<!--
+Thanks to XYZ for reviews of this post.
+-->
 
 <span id="1">1</span>: I prefer the term to "blockchain" — the salience is in the replication mechanism, that the blocks are kept in a linked list is an implementation detail.<br />
-<span id="2">2</span>: [Vulnerable World Hypothesis](https://nickbostrom.com/papers/vulnerable.pdf)
+<span id="2">2</span>: Fulfilling *agreement* and *termination* in roughly their usual BFT senses, possibly the combined view of separate parallel consensus processes.
+<span id="3">3</span>: Or rather than storage capacity could grow faster than storage usage, as is the case with cloud-provisioned storage now.
+<span id="4">4</span>: Or rather that transaction throughput capacity is not a bottleneck on demand, as is the case with EMV (card) payments now.
+<span id="5">5</span>: Such that the subset of parties responsible for executing {% ihighlight haskell %} F {% end ihighlight %} cannot indefinitely censor any subset of transactions, as might be provided by (threshold decryption)
+<span id="6">6</span>: Such that bandwidth and compute required is proportional only in the size of the query, not the size of state, and that the querying client cannot be fooled. (current examples: TM lite client proofs)
+<span id="7">7</span>: As might be provided by a verifiable-delay function with difficulty adjustment (cite: Wachowski VDF paper)
+<span id="8">8</span>: Meaning that specific transaction details (sender, amount, code) can be private to a user while ruleset verification (supply conservation, invariant fulfillment) is performed on the ledger, as likely will be provided by zero-knowledge proof constructions (current examples: Zerocash, ZEXE).
 
-[vulnerable-world-hypothesis]:      https://nickbostrom.com/papers/vulnerable.pdf
-[polycentric-law-in-a-new-century]: https://www.cis.org.au/app/uploads/2015/04/images/stories/policy-magazine/1999-autumn/1999-15-1-tom-bell.pdf
-[terra-ignota]:                     https://en.wikipedia.org/wiki/Terra_Ignota
+<span id=""></span>: [Vulnerable World Hypothesis](https://nickbostrom.com/papers/vulnerable.pdf)
+<span id=""></span>: [Polycentric Law in a New Century](https://www.cis.org.au/app/uploads/2015/04/images/stories/policy-magazine/1999-autumn/1999-15-1-tom-bell.pdf)
+<span id=""></span>: [Terra Ignota](https://en.wikipedia.org/wiki/Terra_Ignota)
+
 [contact]:                          /contact
