@@ -5,35 +5,32 @@ date:       2019-01-27 00:00:00 +0000
 categories: dlt blockchain economics
 ---
 
+(qs? wording, 1st-person)
+
 *Working draft - [feedback or corrections welcome][contact]*.
 
-If blockchain development were to stagnate at its present state, I think we would find the benefits not to be commensurate with the costs. (bitcoin energy cost) (economic value of exchange) 
+Why develop distributed ledgers<sup>[1](#1)</sup>?
 
-Why develop distributed ledgers? (I prefer the term to "blockchain" — the salience of Bitcoin is in its replication, that the blocks are kept in a linked list is an implementation detail)
+For the purposes of this analysis, I define distributed ledgers as state transition functions {% ihighlight haskell %} (S, T) -> S {% endihighlight %}, where all parties with a modicum of compute and network bandwidth have oracle access to {% ihighlight haskell %} S {% endihighlight %} and the ability to cheaply submit transactions {% ihighlight haskell %} T {% endihighlight %}, where the subset of parties responsible for executing {% ihighlight haskell %} F {% endihighlight %} cannot cheaply instead execute some {% ihighlight haskell %} F' {% endihighlight %}, meaningfully censor any subset of transactions `t ⊂ T`, or cause disjoint sets of other parties to view unequal states `S'` and `S''` (agreement). None of these properties are yet satisfactorily provided by existing implementations, but we have reason to expect they may be in time.
 
-For the purposes of this analysis, I define distributed ledgers as state transition functions {% ihighlight haskell %} F :: (S, T) -> S {% endihighlight %}, where all parties with a modicum of compute and network bandwidth have oracle access to `S` and the ability to cheaply submit transactions `T`, where the subset of parties responsible for executing `F` cannot instead execute some `F'`, meaningfully censor any subset of transactions `t <- T`, or cause disjoint sets of other parties to view unequal states `S'` and `S''` (agreement). None of these properties are yet satisfactorily provided by existing implementations, but we have reason to expect they may be in time.
-
-- oracle access to elapsed time (PoW, VDF with difficulty adjustment)
-
+- oracle access to elapsed time (PoW, VDF with difficulty adjustment) (cite: Wachowski VDF paper)
 Distributed ledgers have *rules*, codified as predicates on the set `T` as a function of a particular `S`.
+
+The present efforts justifiably focus on satisficing these properties, in of itself a challenging and interesting task - but assume we largely succeed, what then?
 
 In this post, I outline five broad areas of system design where I think we have reason to believe that distributed ledgers may substially alter the available components for system designers and thereby enable the creation of radically different systems from what we have today.
 
 For each area, I explain the system reference class, why we might benefit from such systems, where distributed ledgers may provide an advantage, then attempt to address the best arguments against desirability and feasibility.
 
-structure
-- what is it
-- why desirable
-- comparative advantage of dlt
-- objections to desirability
-- objections to feasibility
-
 ### Public Commons
 
 #### What
-what is it: platform which facilitates surplus through exchange
 
-Perhaps the most successful existing such commons is the English language (...). Languages as commons have several convenient properties - the size of their state does not scale linearly with the number of users, approximate agreement on most of the present state is sufficient for usage (as any natural language contains many different possible encodings of the same semantics), and our mental facilities and social institutions are well-adapted to track their states and provide the high-throughput gossip required for state changes without requiring central coordination.
+A public commons is a platform which creates economic surplus by connecting buyers and sellers, and/or by providing a medium with which they can transact.
+
+Perhaps the most successful existing such commons is the English language (...), a platform for the exchange of information. Languages as commons have several convenient properties - the size of their state does not scale linearly with the number of users, approximate agreement on most of the present state is sufficient for usage (as any natural language contains many different possible encodings of the same semantics), and our mental facilities and social institutions are well-adapted to track their states and provide the high-throughput gossip required for state changes without requiring central coordination.
+
+Airbnb, Uber, Ebay, Github and even search engines (although not the further flung activies of the surveillance panopticon) would fall under this definition.
 
 #### Why
 
@@ -42,20 +39,31 @@ Perhaps the most successful existing such commons is the English language (...).
 why dlt
 - incentivize creation by capturing a portion of future economic value
 - credibly commit not to extract rent or arbitrarily enforce rules
+- permissionless innovation: interfaces, cross-common connections, no organizational relationship/trust cost
+
+cite: Tyler Cowen post
 
 #### Objections
 
 objections to desirability
 
-Scott Alexander, uncontrollable even in principle
+- Scott Alexander, uncontrollable even in principle
+  hinges a lot on - is "libertarian" aspect of blockchain endemic or social?
+  I admit the concern but consider this the scenario of lesser concern - why? 1. platform reputation very important, 2. covenants around law, 3. worse danger: governments or less scrupulous companies co-opting parts of tech for totalitarian ends.
 
-I admit the concern but consider this the scenario of lesser concern - why? 1. platform reputation very important, 2. covenants around law, 3. worse danger: governments or less scrupulous companies co-opting parts of tech for totalitarian ends.
+objections to feasibility
+
+- technical concerns
+  will be solved in time (and not much time, although perhaps more than the market swings) - cite Starkware DEX prover, Tendermint BFT
+- necessity of "flexibility" instead of rigity
+  more likely concern
+  dlt can interface with meatspace, implement meatspace - cite Kleros alternative adjudication
 
 ### Benevolent Totalitarianism
 
 #### What
 
-what is it: effective world government without the risk of capture
+Benevolent totalitarianism is extremely specific global policing with negligible error rates.
 
 #### Why
 
@@ -81,19 +89,28 @@ why dlt?
 objections to desirability
 
 - could be captured
+  possible to restrict enforcement more precisely
+
 - existential risk factors aren't that significant
+  cite counterarguments: Sandberg, Gwern
+
 - existential risk factors wouldn't be reduced
+  instead just shifted to locus of control - consensus-economic thresholds insufficient
 
 objections to feasability
 
 - requires lots of data to be verifiable on-chain
+  will the oracles really work?
+  cite: proof-of-location, numerai thing, Augur market settlements
+
 - human law is too nuanced and interpretive to be codified
+  maybe, but not sure we care about the nuanced aspects here - more about preventing nuclear warfare, bioterror
 
 ### Polycentric Law
 
 #### What
 
-what is it: overlapping, voluntary, specialized private legal systems
+Polycentric law is overlapping, volunary, and specialized private legal systems.
 
 Tom Bell defines "polycentric law" in [a 1999 essay][polycentric-law-in-a-new-century] as
 
@@ -101,14 +118,23 @@ Tom Bell defines "polycentric law" in [a 1999 essay][polycentric-law-in-a-new-ce
 
 which captures roughly this, but explains neither why such law might be desirable nor, given that, why it does not exist at present.
 
-(one detailed depiction of how such a system might work can be found in Ada Palmer's [Terra Ignota series][terra-ignota])
+unlike his examples, does not capture entirely what I mean: mostly a superset of existing law, none of three examples are exempt (Internet most so, but still)
 
+(one detailed depiction of how such a system might work can be found in Ada Palmer's [Terra Ignota series][terra-ignota])
 
 #### Why
 
 Monopolies of legal systems allow them to extract an inordinate amount of rent. The geographically-determined boundaries by which legal systems operate make sense only to the degree by which geographical proximity indicates a preference for similar law - trend? - and 
 
 An extraordinary amount of effort is directed to the effecting of control over the processes which govern the change in our existing legal monopologies which could perhaps better be directed towards realizing alternative sets of laws, which individuals could voluntarily select from.
+
+Laws are "bundled" not due to conflict but rather due to meatspace limitations
+
+No unclaimed land upon which group of people can voluntarily establish self-governed community.
+
+cite: prediction markets banned, security laws, attention tax
+
+existing internet communities may be closest analgoue, but limited in ability to craft around rules - mostly just around content
 
 #### Comparative Advantage
 
@@ -126,11 +152,14 @@ in the consequentialist extreme, precommit to a set of metrics upon which legal 
 objections to desirability
 
 - forming trade coalitions wouldn't be easier
+
 - enforcement-by-ledger is dangerous
+  initially existing basic legal structures remain in place, more voluntary aspects of trade, commerce, citizenship
 
 objections to feasability
 
-- computing intersections between rulesets impossible - counter: inter-blockchain communication
+- computing intersections between rulesets impossible
+  counter: inter-blockchain communication, by nature of verification rulesets must be known to all parties & codified
 
 ### Threshold Commitment
 
@@ -144,9 +173,14 @@ Alternatively, "jumping Nash equilibria".
 
 in very limited form today: Kickstarter (threshold commitment to produce a product given demand). Doesn't scale, poor information, limited conditionals.
 
+explain: may be difficult to conceptualize, most ledgers do not provide transaction introspection, but not a theoretical limitation
+
+e.g. carbon emission commitments
+
 #### Why
 
 - platform lockin
+- bad game theoretic equilibria
 
 #### Comparative Advantage
 
@@ -180,11 +214,13 @@ When purchasing medicine (setting aside some [signaling value][]), we are intend
 
 this applies more generally to any case in which we primarily wish to purchase a difference in a future probability distribution
 
+also e.g. negative externalities - fast food
+
 #### Why
 
 #### Comparative Advantages
 
-we must subsidize the prediction markets
+we must subsidize the prediction markets, and this could provide a way to do so - substantial part of payment
 
 why dlt?
 
@@ -207,16 +243,28 @@ cite
 objections to desirability
 
 - existing systems are already effective at this, the hard part is just prediction
+  lots of evidence incentives are screwy
+
 - would diverge from "fair" treatment (pre-existing conditions)
+  not sure about a priori, always an opportunity cost - should work more like triage than "care at any cost" - but of course *I* would try
+  if we accept premise, possible to enforce post hoc subsidies according to ratio of probability distributions or something
 
 objections to feasibility
 
 - still too complex to contract, not efficient at scale
+  information from smart devices, doesn't need to be that complex (e.g. time of death)
+
 - transaction costs of prediction markets still too high, illiquid
+  mostly automated, there are existing strong correlations which just aren't priced in
+
+----
 
 This analysis is certainly incomplete, but it covers several areas in which I think we have reason to believe that distributed ledger technology may enable implementation of widely beneficial but previously economically infeasible systems. Did I miss any? [Let me know][contact].
 
 Thanks to XYZ.
+
+<span id="1">1</span>: I prefer the term to "blockchain" — the salience is in the replication mechanism, that the blocks are kept in a linked list is an implementation detail.<br />
+<span id="2">2</span>: [Vulnerable World Hypothesis](https://nickbostrom.com/papers/vulnerable.pdf)
 
 [vulnerable-world-hypothesis]:      https://nickbostrom.com/papers/vulnerable.pdf
 [polycentric-law-in-a-new-century]: https://www.cis.org.au/app/uploads/2015/04/images/stories/policy-magazine/1999-autumn/1999-15-1-tom-bell.pdf
