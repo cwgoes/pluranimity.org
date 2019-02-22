@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Comparative Advantages of Distributed Ledgers"
-date:       2019-01-27 00:00:00 +0000
+date:       2019-02-25 00:00:00 +0000
 categories: dlt blockchain economics
 ---
 
@@ -13,19 +13,20 @@ Why develop distributed ledgers<sup>[1](#1)</sup>?
 
 For the purposes of this analysis, let distributed ledgers be state transition functions {% ihighlight haskell %} F :: (S, T) -> S {% endihighlight %} executed in a consensus algorithm<sup>[2](#2)</sup> by a distributed set {% ihighlight haskell %} P {% end ihighlight %} of parties with arbitrary state complexity<sup>[3](#3)</sup>, unbounded transaction throughput<sup>[4](#4)</sup>, perfect censorship resistance<sup>[5](#5)</sup>, bandwidth-inexpensive queryability<sup>[6](#6)</sup>, oracle access to elapsed time<sup>[7](#7)</sup>, and private data / public ruleset segmentation<sup>[8](#8)</sup>. None of these properties are yet satisfactorily provided by existing implementations, but we have reason to expect they may be in time (see references). The present developmental efforts justifiably focus on satisficing these properties, in of itself a challenging and interesting task - but assume we largely succeed - what then?
 
-In this post, I outline five broad areas of systems design where I think we have reason to believe that distributed ledgers may increase the available component set for mechanism designers and thereby enable the creation of radically different systems from what we have today: public commons, benevolent totalitarianism, polycentric law, threshold commitment, and contingent payments. For each area, I explain the system reference class, why we might benefit from such systems, and in what way distributed ledgers may provide an advantage, then attempt to articulate & address the best arguments against desirability and feasibility.
+In this post, I outline five broad areas of systems design where I think we have reason to believe that distributed ledgers may increase the available component set for mechanism designers and thereby enable the creation of radically different systems from what we have today: public commons, benevolent totalitarianism, polycentric law, threshold commitment, and contingent payment. For each area, I explain the system reference class, why we might benefit from such systems, and in what way distributed ledgers may provide an advantage, then attempt to articulate & address the best arguments against desirability and feasibility.
 
 ### Public Commons
 
 #### What
 
-A public commons is a platform which creates economic surplus by connecting buyers and sellers, and/or by providing a medium with which they can transact.
+Public commons are platforms which creates economic surplus by connecting buyers and sellers & providing a medium through which they can transact, where the platform operator, if existent, is not manufacturing the product or providing the service. The US dollar (value), Airbnb (housing), Uber (transportation), Ebay (goods), Github (code, bug reports), and search engines (information) are all public commons. Public commons tend to possess strong network effects, since the utility to any particular user is proportional to the number of other users, and thus usually result in natural monopolies, especially in the absence of prior open standards for product representation (present in the case of websites, for example, but not in the case of transportation or housing).
 
-Perhaps the most successful existing such commons is the English language (...), a platform for the exchange of information. Languages as commons have several convenient properties - the size of their state does not scale linearly with the number of users, approximate agreement on most of the present state is sufficient for usage (as any natural language contains many different possible encodings of the same semantics), and our mental facilities and social institutions are well-adapted to track their states and provide the high-throughput gossip required for state changes without requiring central coordination.
-
-Airbnb, Uber, Ebay, Github and even search engines (although not the further flung activies of the surveillance panopticon) would fall under this definition.
+Perhaps the most successful (by both user count and economic utility) - and most decentralized - existing such commons is the English language, a platform for the exchange of information. Languages as commons have several convenient properties - the size of their state does not scale linearly with the number of users, approximate agreement on most of the present state is sufficient for usage (as any natural language contains many different possible encodings of the same semantics), and our mental facilities and social institutions are well-adapted to track their states and provide the high-throughput gossip required for state changes without requiring central coordination.
 
 #### Why
+
+- public commons provide lots of utility (lookup companies by market capitalization)
+- control by companies is suboptimal - rent extraction, natural monopolies, deplatforming, just not as efficient as open standards, leads to optimization for mean instead of diversity
 
 #### Comparative Advantage
 
@@ -33,6 +34,8 @@ why dlt
 - incentivize creation by capturing a portion of future economic value
 - credibly commit not to extract rent or arbitrarily enforce rules
 - permissionless innovation: interfaces, cross-common connections, no organizational relationship/trust cost
+- competition at interface layer instead of at data layer
+- rent extraction by consensus participants - data can be forked
 
 cite: Tyler Cowen post
 
@@ -48,15 +51,19 @@ objections to feasibility
 
 - technical concerns
   will be solved in time (and not much time, although perhaps more than the market swings) - cite Starkware DEX prover, Tendermint BFT
-- necessity of "flexibility" instead of rigity
+- change entities in control, but not better than business
+  google can also commit to "do no evil"
+  ~> not really, not binding in any meaningful way
+  consensus partcipants have much less power
+- necessity of "flexibility" instead of rigidity in ruleset, adjudication / dispute resolution
   more likely concern
   dlt can interface with meatspace, implement meatspace - cite Kleros alternative adjudication
 
-### Benevolent Totalitarianism
+### Benevolent Totalitarianism (find a better term...)
 
 #### What
 
-Benevolent totalitarianism is extremely specific global policing with negligible error rates.
+Benevolent totalitarianism is jurisdictionally pervasive but action (? - related to what crime is being committed, just nuclear / bio...) restricted global policing with negligible error rates.
 
 #### Why
 
@@ -73,7 +80,7 @@ capacities for preventive policing and global governance.
 #### Comparative Advantage
 
 why dlt?
-- separate enforcement from control of rules, avoid dystopic aspects of totalitarianism
+- separate enforcement from control of rules, avoid dystopic aspects of totalitarianism, no singular humans in control / command-and-control structure
 - drastically reduce transaction costs of implementation
 - e.g.: can only utilize currency iff. prove compliance with rules
 
@@ -90,11 +97,12 @@ objections to desirability
 - existential risk factors wouldn't be reduced
   instead just shifted to locus of control - consensus-economic thresholds insufficient
 
-objections to feasability
+objections to feasibility
 
 - requires lots of data to be verifiable on-chain
   will the oracles really work?
   cite: proof-of-location, numerai thing, Augur market settlements
+  cellphones running avalanche
 
 - human law is too nuanced and interpretive to be codified
   maybe, but not sure we care about the nuanced aspects here - more about preventing nuclear warfare, bioterror
@@ -103,9 +111,9 @@ objections to feasability
 
 #### What
 
-Polycentric law is overlapping, volunary, and specialized private legal systems.
+Polycentric law is the realization of overlapping, volunary, and specialized private legal systems in a manner capable enough to supplant a substantial fraction of the existing domestic & international regulatory regimes.
 
-Tom Bell defines "polycentric law" in [a 1999 essay][polycentric-law-in-a-new-century] as
+I take the term from [a 1999 essay][polycentric-law-in-a-new-century] by Tom Bell, which defines polycentric law as
 
 > law arising from a variety of customs and private processes rather than law coercively imposed by a single state authority
 
@@ -113,7 +121,7 @@ which captures roughly this, but explains neither why such law might be desirabl
 
 unlike his examples, does not capture entirely what I mean: mostly a superset of existing law, none of three examples are exempt (Internet most so, but still)
 
-(one detailed depiction of how such a system might work can be found in Ada Palmer's [Terra Ignota series][terra-ignota])
+One detailed, albeit fictional, depiction of how a polycentric legal system might work can be found in Ada Palmer's [Terra Ignota series][terra-ignota].
 
 #### Why
 
@@ -128,6 +136,8 @@ No unclaimed land upon which group of people can voluntarily establish self-gove
 cite: prediction markets banned, security laws, attention tax
 
 existing internet communities may be closest analgoue, but limited in ability to craft around rules - mostly just around content
+
+polycentric law may be especially effective when combined with threshold commitment, enabling jumping Nash equilibria of legal schemes
 
 #### Comparative Advantage
 
@@ -158,6 +168,8 @@ objections to feasability
 
 #### What
 
+Threshold commitment is the ability to commit to a particular action (on a distributed ledger, a particular transaction) contingent on other parties committing to particular actions (possibly themselves contingent on your commitment).
+
 Alternatively, "jumping Nash equilibria".
 
 - could be used to threshold-commit to switch *ledgers*
@@ -174,6 +186,8 @@ e.g. carbon emission commitments
 
 - platform lockin
 - bad game theoretic equilibria
+- stuck in pareto-efficient local optima
+- better: pareto-efficient global optima, even tradeoffs
 
 #### Comparative Advantage
 
@@ -184,6 +198,8 @@ why dlt?
 
 e.g.
 
+- companies adopting carbon tax while avoiding Malthusian trap
+- nations restricting tax competition, legal arbitrage
 - policy compromises
 - us/russia disable nuclear devices
 - group of people agree to leave a platform (Facebook)
@@ -198,12 +214,20 @@ objections to desirability
 objections to feasibility
 
 - bad computational scaling
+  zk proofs!
+- need to keep a lot of threshold-commitments
+  not really... even several per human isn't much
 
-### Contingent Payments
+### Contingent Payment
 
 #### What
 
+Contingent payment is the direct purchase of a future expected difference in a probability distribution, such that a variable part of the price can be efficiently used to incentivize accuracy in the future prediction.
+
 When purchasing medicine (setting aside some [signaling value][]), we are intending to buy a positive difference in the future probability distribution of our health, and we are willing to pay a price as some increasing function of the magnitude of the difference. At present, this can neither be efficiciently measured nor easily written into contract law, so we must content ourselves with choosing to either buy or pass on a particular drug at the market price, and rely instead on an costly, inscrutable, and generally ineffective set of institutions to implement prior controls which enforce some correlation between the future health impact and the price tag. What if instead we could purchase the expected future impact directly, precommiting to pay if and only if it were realized?
+
+one way: two prediction markets
+another way: company paid in future contingent on event, company seeks present funding by investors who bet on the event
 
 this applies more generally to any case in which we primarily wish to purchase a difference in a future probability distribution
 
@@ -213,12 +237,13 @@ also e.g. negative externalities - fast food
 
 #### Comparative Advantages
 
-we must subsidize the prediction markets, and this could provide a way to do so - substantial part of payment
+we must subsidize the prediction markets, and this could provide a way to do so - substantial part of payment to prediction markets
 
 why dlt?
 
 - automatic contract creation & enforcement
-- separation of measurement and of computation - one measurement protocol can serve all needs
+- separation of measurement and of computation - one measurement protocol can serve all needs, scales better
+- consumers can create bespoke contracts more easily
 
 relative to
 
@@ -243,6 +268,9 @@ objections to desirability
   if we accept premise, possible to enforce post hoc subsidies according to ratio of probability distributions or something
 
 objections to feasibility
+
+- data cannot be individually verified
+  ~> not in all cases, but verification just needs to be cost-to-forge, not perfect
 
 - still too complex to contract, not efficient at scale
   information from smart devices, doesn't need to be that complex (e.g. time of death)
