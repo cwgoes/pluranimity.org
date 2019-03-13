@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Comparative Advantages of Distributed Ledgers"
-date:       2019-02-25 00:00:00 +0000
+date:       2019-03-20 00:00:00 +0000
 categories: dlt blockchain economics
 ---
 
@@ -11,9 +11,9 @@ categories: dlt blockchain economics
 
 Why develop distributed ledgers<sup>[1](#1)</sup>?
 
-For the purposes of this analysis, let distributed ledgers be state transition functions {% ihighlight haskell %} F :: (S, T) -> S {% endihighlight %} executed in a consensus algorithm<sup>[2](#2)</sup> by a distributed set {% ihighlight haskell %} P {% end ihighlight %} of parties with arbitrary state complexity<sup>[3](#3)</sup>, unbounded transaction throughput<sup>[4](#4)</sup>, perfect censorship resistance<sup>[5](#5)</sup>, bandwidth-inexpensive queryability<sup>[6](#6)</sup>, oracle access to elapsed time<sup>[7](#7)</sup>, and private data / public ruleset segmentation<sup>[8](#8)</sup>. None of these properties are yet satisfactorily provided by existing implementations, but we have reason to expect they may be in time (see references). The present developmental efforts justifiably focus on satisficing these properties, in of itself a challenging and interesting task - but assume we largely succeed - what then?
+For the purposes of this analysis, let distributed ledgers be state transition functions {% ihighlight haskell %} F :: (S, T) -> S {% endihighlight %} executed in a consensus algorithm<sup>[2](#2)</sup> by a distributed set {% ihighlight haskell %} P {% end ihighlight %} of parties with arbitrary state complexity<sup>[3](#3)</sup>, unbounded transaction throughput<sup>[4](#4)</sup>, perfect censorship resistance<sup>[5](#5)</sup>, bandwidth-inexpensive queryability<sup>[6](#6)</sup>, oracle access to elapsed time<sup>[7](#7)</sup>, and private data / public ruleset segmentation<sup>[8](#8)</sup>. None of these properties are yet satisfactorily provided by existing implementations, but we have reason to expect they may be in time (see references). The present developmental efforts justifiably focus on satisficing these properties, in of itself a challenging and engrossing task - but assume we largely succeed - what then?
 
-In this post, I outline five broad areas of systems design where I think we have reason to believe that distributed ledgers may increase the available component set for mechanism designers and thereby enable the creation of radically different systems from what we have today: public commons, benevolent totalitarianism, polycentric law, threshold commitment, and contingent payment. For each area, I explain the system reference class, why we might benefit from such systems, and in what way distributed ledgers may provide an advantage, then attempt to articulate & address the best arguments against desirability and feasibility.
+In this post, I outline five broad areas of systems design where I think we have reason to believe that distributed ledgers may increase the available component set for mechanism designers and thereby enable the creation of radically different systems from what we have today: public commons, benevolent totalitarianism, polycentric law, threshold commitment, and contingent payment. For each area, I explain the system reference class, why we might benefit from such systems, and in what way distributed ledgers may provide a significant advantage, then attempt to articulate & address the best arguments against desirability and feasibility.
 
 ### Public Commons
 
@@ -59,7 +59,7 @@ objections to feasibility
   more likely concern
   dlt can interface with meatspace, implement meatspace - cite Kleros alternative adjudication
 
-### Benevolent Totalitarianism (find a better term...)
+### Benevolent Totalitarianism (find a better term or cut this section...)
 
 #### What
 
@@ -111,7 +111,8 @@ objections to feasibility
 
 #### What
 
-Polycentric law is the realization of overlapping, volunary, and specialized private legal systems in a manner capable enough to supplant a substantial fraction of the existing domestic & international regulatory regimes.
+Polycentric law is the realization of overlapping, volunary, and specialized private legal systems in a manner capable enough to supplant a substantial fraction of the existing domestic & international regulatory regimes,
+with enforcement through control over economic incentives instead of by the implicit threat of force.
 
 I take the term from [a 1999 essay][polycentric-law-in-a-new-century] by Tom Bell, which defines polycentric law as
 
@@ -143,10 +144,11 @@ polycentric law may be especially effective when combined with threshold commitm
 
 why dlt?
 
+- can "enforce" contracts without a single trusted party
 - reduces transaction costs of implementation
 - facilitates codified integration of disparate systems
 - includes incentive layer
-- could eventually maintain monopoly on use of force
+- could eventually maintain monopoly on use of force (?)
 
 in the consequentialist extreme, precommit to a set of metrics upon which legal systems are contionuously and automatically chosen based on randomized control trials (perhaps specifiying some basic deontological restrictions)
 
@@ -155,9 +157,16 @@ in the consequentialist extreme, precommit to a set of metrics upon which legal 
 objections to desirability
 
 - forming trade coalitions wouldn't be easier
+  hard to predict now, but reasons to believe it would be, easier to solve information problem
 
 - enforcement-by-ledger is dangerous
   initially existing basic legal structures remain in place, more voluntary aspects of trade, commerce, citizenship
+
+- consensus or ledger governance systems would be just as capturable
+  maybe, but the ledgers can compete, no fundamentally scarce resource (land) and existing ledgers can't threaten with weaponry
+
+- network effects will facilitate monopolies anyways
+  ledgers by nature do not have monopoly over *data*, "fork threat" real & essential
 
 objections to feasability
 
@@ -176,13 +185,15 @@ Alternatively, "jumping Nash equilibria".
 
 - indexable commitment stores, data processing
 
-in very limited form today: Kickstarter (threshold commitment to produce a product given demand). Doesn't scale, poor information, limited conditionals.
+in very limited form today: Kickstarter (threshold commitment to produce a product given demand). Doesn't scale, poor information, limited conditionals, requires trusted funds custody ~=> can't fund large projects.
 
 explain: may be difficult to conceptualize, most ledgers do not provide transaction introspection, but not a theoretical limitation
 
-e.g. carbon emission commitments
+e.g. carbon emission commitments, solve tragedies of the commons
 
 #### Why
+
+cite slatestarcodex libertarianism post on lake fishing
 
 - platform lockin
 - bad game theoretic equilibria
@@ -235,7 +246,7 @@ also e.g. negative externalities - fast food
 
 #### Why
 
-#### Comparative Advantages
+#### Comparative Advantage
 
 we must subsidize the prediction markets, and this could provide a way to do so - substantial part of payment to prediction markets
 
@@ -252,7 +263,7 @@ relative to
 
 cite
 
-- foam protocol
+- foam protocol, Numerai Erasure?, others (oracles on data)
 - oracle research
 - oracle markets
 
