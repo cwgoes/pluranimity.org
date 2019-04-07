@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Comparative Advantages of Distributed Ledgers"
-date:       2019-03-20 00:00:00 +0000
+date:       2019-04-01 00:00:00 +0000
 categories: dlt blockchain economics
 ---
 
@@ -13,7 +13,7 @@ Why develop distributed ledgers<sup>[1](#1)</sup>?
 
 For the purposes of this analysis, let distributed ledgers be state transition functions {% ihighlight haskell %} F :: (S, T) -> S {% endihighlight %} executed in a consensus algorithm<sup>[2](#2)</sup> by a distributed set {% ihighlight haskell %} P {% end ihighlight %} of parties with arbitrary state complexity<sup>[3](#3)</sup>, unbounded transaction throughput<sup>[4](#4)</sup>, perfect censorship resistance<sup>[5](#5)</sup>, bandwidth-inexpensive queryability<sup>[6](#6)</sup>, oracle access to elapsed time<sup>[7](#7)</sup>, and private data / public ruleset segmentation<sup>[8](#8)</sup>. None of these properties are yet satisfactorily provided by existing implementations, but we have reason to expect they may be in time (see references). The present developmental efforts justifiably focus on satisficing these properties, in of itself a challenging and engrossing task - but assume we largely succeed - what then?
 
-In this post, I outline five broad areas of systems design where I think we have reason to believe that distributed ledgers may increase the available component set for mechanism designers and thereby enable the creation of radically different systems from what we have today: public commons, benevolent totalitarianism, polycentric law, threshold commitment, and contingent payment. For each area, I explain the system reference class, why we might benefit from such systems, and in what way distributed ledgers may provide a significant advantage, then attempt to articulate & address the best arguments against desirability and feasibility.
+In this post, I outline four broad areas of systems design where I think we have reason to believe that distributed ledgers may increase the available component set for mechanism designers and thereby enable the creation of radically different systems from what we have today: public commons, polycentric law, threshold commitment, and contingent payments. For each area, I explain the system reference class, why we might benefit from such systems, and in what way distributed ledgers may provide a significant advantage, then attempt to articulate & address the best arguments against desirability and feasibility.
 
 ### Public Commons
 
@@ -25,8 +25,9 @@ Perhaps the most successful (by both user count and economic utility) - and most
 
 #### Why
 
-- public commons provide lots of utility (lookup companies by market capitalization)
+- public commons provide lots of utility (lookup companies by market capitalization, and they capture but a small fraction)
 - control by companies is suboptimal - rent extraction, natural monopolies, deplatforming, just not as efficient as open standards, leads to optimization for mean instead of diversity
+- want to incentivize creation by allowing the capture of some future value, only way to incentivize creation r.n. is to own the platform
 
 #### Comparative Advantage
 
@@ -58,54 +59,6 @@ objections to feasibility
 - necessity of "flexibility" instead of rigidity in ruleset, adjudication / dispute resolution
   more likely concern
   dlt can interface with meatspace, implement meatspace - cite Kleros alternative adjudication
-
-### Benevolent Totalitarianism (find a better term or cut this section...)
-
-#### What
-
-Benevolent totalitarianism is jurisdictionally pervasive but action (? - related to what crime is being committed, just nuclear / bio...) restricted global policing with negligible error rates.
-
-#### Why
-
-[Nick Bostrom argues][vulnerable-world-hypothesis] that the relative ineffectiveness of our present legal institutions in enforcing the law may be an extinction-level risk factor:
-
-> Scientific and technological progress might change people’s capabilities or incentives in ways
-that would destabilize civilization. For example, advances in DIY biohacking tools might make it
-easy for anybody with basic training in biology to kill millions; novel military technologies could
-trigger arms races in which whoever strikes first has a decisive advantage; or some economically
-advantageous process may be invented that produces disastrous negative global externalities
-that are hard to regulate. [...] A general ability to stabilize a vulnerable world would require greatly amplified
-capacities for preventive policing and global governance.
-
-#### Comparative Advantage
-
-why dlt?
-- separate enforcement from control of rules, avoid dystopic aspects of totalitarianism, no singular humans in control / command-and-control structure
-- drastically reduce transaction costs of implementation
-- e.g.: can only utilize currency iff. prove compliance with rules
-
-#### Objections
-
-objections to desirability
-
-- could be captured
-  possible to restrict enforcement more precisely
-
-- existential risk factors aren't that significant
-  cite counterarguments: Sandberg, Gwern
-
-- existential risk factors wouldn't be reduced
-  instead just shifted to locus of control - consensus-economic thresholds insufficient
-
-objections to feasibility
-
-- requires lots of data to be verifiable on-chain
-  will the oracles really work?
-  cite: proof-of-location, numerai thing, Augur market settlements
-  cellphones running avalanche
-
-- human law is too nuanced and interpretive to be codified
-  maybe, but not sure we care about the nuanced aspects here - more about preventing nuclear warfare, bioterror
 
 ### Polycentric Law
 
@@ -195,6 +148,7 @@ e.g. carbon emission commitments, solve tragedies of the commons
 
 cite slatestarcodex libertarianism post on lake fishing
 
+- cite tragedy of commons - http://science.sciencemag.org/content/162/3859/1243.full
 - platform lockin
 - bad game theoretic equilibria
 - stuck in pareto-efficient local optima
@@ -229,11 +183,13 @@ objections to feasibility
 - need to keep a lot of threshold-commitments
   not really... even several per human isn't much
 
-### Contingent Payment
+### contingent Payments
 
 #### What
 
-Contingent payment is the direct purchase of a future expected difference in a probability distribution, such that a variable part of the price can be efficiently used to incentivize accuracy in the future prediction.
+~ another possible implementation: payment escrowed, settled in future based on measurement, rights of future payment can be tokenized & traded
+
+Contingent payments are the direct purchase of a future expected difference in a probability distribution, such that a variable part of the price can be efficiently used to incentivize accuracy in the future prediction.
 
 When purchasing medicine (setting aside some [signaling value][]), we are intending to buy a positive difference in the future probability distribution of our health, and we are willing to pay a price as some increasing function of the magnitude of the difference. At present, this can neither be efficiciently measured nor easily written into contract law, so we must content ourselves with choosing to either buy or pass on a particular drug at the market price, and rely instead on an costly, inscrutable, and generally ineffective set of institutions to implement prior controls which enforce some correlation between the future health impact and the price tag. What if instead we could purchase the expected future impact directly, precommiting to pay if and only if it were realized?
 
