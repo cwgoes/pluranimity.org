@@ -4,7 +4,9 @@ title: "Media"
 permalink: /media/
 ---
 
-Particularly informative or illuminative resources, sorted in no particular order.
+Resources I have found particularly informative or illuminative, sorted in no particular order.
+
+In English unless otherwise indicated.
 
 ## Textual
 
@@ -16,6 +18,7 @@ Particularly informative or illuminative resources, sorted in no particular orde
 - [Marginal Revolution](https://marginalrevolution.com/)
 - [Schtetl-Optimized](https://www.scottaaronson.com/blog/)
 - [The Last Psychiatrist](https://thelastpsychiatrist.com/)
+- [Effective Altruism Forum](https://forum.effectivealtruism.org/)
 
 ### Magazines / Periodicals
 
