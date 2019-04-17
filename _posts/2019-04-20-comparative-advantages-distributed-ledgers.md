@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Comparative Advantages of Distributed Ledgers"
-date:       2019-04-01 00:00:00 +0000
+date:       2019-04-20 00:00:00 +0000
 categories: dlt blockchain economics
 ---
 
