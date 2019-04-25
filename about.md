@@ -11,7 +11,7 @@ Check your guess of cultural reference against `b1f23e6c01` (SHA256, first ten c
 <br />
 Opinions expressed herein are my own and not necessarily those of any employer or future self.<br />
 <br />
-[Here](/headshot.jpg) is a headshot should you want to match a face to the name or require one for media.<br />
+[Here](/headshot.jpg) is a headshot should you wish to match a face to the name or require one for media.<br />
 
 ### Work
 
