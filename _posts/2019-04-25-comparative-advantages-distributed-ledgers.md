@@ -15,19 +15,24 @@ In this post, I outline four broad areas of systems design where I think we have
 
 #### What
 
-Public commons are platforms which creates economic surplus by connecting buyers and sellers & providing a medium through which they can transact, where the platform operator, if existent, is not manufacturing the product or providing the service. The US dollar (value), Airbnb (housing), Uber (transportation), Ebay (goods), Github (code, bug reports), and search engines (information) are all public commons. Public commons tend to possess strong network effects, since the utility to any particular user is proportional to the number of other users, and thus usually result in natural monopolies, especially in the absence of prior open standards for product representation (present in the case of websites, for example, but not in the case of transportation or housing).
+What are public commons?
 
-Perhaps the most successful (by both user count and economic utility) - and most decentralized - existing such commons is the English language, a platform for the exchange of information. Languages as commons have several convenient properties - the size of their state does not scale linearly with the number of users, approximate agreement on most of the present state is sufficient for usage (as any natural language contains many different possible encodings of the same semantics), and our mental facilities and social institutions are well-adapted to track their states and provide the high-throughput gossip required for state changes without requiring central coordination.
+Public commons are platforms which creates economic surplus by connecting buyers and sellers & providing a medium through which they can transact, where the platform operator, if distinct from the userbase, is not manufacturing the product or providing the service. The US dollar (value), Airbnb (housing), Uber (transportation), Ebay (goods), Github (code, bug reports), Microsoft Windows (desktop applications), and search engines (information) are all public commons to varying degrees. Public commons tend to possess strong network effects, since the utility provided to any particular user is proportional to the number of other users, and thus they often result in natural monopolies, especially in the absence of prior open standards for product representation (present in the case of websites, for example, but not in the case of transportation or housing).
+
+Perhaps the most successful (by both user count and economic utility) — and most decentralized — existing such commons is the English language, a platform for the exchange of information. Languages as commons have several convenient properties: the size of their state does not scale linearly with the number of users, approximate agreement on most of the present state is sufficient for usage (as any natural language contains many different possible encodings of the same semantics), and our mental facilities and social institutions are well-adapted to track their states and provide the high-throughput gossip required for state changes without requiring central coordination.
 
 #### Why
 
-- public commons provide lots of utility (lookup companies by market capitalization, and they capture but a small fraction)
-- control by companies is suboptimal - rent extraction, natural monopolies, deplatforming, just not as efficient as open standards, leads to optimization for mean instead of diversity
-- want to incentivize creation by allowing the capture of some future value, only way to incentivize creation r.n. is to own the platform
+Why are public commons valuable, and what are their challenges?
+
+- Public commons provide an enormous amount of utility. Seven of the ten largest global firms by market capitalization operate commons of sorts<sup>[9](#9)</sup>, and they capture but a small fraction (although perhaps a larger fraction than necessary) of the created utility. The English language provides far more utility than all of them combined, but — and partially because (imagine if the English vocabulary were owned by a company) — it captures none of it.
+- Control of commons by companies often tends to be suboptimal, since the profit motive of the company (generally enshrined in law) is not necessarily aligned with the best interests of the commons' userbase. Especially once they attain a dominant agglomeration effect, companies may find it more profitable to extract rent far in excess of their costs, deprive users of alternative interfaces and algorithms through the use of proprietary standards and siloed data, deplatform users instead of respecting a notion of minority rights, and optimize content & information for attention and purchase-in-expectation capture even when it is clearly against the best interest of the user.
+- The immense possible utility seems to justify incentivizing the creation of commons by allowing a capture by the creators of some fraction of the future value, but preferably in a way where the creators can credibly commit to a particular ruleset which curtails their power as an operator of the commons. At the moment, the only way to incentivize creation is for firms to own the commons and control all of the rules, which frequently leads to incentive misalignment.
 
 #### Comparative Advantage
 
-why dlt
+Why might distributed ledger technology help, and what role would it serve?
+
 - incentivize creation by capturing a portion of future economic value
 - credibly commit not to extract rent or arbitrarily enforce rules
 - permissionless innovation: interfaces, cross-common connections, no organizational relationship/trust cost
@@ -38,13 +43,13 @@ cite: Tyler Cowen post
 
 #### Objections
 
-objections to desirability
+Why might this approach not be desirable?
 
 - Scott Alexander, uncontrollable even in principle
   hinges a lot on - is "libertarian" aspect of blockchain endemic or social?
   I admit the concern but consider this the scenario of lesser concern - why? 1. platform reputation very important, 2. covenants around law, 3. worse danger: governments or less scrupulous companies co-opting parts of tech for totalitarian ends.
 
-objections to feasibility
+Why might this approach not be feasible?
 
 - technical concerns
   will be solved in time (and not much time, although perhaps more than the market swings) - cite Starkware DEX prover, Tendermint BFT
@@ -60,6 +65,8 @@ objections to feasibility
 
 #### What
 
+What is polycentric law?
+
 Polycentric law is the realization of overlapping, volunary, and specialized private legal systems in a manner capable enough to supplant a substantial fraction of the existing domestic & international regulatory regimes,
 with enforcement through control over economic incentives instead of by the implicit threat of force.
 
@@ -74,6 +81,8 @@ unlike his examples, does not capture entirely what I mean: mostly a superset of
 One detailed, albeit fictional, depiction of how a polycentric legal system might work can be found in Ada Palmer's [Terra Ignota series][terra-ignota].
 
 #### Why
+
+Why might polycentric law be useful, and what challenges are involved?
 
 Monopolies of legal systems allow them to extract an inordinate amount of rent. The geographically-determined boundaries by which legal systems operate make sense only to the degree by which geographical proximity indicates a preference for similar law - trend? - and 
 
@@ -91,7 +100,7 @@ polycentric law may be especially effective when combined with threshold commitm
 
 #### Comparative Advantage
 
-why dlt?
+Why might distributed ledger technology help, and what role would it serve?
 
 - can "enforce" contracts without a single trusted party
 - reduces transaction costs of implementation
@@ -103,7 +112,7 @@ in the consequentialist extreme, precommit to a set of metrics upon which legal 
 
 #### Objections
 
-objections to desirability
+Why might this approach not be desirable?
 
 - forming trade coalitions wouldn't be easier
   hard to predict now, but reasons to believe it would be, easier to solve information problem
@@ -117,7 +126,7 @@ objections to desirability
 - network effects will facilitate monopolies anyways
   ledgers by nature do not have monopoly over *data*, "fork threat" real & essential
 
-objections to feasability
+Why might this approach not be feasible?
 
 - computing intersections between rulesets impossible
   counter: inter-blockchain communication, by nature of verification rulesets must be known to all parties & codified
@@ -125,6 +134,8 @@ objections to feasability
 ### Threshold Commitment
 
 #### What
+
+What is threshold commitment?
 
 Threshold commitment is the ability to commit to a particular action (on a distributed ledger, a particular transaction) contingent on other parties committing to particular actions (possibly themselves contingent on your commitment).
 
@@ -142,8 +153,9 @@ e.g. carbon emission commitments, solve tragedies of the commons
 
 #### Why
 
-cite slatestarcodex libertarianism post on lake fishing
+Why might threshold commitment be useful, and what are the challenges involved?
 
+cite slatestarcodex libertarianism post on lake fishing
 - cite tragedy of commons - http://science.sciencemag.org/content/162/3859/1243.full
 - platform lockin
 - bad game theoretic equilibria
@@ -152,7 +164,7 @@ cite slatestarcodex libertarianism post on lake fishing
 
 #### Comparative Advantage
 
-why dlt?
+Why might distributed ledger technology help, and what role would it serve?
 
 - atomicization of actions
 - can maintain space of possible contingent actions - "DEX orderbook"
@@ -167,12 +179,12 @@ e.g.
 
 #### Objections
 
-objections to desirability
+Why might this approach not be desirable?
 
 - how much rent are platforms really extracting?
 - still too much effort - after all, humans could coordinate to leave FB
 
-objections to feasibility
+Why might this approach not be feasible?
 
 - bad computational scaling
   zk proofs!
@@ -182,6 +194,8 @@ objections to feasibility
 ### contingent Payments
 
 #### What
+
+What are contingent payments?
 
 ~ another possible implementation: payment escrowed, settled in future based on measurement, rights of future payment can be tokenized & traded
 
@@ -198,11 +212,13 @@ also e.g. negative externalities - fast food
 
 #### Why
 
+Why might contingent payments be useful, and what are the challenges involved?
+
 #### Comparative Advantage
 
-we must subsidize the prediction markets, and this could provide a way to do so - substantial part of payment to prediction markets
+Why might distributed ledger technology help, and what role would it serve?
 
-why dlt?
+we must subsidize the prediction markets, and this could provide a way to do so - substantial part of payment to prediction markets
 
 - automatic contract creation & enforcement
 - separation of measurement and of computation - one measurement protocol can serve all needs, scales better
@@ -221,7 +237,7 @@ cite
 
 #### Objections
 
-objections to desirability
+Why might this approach not be desirable?
 
 - existing systems are already effective at this, the hard part is just prediction
   lots of evidence incentives are screwy
@@ -230,7 +246,7 @@ objections to desirability
   not sure about a priori, always an opportunity cost - should work more like triage than "care at any cost" - but of course *I* would try
   if we accept premise, possible to enforce post hoc subsidies according to ratio of probability distributions or something
 
-objections to feasibility
+Why might this approach not be feasible?
 
 - data cannot be individually verified
   ~> not in all cases, but verification just needs to be cost-to-forge, not perfect
@@ -261,6 +277,7 @@ Thanks to XYZ for reviews of this post.
 <span id="6">6</span>: Such that bandwidth and compute required is proportional only in the size of the query, not the size of state, and that the querying client cannot be fooled. (current examples: TM lite client proofs).<br />
 <span id="7">7</span>: As might be provided by a verifiable-delay function with difficulty adjustment (cite: Wachowski VDF paper). <br />
 <span id="8">8</span>: Meaning that specific transaction details (sender, amount, code) can be private to a user while ruleset verification (supply conservation, invariant fulfillment) is performed on the ledger, as likely will be provided by zero-knowledge proof constructions (current examples: Zerocash, ZEXE).<br />
+<span id="9">9</span>: [List of top ten firms by market capitalization](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization). I count Microsoft, Apple, Amazon, Alphabet, Facebook, Alibaba Group, and Tencent as operating commons.
 
 <span id=""></span>: [Vulnerable World Hypothesis](https://nickbostrom.com/papers/vulnerable.pdf)
 <span id=""></span>: [Polycentric Law in a New Century](https://www.cis.org.au/app/uploads/2015/04/images/stories/policy-magazine/1999-autumn/1999-15-1-tom-bell.pdf)
