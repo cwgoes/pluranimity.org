@@ -1,13 +1,13 @@
 ---
 layout:     post
 title:      "Comparative Advantages of Distributed Ledgers"
-date:       2019-04-25 00:00:00 +0000
+date:       2019-04-27 00:00:00 +0000
 categories: dlt blockchain economics
 ---
 
 Why develop distributed ledgers<sup>[1](#1)</sup>?
 
-For the purposes of this analysis, let distributed ledgers be state transition functions {% ihighlight haskell %} F :: (S, T) -> S {% endihighlight %} executed in a consensus algorithm<sup>[2](#2)</sup> by a distributed set {% ihighlight haskell %} P {% endihighlight %} of parties with arbitrary state complexity<sup>[3](#3)</sup>, unbounded transaction throughput<sup>[4](#4)</sup>, perfect censorship resistance<sup>[5](#5)</sup>, bandwidth-inexpensive queryability<sup>[6](#6)</sup>, oracle access to elapsed time<sup>[7](#7)</sup>, and private data / public ruleset segmentation<sup>[8](#8)</sup>. None of these properties are yet satisfactorily provided by existing implementations, but we have reason enough to expect they may be in time (see references). The present developmental efforts justifiably focus on satisficing these properties, in of itself a challenging and engrossing task - but assume we largely succeed - what then?
+For the purposes of this analysis, let distributed ledgers be state transition functions executed in a consensus algorithm<sup>[2](#2)</sup> by a distributed set of parties with arbitrary state complexity<sup>[3](#3)</sup>, unbounded transaction throughput<sup>[4](#4)</sup>, perfect censorship resistance<sup>[5](#5)</sup>, bandwidth-inexpensive queryability<sup>[6](#6)</sup>, oracle access to elapsed time<sup>[7](#7)</sup>, and private data / public ruleset segmentation<sup>[8](#8)</sup>. None of these properties are yet satisfactorily provided by existing implementations, but we have reason enough to expect they may be in time (see references). The present developmental efforts justifiably focus on satisficing these properties, in of itself a challenging and engrossing task — but assume we largely succeed — what then?
 
 In this post, I outline four broad areas of systems design where I think we have reason to believe that distributed ledgers may increase the available component set for mechanism designers and thereby enable the creation of radically different systems from what we have today: public commons, polycentric law, threshold commitment, and contingent payments. For each area, I explain the system reference class, why we might benefit from such systems, and in what way distributed ledgers may provide a significant advantage, then attempt to articulate & address the best arguments against desirability and feasibility.
 
@@ -17,7 +17,7 @@ In this post, I outline four broad areas of systems design where I think we have
 
 What are public commons?
 
-Public commons are platforms which creates economic surplus by connecting buyers and sellers & providing a medium through which they can transact, where the platform operator, if distinct from the userbase, is not manufacturing the product or providing the service. The US dollar (value), Airbnb (housing), Uber (transportation), Ebay (goods), Github (code, bug reports), Microsoft Windows (desktop applications), and search engines (information) are all public commons to varying degrees. Public commons tend to possess strong network effects, since the utility provided to any particular user is proportional to the number of other users, and thus they often result in natural monopolies, especially in the absence of prior open standards for product representation (present in the case of websites, for example, but not in the case of transportation or housing).
+Public commons are platforms which creates economic surplus by connecting buyers and sellers & providing a medium through which they can transact, where the platform operator, if distinct from the userbase, is not manufacturing the product or providing the service. The US dollar (value), Airbnb (housing), Uber (transportation), Ebay (goods), Github (code, bug reports), Microsoft Windows (desktop applications), and search engines (information) are all public commons to varying degrees. Public commons tend to possess strong network effects, since the utility provided to any particular user is proportional to the number of other users, thus they often result in natural monopolies, especially in the absence of prior open standards for product representation (present in the case of websites, for example, but not in the case of transportation or housing).
 
 Perhaps the most successful (by both user count and economic utility) — and most decentralized — existing such commons is the English language, a platform for the exchange of information. Languages as commons have several convenient properties: the size of their state does not scale linearly with the number of users, approximate agreement on most of the present state is sufficient for usage (as any natural language contains many different possible encodings of the same semantics), and our mental facilities and social institutions are well-adapted to track their states and provide the high-throughput gossip required for state changes without requiring central coordination.
 
@@ -26,28 +26,33 @@ Perhaps the most successful (by both user count and economic utility) — and mo
 Why are public commons valuable, and what are their challenges?
 
 - Public commons provide an enormous amount of utility. Seven of the ten largest global firms by market capitalization operate commons of sorts<sup>[9](#9)</sup>, and they capture but a small fraction (although perhaps a larger fraction than necessary) of the created utility. The English language provides far more utility than all of them combined, but — and partially because (imagine if the English vocabulary were owned by a company) — it captures none of it.
-- Control of commons by companies often tends to be suboptimal, since the profit motive of the company (generally enshrined in law) is not necessarily aligned with the best interests of the commons' userbase. Especially once they attain a dominant agglomeration effect, companies may find it more profitable to extract rent far in excess of their costs, deprive users of alternative interfaces and algorithms through the use of proprietary standards and siloed data, deplatform users instead of respecting a notion of minority rights, and optimize content & information for attention and purchase-in-expectation capture even when it is clearly against the best interest of the user.
+- Control of commons by companies often tends to be suboptimal, since the profit motive of the company (generally enshrined in law) is not necessarily aligned with the best interests of the commons' userbase. Especially once they attain a dominant agglomeration effect, companies may find it more profitable to extract rent far in excess of their costs, deprive users of alternative interfaces and algorithms through the use of proprietary standards and siloed data, deplatform users instead of respecting a notion of minority rights, and optimize content & information for attention and behavioural surplus capture even when it is clearly against the best interest of the user.
 - The immense possible utility seems to justify incentivizing the creation of commons by allowing a capture by the creators of some fraction of the future value, but preferably in a way where the creators can credibly commit to a particular ruleset which curtails their power as an operator of the commons. At the moment, the only way to incentivize creation is for firms to own the commons and control all of the rules, which frequently leads to incentive misalignment.
 
 #### Comparative Advantage
 
 Why might distributed ledger technology help, and what role would it serve?
 
-- incentivize creation by capturing a portion of future economic value
-- credibly commit not to extract rent or arbitrarily enforce rules
-- permissionless innovation: interfaces, cross-common connections, no organizational relationship/trust cost
-- competition at interface layer instead of at data layer
-- rent extraction by consensus participants - data can be forked
-
-cite: Tyler Cowen post
+- Distributed ledger technology can serve as the backbone of a decentralized commons, enforcing the ruleset (accepting user input, matching counterparties, settling payment, operating rating algorithms, etc.) by encoding it in the state machine.
+- Creators of a decentralized commons can capture a portion of the future economic value by assigning themselves a fraction of future revenue or apportionment of a network-associated token, but credibly commit not to extract rent or arbitrarily alter the rules against users' interest once the platform becomes dominant (as noted by Tyler Cowen<sup>[10](#10)</sup>).
+- Decentralized commons can faciliate scalable permissionless innovation and interoperation with other services and interfaces since interactions with the system are not bottlenecked by trusted organizational relationships.
+- Distributed ledgers, by construction, cannot own and control access to data in the same sense as Google or Facebook, so the cost of exit (were the decentralized commons to ramp up fees, say) and correspondingly the degree of possible rent extraction is lower.
+- Commons operated on distributed ledgers are likely to be more resilient to legal & geopolitical adversaries, since they must be constructed to function on open networks and build cryptographic authentication & Sybil resistance into their design.
 
 #### Objections
 
 Why might this approach not be desirable?
 
-- Scott Alexander, uncontrollable even in principle
-  hinges a lot on - is "libertarian" aspect of blockchain endemic or social?
-  I admit the concern but consider this the scenario of lesser concern - why? 1. platform reputation very important, 2. covenants around law, 3. worse danger: governments or less scrupulous companies co-opting parts of tech for totalitarian ends.
+Scott Alexander has expressed concern<sup>[11](#11)</sup> about the risks of too-resilient marketplaces:
+
+> The latest development in the brave new post-Bitcoin world is crypto-equity. At this point I’ve gone from wanting to praise these inventors as bold libertarian heroes to wanting to drag them in front of a blackboard and making them write a hundred times “I WILL NOT CALL UP THAT WHICH I CANNOT PUT DOWN” (...) People are using the contingent stupidity of our current government to replace lots of human interaction with mechanisms that cannot be coordinated even in principle.
+
+I admit this possibility, but consider it remote.
+
+- I suspect whether "unstoppable markets" which prevent censorship of funding for human trafficking or terrorism (which ought to be censored) are realized hinges on whether the "hard libertarian" aspect of distributed ledgers is primarily endemic to the technology or primarily contingent on founder effects. I think it is mostly the latter. Nothing about the decentralized nature of the infrastructure prevents 
+- I don't think that decentralized commons cannot be coordinated. English language social norms around acceptable words and honorifics are shifting rapidly all the time, for example.
+- Platform (brand) reputation of decentralized ledgers is extremely important, and the costs of exit are low, so 
+- Likely a worse danger is government or less scrupulous companies co-opting parts of the technology and branding around blockchains to realize their own, often totalitarian, ends.
 
 Why might this approach not be feasible?
 
@@ -277,10 +282,12 @@ Thanks to XYZ for reviews of this post.
 <span id="6">6</span>: Such that bandwidth and compute required is proportional only in the size of the query, not the size of state, and that the querying client cannot be fooled. (current examples: TM lite client proofs).<br />
 <span id="7">7</span>: As might be provided by a verifiable-delay function with difficulty adjustment (cite: Wachowski VDF paper). <br />
 <span id="8">8</span>: Meaning that specific transaction details (sender, amount, code) can be private to a user while ruleset verification (supply conservation, invariant fulfillment) is performed on the ledger, as likely will be provided by zero-knowledge proof constructions (current examples: Zerocash, ZEXE).<br />
-<span id="9">9</span>: [List of top ten firms by market capitalization](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization). I count Microsoft, Apple, Amazon, Alphabet, Facebook, Alibaba Group, and Tencent as operating commons.
+<span id="9">9</span>: [List of top ten firms by market capitalization](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization). I count Microsoft, Apple, Amazon, Alphabet, Facebook, Alibaba Group, and Tencent as operating commons.<br />
+<span id="10">10</span>: [Blockchains and the Opportunity of the Commons](https://marginalrevolution.com/marginalrevolution/2018/06/blockchains-opportunity-commons.html), Tyler Cowen.<br />
+<span id="11">11</span>: [Meditations on Moloch](https://slatestarcodex.com/2014/07/30/meditations-on-moloch/), Scott Alexander.<br />
 
-<span id=""></span>: [Vulnerable World Hypothesis](https://nickbostrom.com/papers/vulnerable.pdf)
-<span id=""></span>: [Polycentric Law in a New Century](https://www.cis.org.au/app/uploads/2015/04/images/stories/policy-magazine/1999-autumn/1999-15-1-tom-bell.pdf)
-<span id=""></span>: [Terra Ignota](https://en.wikipedia.org/wiki/Terra_Ignota)
+<span id=""></span>: [Vulnerable World Hypothesis](https://nickbostrom.com/papers/vulnerable.pdf), Nick Bostrom.<br />
+<span id=""></span>: [Polycentric Law in a New Century](https://www.cis.org.au/app/uploads/2015/04/images/stories/policy-magazine/1999-autumn/1999-15-1-tom-bell.pdf), Tom Bell.<br />
+<span id=""></span>: [Terra Ignota (series)](https://en.wikipedia.org/wiki/Terra_Ignota), Ada Palmer.<br />
 
 [contact]:                          /contact
