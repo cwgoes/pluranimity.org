@@ -11,7 +11,7 @@ For the purposes of this analysis, let distributed ledgers be state transition f
 
 In this post, I outline four broad areas of systems design where I think we have reason to believe that distributed ledgers may increase the available component set for mechanism designers and thereby enable the creation of radically different systems from what we have today: public commons, polycentric law, threshold commitment, and contingent payments. For each area, I explain the system reference class, why we might benefit from such systems, and in what way distributed ledgers may provide a significant advantage, then attempt to articulate & address the best arguments against desirability and feasibility.
 
-### Public Commons
+### Public commons
 
 #### What
 
@@ -29,7 +29,7 @@ Why are public commons valuable, and what are their challenges?
 - Control of commons by companies often tends to be suboptimal, since the profit motive of the company (generally enshrined in law) is not necessarily aligned with the best interests of the commons' userbase. Especially once they attain a dominant agglomeration effect, companies may find it more profitable to extract rent far in excess of their costs, deprive users of alternative interfaces and algorithms through the use of proprietary standards and siloed data, deplatform users instead of respecting a notion of minority rights, and optimize content & information for attention and behavioural surplus capture even when it is clearly against the best interest of the user.
 - The immense possible utility seems to justify incentivizing the creation of commons by allowing a capture by the creators of some fraction of the future value, but preferably in a way where the creators can credibly commit to a particular ruleset which curtails their power as an operator of the commons. At the moment, the only way to incentivize creation is for firms to own the commons and control all of the rules, which frequently leads to incentive misalignment.
 
-#### Comparative Advantage
+#### Comparative advantage
 
 Why might distributed ledger technology help, and what role would it serve?
 
@@ -66,16 +66,16 @@ Why might this approach not be feasible?
   more likely concern
   dlt can interface with meatspace, implement meatspace - cite Kleros alternative adjudication
 
-### Polycentric Law
+### Polycentric law
 
 #### What
 
 What is polycentric law?
 
-Polycentric law is the realization of overlapping, volunary, and specialized private legal systems in a manner capable enough to supplant a substantial fraction of the existing domestic & international regulatory regimes,
+Polycentric law is the realization of overlapping, voluntary, and specialized private legal systems in a manner capable enough to supplant a substantial fraction of the existing domestic & international regulatory regimes,
 with enforcement through control over economic incentives instead of by the implicit threat of force.
 
-I take the term from [a 1999 essay][polycentric-law-in-a-new-century] by Tom Bell, which defines polycentric law as
+I borrow the term from a 1999 essay<sup>[12](#12)</sup> by Tom Bell, which defines polycentric law as
 
 > law arising from a variety of customs and private processes rather than law coercively imposed by a single state authority
 
@@ -89,31 +89,30 @@ One detailed, albeit fictional, depiction of how a polycentric legal system migh
 
 Why might polycentric law be useful, and what challenges are involved?
 
-Monopolies of legal systems allow them to extract an inordinate amount of rent. The geographically-determined boundaries by which legal systems operate make sense only to the degree by which geographical proximity indicates a preference for similar law - trend? - and 
+- Present legal systems are unicentric, or at best federalist.
 
-An extraordinary amount of effort is directed to the effecting of control over the processes which govern the change in our existing legal monopologies which could perhaps better be directed towards realizing alternative sets of laws, which individuals could voluntarily select from.
+- Monopolies of legal systems allow them to extract an inordinate amount of rent. The geographically-determined boundaries by which legal systems operate make sense only to the degree by which geographical proximity indicates a preference for similar law - trend? - and 
 
-Laws are "bundled" not due to conflict but rather due to meatspace limitations
+- No unclaimed land upon which group of people can voluntarily establish self-governed community.
 
-No unclaimed land upon which group of people can voluntarily establish self-governed community.
+- An extraordinary amount of effort is directed to the effecting of control over the processes which govern the change in our existing legal monopologies which could perhaps better be directed towards realizing alternative sets of laws, which individuals could voluntarily select from.
 
-cite: prediction markets banned, security laws, attention tax
+- bad laws: prediction markets banned, security laws, attention tax
 
-existing internet communities may be closest analgoue, but limited in ability to craft around rules - mostly just around content
+- existing internet communities may be closest analogue, but limited in ability to craft around rules - mostly just around content
 
-polycentric law may be especially effective when combined with threshold commitment, enabling jumping Nash equilibria of legal schemes
-
-#### Comparative Advantage
+#### Comparative advantage
 
 Why might distributed ledger technology help, and what role would it serve?
 
 - can "enforce" contracts without a single trusted party
 - reduces transaction costs of implementation
-- facilitates codified integration of disparate systems
-- includes incentive layer
+- facilitates codified integration of disparate systems; interoperation where laws are shared
+- includes constrained incentive layer which can affect the real world
 - could eventually maintain monopoly on use of force (?)
 
 in the consequentialist extreme, precommit to a set of metrics upon which legal systems are contionuously and automatically chosen based on randomized control trials (perhaps specifiying some basic deontological restrictions)
+~ too dangerous, runs into alignment problems
 
 #### Objections
 
@@ -136,7 +135,13 @@ Why might this approach not be feasible?
 - computing intersections between rulesets impossible
   counter: inter-blockchain communication, by nature of verification rulesets must be known to all parties & codified
 
-### Threshold Commitment
+- physical world, coercion would intervene
+  realpolitik
+  pentagon, aircraft carrier, black sea, california
+
+  The threat of force is a feature of modern geopolitics. (for an amusing illustration of the realpolitik involved, read Pentagon press releases, like this one <sup></sup> complaining about a Russian SU-27 flying past an American EP-3 in the Black Sea. The Black Sea is on the Russian coast - for comparision, imagine a Russian or Chinese carrier parked off California).
+
+### Threshold commitment
 
 #### What
 
@@ -167,7 +172,7 @@ cite slatestarcodex libertarianism post on lake fishing
 - stuck in pareto-efficient local optima
 - better: pareto-efficient global optima, even tradeoffs
 
-#### Comparative Advantage
+#### Comparative advantage
 
 Why might distributed ledger technology help, and what role would it serve?
 
@@ -196,7 +201,7 @@ Why might this approach not be feasible?
 - need to keep a lot of threshold-commitments
   not really... even several per human isn't much
 
-### contingent Payments
+### Contingent payments
 
 #### What
 
@@ -219,7 +224,7 @@ also e.g. negative externalities - fast food
 
 Why might contingent payments be useful, and what are the challenges involved?
 
-#### Comparative Advantage
+#### Comparative advantage
 
 Why might distributed ledger technology help, and what role would it serve?
 
@@ -264,7 +269,7 @@ Why might this approach not be feasible?
 
 ----
 
-This analysis omits many more mundane usecases for which DLT may be able to accomplish roughly the same functionality at a lower cost or with higher efficacy than existing solutions, including cross-border remittances, internet payments, derivative settlement, data notarization, censorship-resistant communication, and mesh-networked state synchronization, not for lack of potential comparative advantage but rather because I am primarily interested in investigating systems which present technology cannot realize at all.
+This analysis omits many more mundane usecases for which DLT may be able to accomplish roughly the same functionality at a lower cost or with higher efficacy than existing solutions, including cross-border remittances, internet payments, derivative settlement, data notarization, and censorship-resistant communication, not for lack of potential comparative advantage but rather because I am primarily interested in investigating systems which present technology cannot realize at all.
 
 <!--
 Thanks to XYZ for reviews of this post.
@@ -285,9 +290,9 @@ Thanks to XYZ for reviews of this post.
 <span id="9">9</span>: [List of top ten firms by market capitalization](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization). I count Microsoft, Apple, Amazon, Alphabet, Facebook, Alibaba Group, and Tencent as operating commons.<br />
 <span id="10">10</span>: [Blockchains and the Opportunity of the Commons](https://marginalrevolution.com/marginalrevolution/2018/06/blockchains-opportunity-commons.html), Tyler Cowen.<br />
 <span id="11">11</span>: [Meditations on Moloch](https://slatestarcodex.com/2014/07/30/meditations-on-moloch/), Scott Alexander.<br />
+<span id="12">12</span>: [Polycentric Law in a New Century](https://www.cis.org.au/app/uploads/2015/04/images/stories/policy-magazine/1999-autumn/1999-15-1-tom-bell.pdf), Tom Bell.<br />
 
-<span id=""></span>: [Vulnerable World Hypothesis](https://nickbostrom.com/papers/vulnerable.pdf), Nick Bostrom.<br />
-<span id=""></span>: [Polycentric Law in a New Century](https://www.cis.org.au/app/uploads/2015/04/images/stories/policy-magazine/1999-autumn/1999-15-1-tom-bell.pdf), Tom Bell.<br />
+<span id=""></span>: [U.S. EP-3 Intercepted in the Black Sea](https://www.navy.mil/submit/display.asp?story_id=107669), US Naval Forces, 6th Fleet.<br />
 <span id=""></span>: [Terra Ignota (series)](https://en.wikipedia.org/wiki/Terra_Ignota), Ada Palmer.<br />
 
 [contact]:                          /contact
