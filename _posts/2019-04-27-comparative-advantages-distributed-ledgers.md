@@ -17,7 +17,7 @@ In this post, I outline four broad areas of systems design where I think we have
 
 What are public commons?
 
-Public commons are platforms which creates economic surplus by connecting buyers and sellers & providing a medium through which they can transact, where the platform operator, if distinct from the userbase, is not manufacturing the product or providing the service. The US dollar (value), Airbnb (housing), Uber (transportation), Ebay (goods), Github (code, bug reports), Microsoft Windows (desktop applications), and search engines (information) are all public commons to varying degrees. Public commons tend to possess strong network effects, since the utility provided to any particular user is proportional to the number of other users, thus they often result in natural monopolies, especially in the absence of prior open standards for product representation (present in the case of websites, for example, but not in the case of transportation or housing).
+*Public commons* are platforms which creates economic surplus by connecting buyers and sellers & providing a medium through which they can transact, where the platform operator, if distinct from the userbase, is not manufacturing the product or providing the service. The US dollar (value), Airbnb (housing), Uber (transportation), Ebay (goods), Github (code, bug reports), Microsoft Windows (desktop applications), and search engines (information) are all public commons to varying degrees. Public commons tend to possess strong network effects, since the utility provided to any particular user is proportional to the number of other users, thus they often result in natural monopolies, especially in the absence of prior open standards for product representation (present in the case of websites, for example, but not in the case of transportation or housing).
 
 Perhaps the most successful (by both user count and economic utility) — and most decentralized — existing such commons is the English language, a platform for the exchange of information. Languages as commons have several convenient properties: the size of their state does not scale linearly with the number of users, approximate agreement on most of the present state is sufficient for usage (as any natural language contains many different possible encodings of the same semantics), and our mental facilities and social institutions are well-adapted to track their states and provide the high-throughput gossip required for state changes without requiring central coordination.
 
@@ -72,47 +72,37 @@ Why might this approach not be feasible?
 
 What is polycentric law?
 
-Polycentric law is the realization of overlapping, voluntary, and specialized private legal systems in a manner capable enough to supplant a substantial fraction of the existing domestic & international regulatory regimes,
-with enforcement through control over economic incentives instead of by the implicit threat of force.
+I borrow the term from a 1999 essay<sup>[12](#12)</sup> by Tom Bell, although I use it somewhat differently. He defines polycentric law as
 
-I borrow the term from a 1999 essay<sup>[12](#12)</sup> by Tom Bell, which defines polycentric law as
+> law arising from a variety of customs and private processes rather than law coercively imposed by a single state authority.
 
-> law arising from a variety of customs and private processes rather than law coercively imposed by a single state authority
+Bell cites three examples: alternative dispute resolution, private communities, and online adjudicators which have arisen on the internet (the article is a bit dated — a modern take would more likely focus on the differing rulesets of social networks). I am interested in this essential concept, but with a broader scope and a few additional properties.
 
-which captures roughly this, but explains neither why such law might be desirable nor, given that, why it does not exist at present.
+*Polycentric law* is the realization of overlapping, voluntary, and specialized private legal systems, in a manner capable enough to supplant a substantial fraction of the existing domestic & international regulatory regime,
+where enforcement is either inherent or effected through control over economic incentive levers instead of a monopoly on the use of force.
 
-unlike his examples, does not capture entirely what I mean: mostly a superset of existing law, none of three examples are exempt (Internet most so, but still)
-
-One detailed, albeit fictional, depiction of how a polycentric legal system might work can be found in Ada Palmer's [Terra Ignota series][terra-ignota].
+One detailed, albeit fictional, depiction of how a polycentric legal system might work and evolve at global scale can be found in Ada Palmer's Terra Ignota series<sup>[13](#13)</sup>.
 
 #### Why
 
 Why might polycentric law be useful, and what challenges are involved?
 
-- Present legal systems are unicentric, or at best federalist.
+- Present legal systems are regionally monopolized: one legislative body & governance process determines the ruleset for an area of physical space. To so determine boundaries of legal systems makes sense only to the degree by which geographical proximity indicates a preference or necessity for shared law — plausible for physically-mediating domains such as the right to bear arms, but far less so for others like online privacy protections.
 
-- Monopolies of legal systems allow them to extract an inordinate amount of rent. The geographically-determined boundaries by which legal systems operate make sense only to the degree by which geographical proximity indicates a preference for similar law - trend? - and 
+- An extraordinary amount of effort is directed to the effecting of control over the processes which govern the change in our existing legal monopologies which could perhaps better be directed towards realizing alternative sets of laws which individuals could voluntarily select from. Unfortunately, there is no unclaimed land (except perhaps extraterrestrially) upon which a consenting group of people can voluntarily establish a sovereign nation.
 
-- No unclaimed land upon which group of people can voluntarily establish self-governed community.
-
-- An extraordinary amount of effort is directed to the effecting of control over the processes which govern the change in our existing legal monopologies which could perhaps better be directed towards realizing alternative sets of laws, which individuals could voluntarily select from.
-
-- bad laws: prediction markets banned, security laws, attention tax
-
-- existing internet communities may be closest analogue, but limited in ability to craft around rules - mostly just around content
+- The closest analogue may be existing internet communities such as social networks, sub-Reddits, private chat groups, and blogs, but these communities are limited in ruleset - primarily content moderation and ranking - and enforcement - primarily social capital<sup>[14](#14)</sup> or shaming.
+existing internet communities may be closest analogue, but limited in ability to craft around rules - mostly just around content
 
 #### Comparative advantage
 
 Why might distributed ledger technology help, and what role would it serve?
 
-- can "enforce" contracts without a single trusted party
-- reduces transaction costs of implementation
-- facilitates codified integration of disparate systems; interoperation where laws are shared
-- includes constrained incentive layer which can affect the real world
+- Distributed ledgers can enforce contracts either ex ante by embedding the logic directly into the ledger, without a single trusted party, or ex post through economic incentives (slashing).
+- The costs of implementing complex rulesets are drastically reduced, and the enforcement can be far more accurate.
+- Facilitates codified integration of disparate systems; interoperation where laws are shared
+- Includes constrained incentive layer which can affect the real world
 - could eventually maintain monopoly on use of force (?)
-
-in the consequentialist extreme, precommit to a set of metrics upon which legal systems are contionuously and automatically chosen based on randomized control trials (perhaps specifiying some basic deontological restrictions)
-~ too dangerous, runs into alignment problems
 
 #### Objections
 
@@ -147,19 +137,13 @@ Why might this approach not be feasible?
 
 What is threshold commitment?
 
-Threshold commitment is the ability to commit to a particular action (on a distributed ledger, a particular transaction) contingent on other parties committing to particular actions (possibly themselves contingent on your commitment).
-
-Alternatively, "jumping Nash equilibria".
-
-- could be used to threshold-commit to switch *ledgers*
-
-- indexable commitment stores, data processing
-
-in very limited form today: Kickstarter (threshold commitment to produce a product given demand). Doesn't scale, poor information, limited conditionals, requires trusted funds custody ~=> can't fund large projects.
+*Threshold commitment* is the ability to commit to a particular action (on a distributed ledger, a particular transaction) contingent on other parties committing to particular actions (possibly themselves contingent on your commitment).
 
 explain: may be difficult to conceptualize, most ledgers do not provide transaction introspection, but not a theoretical limitation
 
-e.g. carbon emission commitments, solve tragedies of the commons
+Alternatively, "jumping Nash equilibria".
+
+- in very limited form today: Kickstarter (threshold commitment to produce a product given demand). Doesn't scale, poor information, limited conditionals, requires trusted funds custody ~=> can't fund large projects.
 
 #### Why
 
@@ -178,9 +162,12 @@ Why might distributed ledger technology help, and what role would it serve?
 
 - atomicization of actions
 - can maintain space of possible contingent actions - "DEX orderbook"
+- could be used to threshold-commit to switch *ledgers*
+- indexable commitment stores, data processing
 
 e.g.
 
+- e.g. carbon emission commitments, solve tragedies of the commons
 - companies adopting carbon tax while avoiding Malthusian trap
 - nations restricting tax competition, legal arbitrage
 - policy compromises
@@ -207,9 +194,7 @@ Why might this approach not be feasible?
 
 What are contingent payments?
 
-~ another possible implementation: payment escrowed, settled in future based on measurement, rights of future payment can be tokenized & traded
-
-Contingent payments are the direct purchase of a future expected difference in a probability distribution, such that a variable part of the price can be efficiently used to incentivize accuracy in the future prediction.
+*Contingent payments* are the direct purchase of a future expected difference in a probability distribution, such that a variable part of the price can be efficiently used to incentivize accuracy in the future prediction.
 
 When purchasing medicine (setting aside some [signaling value][]), we are intending to buy a positive difference in the future probability distribution of our health, and we are willing to pay a price as some increasing function of the magnitude of the difference. At present, this can neither be efficiciently measured nor easily written into contract law, so we must content ourselves with choosing to either buy or pass on a particular drug at the market price, and rely instead on an costly, inscrutable, and generally ineffective set of institutions to implement prior controls which enforce some correlation between the future health impact and the price tag. What if instead we could purchase the expected future impact directly, precommiting to pay if and only if it were realized?
 
@@ -219,6 +204,8 @@ another way: company paid in future contingent on event, company seeks present f
 this applies more generally to any case in which we primarily wish to purchase a difference in a future probability distribution
 
 also e.g. negative externalities - fast food
+
+~ another possible implementation: payment escrowed, settled in future based on measurement, rights of future payment can be tokenized & traded
 
 #### Why
 
@@ -291,8 +278,9 @@ Thanks to XYZ for reviews of this post.
 <span id="10">10</span>: [Blockchains and the Opportunity of the Commons](https://marginalrevolution.com/marginalrevolution/2018/06/blockchains-opportunity-commons.html), Tyler Cowen.<br />
 <span id="11">11</span>: [Meditations on Moloch](https://slatestarcodex.com/2014/07/30/meditations-on-moloch/), Scott Alexander.<br />
 <span id="12">12</span>: [Polycentric Law in a New Century](https://www.cis.org.au/app/uploads/2015/04/images/stories/policy-magazine/1999-autumn/1999-15-1-tom-bell.pdf), Tom Bell.<br />
+<span id="13">13</span>: [Terra Ignota (series)](https://en.wikipedia.org/wiki/Terra_Ignota), Ada Palmer.<br />
+<span id="14">14</span>: [Status as a Service](https://www.eugenewei.com/blog/2019/2/19/status-as-a-service), Eugene Wei.<br />
 
 <span id=""></span>: [U.S. EP-3 Intercepted in the Black Sea](https://www.navy.mil/submit/display.asp?story_id=107669), US Naval Forces, 6th Fleet.<br />
-<span id=""></span>: [Terra Ignota (series)](https://en.wikipedia.org/wiki/Terra_Ignota), Ada Palmer.<br />
 
 [contact]:                          /contact
