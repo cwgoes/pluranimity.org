@@ -45,6 +45,7 @@ In English unless otherwise indicated.
 - [AI Alignment Podcast](https://futureoflife.org/ai-alignment-podcast/)
 - [Arms Control Wonk](https://www.armscontrolwonk.com/archive/author/podcast/)
 - [Future Makers](https://audioboom.com/channels/4973983)
+- [Future State Podcast](https://futurestatepodcast.com/)
 
 ## Video
 
