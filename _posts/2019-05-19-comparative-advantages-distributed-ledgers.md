@@ -135,12 +135,14 @@ Why might this approach not be desirable?
 
 Why might this approach not be feasible?
 
-- computing intersections between rulesets impossible
-  counter: inter-blockchain communication, by nature of verification rulesets must be known to all parties & codified
+> Computing the intersections between rulesets necessary to determine how subscribers to different legal systems can interact will be impossible, due to complexity or due to the inability of distributed ledgers with separate consensus algorithms to interoperate.
+
+By the nature of distributed ledgers (which must be verified by many parties), the rulesets being verified must be public & codified, so computing intersections of compatibility should be possible. Cross-consensus-algorithm interoperation protocols are under development<sup>polkadot,cosmosibc</sup>.
 
 > The threat of physical coercion will prevent voluntary, ledger-based legal systems from supplanting a substantial portion of the role of existing institutions.
 
-  The threat of force is a feature of modern geopolitics. (for an amusing illustration of the realpolitik involved, read Pentagon press releases, like this one <sup></sup> complaining about a Russian SU-27 flying past an American EP-3 in the Black Sea. The Black Sea is on the Russian coast - for comparision, imagine a Russian or Chinese carrier parked off California).
+  The threat of force is indeed a feature of modern geopolitics<sup>force</sup>
+
 
 This may be true, but technology does supplant (banking system), force is a blunt instrument
 
@@ -160,46 +162,49 @@ In very limited form today, threshold commitments are realized by crowdfunding p
 
 Why might threshold commitment be useful, and what are the challenges involved?
 
-The best illustration of the essential game theretic problem can be found in a parable of fishermen upon a lake.
+The best illustration of the essential game theoretic problem can be found in a parable of fishermen upon a lake.
 
 cite slatestarcodex libertarianism post on lake fishing
 - cite tragedy of commons - http://science.sciencemag.org/content/162/3859/1243.full
-- platform lockin
-- bad game theoretic equilibria
-- stuck in pareto-efficient local optima
-- better: pareto-efficient global optima, even tradeoffs
 
-#### Comparative advantage
+- platform lockin, bad game theoretic equilibria, surveillance capitalism
 
-Why might distributed ledger technology help, and what role would it serve?
-
-- atomicization of actions
-- can maintain space of possible contingent actions - "DEX orderbook"
-- could be used to threshold-commit to switch *ledgers*
-- indexable commitment stores, data processing
+- stuck in pareto-efficient local optima ~ better: pareto-efficient global optima, even tradeoffs
 
 e.g.
 
-- e.g. carbon emission commitments, solve tragedies of the commons
+- carbon emission commitments, solve tragedies of the commons
 - companies adopting carbon tax while avoiding Malthusian trap
 - nations restricting tax competition, legal arbitrage
 - policy compromises
 - us/russia disable nuclear devices
 - group of people agree to leave a platform (Facebook)
 
+#### Comparative advantage
+
+Why might distributed ledger technology help, and what role would it serve?
+
+- collection of binding commitments - can maintain space of possible contingent actions - "DEX orderbook"
+
+- indexable commitment stores, data processing
+
+- atomicization of actions
+
+- could be used to threshold-commit to switch *ledgers*
+
 #### Objections
 
 Why might this approach not be desirable?
 
-- how much rent are platforms really extracting?
-- still too much effort - after all, humans could coordinate to leave FB
+> Are centrally controlled platforms really extracting that much rent? If they are, why aren't humans coordinating to leave Facebook et al.?
+
+Coordination is really hard (at least at fast speed) - unilateral actions do happen, and eventual "tipping point", but slower. Operative question: how easy to compete with better ruleset.
 
 Why might this approach not be feasible?
 
-- bad computational scaling
-  zk proofs!
-- need to keep a lot of threshold-commitments
-  not really... even several per human isn't much
+> Enacting threshold commitments between thousands (or millions) of participants will never fit into a single blockchain transaction, so won't be possible to settle atomically.
+
+This is currently the case, but computational efficiency can be expected to scale much faster than the number of actors involved in most threshold-commitment systems. One particularly promising technology here may be zero-knowledge proofs, instantiations of which such as SNARKS<sup>?</sup> or STARKS<sup>?</sup> come with "succinct" proof sizes which are generally sublinear or even constant relative to the size of the input.
 
 ### Contingent payments
 
@@ -249,33 +254,40 @@ cite
 
 Why might this approach not be desirable?
 
-- existing systems are already effective at this, the hard part is just prediction
-  lots of evidence incentives are screwy
+> Existing systems are already effective at this, the hard part is prediction.
 
-- would diverge from "fair" treatment (pre-existing conditions)
-  not sure about a priori, always an opportunity cost - should work more like triage than "care at any cost" - but of course *I* would try
-  if we accept premise, possible to enforce post hoc subsidies according to ratio of probability distributions or something
+lots of evidence incentives are screwy
+
+> Overindividualized contingent payments would diverge from "fair" treatment, by discriminating on the basis of pre-existing conditions, personal history, etc.
+
+not sure about a priori, always an opportunity cost - should work more like triage than "care at any cost" - but of course *I* would try
+if we accept premise, possible to enforce post hoc subsidies according to ratio of probability distributions or something
 
 Why might this approach not be feasible?
 
-- data cannot be individually verified
-  ~> not in all cases, but verification just needs to be cost-to-forge, not perfect
+> The relevant data cannot be easily or securely verified. Distributed ledgers can notarize data but have no way to verify its authenticity.<sup>??</sup>.
 
-- still too complex to contract, not efficient at scale
-  information from smart devices, doesn't need to be that complex (e.g. time of death)
+not in all cases, but verification just needs to be cost-to-forge, not perfect
 
-- transaction costs of prediction markets still too high, illiquid
-  mostly automated, there are existing strong correlations which just aren't priced in
+> Contingent payments are still too complex to contract and will not be efficient at scale.
+
+information from smart devices, doesn't need to be that complex (e.g. time of death) - walk into a pharmacy and contract with any drug you buy
+
+> The transaction costs of operating prediction markets will be too high, and the markets will be too illiquid to generate correct prices.
+
+mostly automated, there are existing strong correlations which just aren't priced in
 
 ----
 
-This analysis omits many more mundane usecases for which DLT may be able to accomplish roughly the same functionality at a lower cost or with higher efficacy than existing solutions, including cross-border remittances, internet payments, derivative settlement, data notarization, and censorship-resistant communication, not for lack of potential comparative advantage but rather because I am primarily interested in investigating systems which present technology cannot realize at all.
+This analysis omits many more mundane usecases for which DLT may be able to accomplish roughly the same functionality at a lower cost or with higher efficacy than existing solutions, including cross-border remittances, internet payments, derivative settlement, data notarization, and censorship-resistant communication, not for lack of potential comparative advantage but rather because I am primarily interested in investigating institutions which present technology cannot realize at all.
 
 <!--
 Thanks to XYZ for reviews of this post.
 -->
 
 *Working draft - [feedback welcome][contact]*.
+
+----
 
 *Footnotes*
 
@@ -297,10 +309,12 @@ Thanks to XYZ for reviews of this post.
 <span id="14">14</span>: [Terra Ignota (series)](https://en.wikipedia.org/wiki/Terra_Ignota), Ada Palmer.<br />
 <span id="15">15</span>: [Status as a Service](https://www.eugenewei.com/blog/2019/2/19/status-as-a-service), Eugene Wei.<br />
 
+<span id="??">??</span>: For those familiar with existing ledgers such as Bitcoin or Ethereum, this may be difficult to conceptualize since most present ledgers do not natively provide transaction introspection, but the limitation is not theoretical. As an example in this direction consider the [Wyvern DEX protocol](https://wyvernprotocol.com/docs).
 
-<span id=""></span> For those familiar with existing ledgers such as Bitcoin or Ethereum, this may be difficult to conceptualize since most present ledgers do not natively provide transaction introspection, but the limitation is not theoretical. As an example in this direction consider the [Wyvern DEX protocol](https://wyvernprotocol.com/docs).
+<span id="??">??</span>: For an amusing illustration of the realpolitik involved, read Pentagon press releases, like [this one](https://www.navy.mil/submit/display.asp?story_id=107669) complaining about a Russian SU-27 flying past an American EP-3 in the Black Sea. The Black Sea is on the Russian coast - for comparision, imagine a Russian or Chinese carrier parked off California. Ape chest-banging incarnate.
 
-<span id=""></span>: [U.S. EP-3 Intercepted in the Black Sea](https://www.navy.mil/submit/display.asp?story_id=107669), US Naval Forces, 6th Fleet.<br />
-<span id=""></span>: [Hanson on Signalling](https://www.econtalk.org/hanson-on-signalling/), Russ Roberts / Robin Hanson.<br />
+<span id="??">??</span>: [Hanson on Signalling](https://www.econtalk.org/hanson-on-signalling/), Russ Roberts / Robin Hanson.<br />
+
+<span id="??">??</span>: See this [phone cradle](https://twitter.com/mbrennanchina/status/1128201958962032641) for boosting step counts.<br />
 
 [contact]:                          /contact
