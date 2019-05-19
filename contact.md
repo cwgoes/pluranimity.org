@@ -14,7 +14,7 @@ permalink: /contact/
 
 #### Email
 
-[twitter handle] @ [this domain]
+[twitter/github handle] @ [this domain]
 
 #### PGP
 

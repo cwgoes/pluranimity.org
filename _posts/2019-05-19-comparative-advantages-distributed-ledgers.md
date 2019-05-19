@@ -9,7 +9,7 @@ Why develop distributed ledgers<sup>[1](#1)</sup>?
 
 For the purposes of this analysis, let distributed ledgers be state transition functions executed in a consensus algorithm<sup>[2](#2)</sup> by a distributed set of parties, with arbitrary state complexity<sup>[3](#3)</sup>, unbounded transaction throughput<sup>[4](#4)</sup>, perfect censorship resistance<sup>[5](#5)</sup>, bandwidth-inexpensive queryability<sup>[6](#6)</sup>, oracle access to elapsed time<sup>[7](#7)</sup>, and private data - public ruleset segmentation<sup>[8](#8)</sup>. None of these properties are yet satisfactorily provided by existing implementations, but we have reason enough to expect they may be in time (see references). The present developmental efforts justifiably focus on satisficing these properties, in of itself a challenging and engrossing task — but assume we largely succeed — what then?
 
-In this post, I focus on *institution design*, where an *institution* is a set of rules, actors, and incentives intentionally designed to realize a particular high-level outcome and persist itself over time in the absence of a singular coordinating entity. I outline four broad areas of institution design where I think we have reason to believe that distributed ledgers may increase the available component set for mechanism designers and thereby enable the creation of radically different institutions from what we have today: public commons, polycentric law, threshold commitment, and contingent payments. For each area, I explain the institution reference class, why we might benefit from such institutions, and in what way distributed ledgers may provide a significant advantage, then attempt to articulate & address the best arguments against desirability and feasibility.
+In this post, I focus on *institution design*, where an *institution* is a set of rules, actors, and incentives intentionally designed to realize a particular high-level outcome and persist itself over time in the absence of a singular coordinating entity. I outline four broad areas of institution design where I think we have reason to believe that distributed ledgers may increase the available component set for mechanism designers and thereby enable the creation of radically different institutions from what we have today: public commons, polycentric law, threshold commitment, and contingent payments. For each area, I explain the institution or institutional component reference class, why we might benefit from such institutions or components, and in what way distributed ledgers may provide a significant advantage, then attempt to articulate & address the best arguments against desirability and feasibility.
 
 ### Public commons
 
@@ -77,64 +77,72 @@ Many present "flexible" meatspace institutions — such as the IRS<sup>taxevasio
 
 What is polycentric law?
 
-I borrow the term from a 1999 essay<sup>[13](#13)</sup> by Tom Bell, although I use it somewhat differently. He defines polycentric law as
+I borrow the term from a 1999 essay<sup>[13](#13)</sup> by Tom Bell, although I use it somewhat differently.
+
+Bell defines polycentric law as
 
 > law arising from a variety of customs and private processes rather than law coercively imposed by a single state authority.
 
-Bell cites three examples: alternative dispute resolution, private communities, and online adjudicators which have arisen on the internet (the article is a bit dated — a modern take would more likely focus on the differing rulesets of social networks). I am interested in this essential concept, but with a broader scope and a few additional properties.
+His essay cites three examples: alternative dispute resolution, private communities, and online adjudicators which have arisen on the internet (the article is a bit dated — a modern take would more likely focus on the differing rulesets of social networks). I am interested in this essential concept, but with a broader scope and a few additional properties.
 
-*Polycentric law* is the realization of overlapping, voluntary, and specialized private legal systems, in a manner capable enough to supplant a substantial fraction of the existing domestic & international regulatory regime,
-where enforcement is either inherent or effected through control over economic incentive levers instead of a monopoly on the use of force.
+*Polycentric law* is the realization of overlapping, voluntary, and specialized private legal systems, in a manner capable enough to supplant a substantial fraction of the existing domestic & international regulatory regime. Although this is not inherent to the definition, in the distributed ledger context, enforcement is either inherent or effected through control over economic incentive levers instead of a monopoly on the use of force.
 
-One detailed, albeit fictional, depiction of how a polycentric legal system might work and evolve at global scale can be found in Ada Palmer's Terra Ignota series<sup>[14](#14)</sup>.
+One detailed, albeit fictional, depiction of how a polycentric legal system might function and evolve at global scale can be found in Ada Palmer's Terra Ignota series<sup>[14](#14)</sup>.
 
 #### Why
 
 Why might polycentric law be useful, and what challenges are involved?
 
-- Present legal systems are regionally monopolized: one legislative body & governance process determines the ruleset for an area of physical space. To so determine boundaries of legal systems makes sense only to the degree by which geographical proximity indicates a preference or necessity for shared law — plausible for physically-mediating domains such as the right to bear arms, but far less so for others like online privacy protections.
+- Present legal systems are regionally monopolized: one legislative body & governance process determines the ruleset for an area of physical space. To so determine boundaries of legal systems makes sense only to the degree by which geographical proximity indicates a preference or necessity for shared law — such a shared preference is plausible or at least necessary for physically-mediating domains such as the right to bear arms, but seems far less sensical for others like online privacy protections.
 
-- An extraordinary amount of effort is directed to the effecting of control over the processes which govern the change in our existing legal monopologies which could perhaps better be directed towards realizing alternative sets of laws which individuals could voluntarily select from. Unfortunately, there is no unclaimed land (except perhaps extraterrestrially) upon which a consenting group of people can voluntarily establish a sovereign nation.
+- An extraordinary amount of effort is directed to the effecting of control over the processes which govern changes in our existing legal monopolies. This effort could perhaps better be directed towards realizing alternative sets of laws which individuals could voluntarily select from. Unfortunately, there is no unclaimed land (except perhaps extraterrestrially) upon which a consenting group of individuals can voluntarily establish a sovereign nation — but this restriction does not exist in the digital realm.
 
-- The closest analogue may be existing internet communities such as social networks, sub-Reddits, private chat groups, and blogs, but these communities are limited in ruleset - primarily content moderation and ranking - and enforcement - primarily social capital<sup>[15](#15)</sup> or shaming.
-existing internet communities may be closest analogue, but limited in ability to craft around rules - mostly just around content
+- The closest analogue may be existing internet communities such as social networks, sub-Reddits, private chat groups, and blogs, but these communities are limited in the kinds of rulesets - primarily content moderation and ranking - and methods of enforcement by positive & negative incentive levers - primarily social capital<sup>[15](#15)</sup> or shaming - that they can implement.
 
 #### Comparative advantage
 
 Why might distributed ledger technology help, and what role would it serve?
 
-- Distributed ledgers can enforce contracts either ex ante by embedding the logic directly into the ledger, without a single trusted party, or ex post through economic incentives (slashing).
-- The costs of implementing complex rulesets are drastically reduced, and the enforcement can be far more accurate.
+- Distributed ledgers can enforce contracts in two distinct ways: *ex ante*, by embedding the logic directly into the ledger,
+  or *ex post* through economic incentives or penalties for attributable behaviours<sup>counterfactual-slashing</sup>.
+  *Ex ante* enforcement is rarely possible to construct with the toolkits of existing meatspace institutions, and *ex post*
+  enforcement tends to have substantial implementation costs which distort accuracy.
+
 - Facilitates codified integration of disparate systems; interoperation where laws are shared
+
 - Includes constrained incentive layer which can affect the real world
-- could eventually maintain monopoly on use of force (?)
+
+- Could eventually maintain monopoly on use of force (?) (cite: Nick Bostrom vulnerable world hypothesis)
 
 #### Objections
 
 Why might this approach not be desirable?
 
-- forming trade coalitions wouldn't be easier
+> Concentrated political coalitions & supranational bodies emerge because of economies of scale in military & economic geopolitics, which will persist whether or not distributed ledgers are used as a medium of legal enforcement.
+
   hard to predict now, but reasons to believe it would be, easier to solve information problem
 
-- enforcement-by-ledger is dangerous
+  ledgers by nature do not have monopoly over *data*, or over *land*, "fork threat" real & essential
+
+> *Ex ante* contract enforcement by distributed ledger is dangerous because it fails to preserve the nuance and "learned lessons" of meatspace arbitration systems.
+
   initially existing basic legal structures remain in place, more voluntary aspects of trade, commerce, citizenship
+
+> Governance mechanisms of distributed ledgers, whether formal or informal, will be capturable just as present governance mechanisms are.
 
 - consensus or ledger governance systems would be just as capturable
   maybe, but the ledgers can compete, no fundamentally scarce resource (land) and existing ledgers can't threaten with weaponry
-
-- network effects will facilitate monopolies anyways
-  ledgers by nature do not have monopoly over *data*, "fork threat" real & essential
 
 Why might this approach not be feasible?
 
 - computing intersections between rulesets impossible
   counter: inter-blockchain communication, by nature of verification rulesets must be known to all parties & codified
 
-- physical world, coercion would intervene
-  realpolitik
-  pentagon, aircraft carrier, black sea, california
+> The threat of physical coercion will prevent voluntary, ledger-based legal systems from supplanting a substantial portion of the role of existing institutions.
 
   The threat of force is a feature of modern geopolitics. (for an amusing illustration of the realpolitik involved, read Pentagon press releases, like this one <sup></sup> complaining about a Russian SU-27 flying past an American EP-3 in the Black Sea. The Black Sea is on the Russian coast - for comparision, imagine a Russian or Chinese carrier parked off California).
+
+This may be true, but technology does supplant (banking system), force is a blunt instrument
 
 ### Threshold commitment
 
@@ -142,17 +150,17 @@ Why might this approach not be feasible?
 
 What is threshold commitment?
 
-*Threshold commitment* is the ability to commit to a particular action (on a distributed ledger, a particular transaction) contingent on other parties committing to particular actions (possibly themselves contingent on your commitment).
+*Threshold commitment* is the ability to commit to a particular action (on a distributed ledger, a particular transaction) contingent on other parties committing to particular actions (possibly themselves contingent on your commitment). A set of threshold commitments can together realize an atomic transition from one state to another which could not be unilaterally effected by any of the participating parties individually<sup>ledgers</sup>.
 
-explain: may be difficult to conceptualize, most ledgers do not provide transaction introspection, but not a theoretical limitation
+Threshold commitment may prove particularly useful since it can be used to jump between Nash equilibria in incentive space: players in a game can commit to change their strategies (restricting their own future actions) contingent on other players agreeing to do likewise, and the underlying ledger can realize this transition atomically such that no individual player can defect.
 
-Alternatively, "jumping Nash equilibria".
-
-- in very limited form today: Kickstarter (threshold commitment to produce a product given demand). Doesn't scale, poor information, limited conditionals, requires trusted funds custody ~=> can't fund large projects.
+In very limited form today, threshold commitments are realized by crowdfunding platforms such as Kickstarter, where producers commit to produce a product or service given sufficient demand, and consumers commit to pay a certain amount given sufficient demand to provide the necessary capital for production costs. Kickstarter is a very limited threshold commitment platform, however — the information provided to participants is quite minimal, the conditionals which can be committed to are very limited, and contract enforcement requires trust in a corporate intermediary (and is thus limited to low-stakes games: Kickstarter cannot fund public infrastructure or enforce multiparty nuclear deprofileration). 
 
 #### Why
 
 Why might threshold commitment be useful, and what are the challenges involved?
+
+The best illustration of the essential game theretic problem can be found in a parable of fishermen upon a lake.
 
 cite slatestarcodex libertarianism post on lake fishing
 - cite tragedy of commons - http://science.sciencemag.org/content/162/3859/1243.full
@@ -288,6 +296,9 @@ Thanks to XYZ for reviews of this post.
 <span id="13">13</span>: [Polycentric Law in a New Century](https://www.cis.org.au/app/uploads/2015/04/images/stories/policy-magazine/1999-autumn/1999-15-1-tom-bell.pdf), Tom Bell.<br />
 <span id="14">14</span>: [Terra Ignota (series)](https://en.wikipedia.org/wiki/Terra_Ignota), Ada Palmer.<br />
 <span id="15">15</span>: [Status as a Service](https://www.eugenewei.com/blog/2019/2/19/status-as-a-service), Eugene Wei.<br />
+
+
+<span id=""></span> For those familiar with existing ledgers such as Bitcoin or Ethereum, this may be difficult to conceptualize since most present ledgers do not natively provide transaction introspection, but the limitation is not theoretical. As an example in this direction consider the [Wyvern DEX protocol](https://wyvernprotocol.com/docs).
 
 <span id=""></span>: [U.S. EP-3 Intercepted in the Black Sea](https://www.navy.mil/submit/display.asp?story_id=107669), US Naval Forces, 6th Fleet.<br />
 <span id=""></span>: [Hanson on Signalling](https://www.econtalk.org/hanson-on-signalling/), Russ Roberts / Robin Hanson.<br />
