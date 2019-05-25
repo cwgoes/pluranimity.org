@@ -24,6 +24,7 @@ In English unless otherwise indicated.
 
 - [Quillette](https://quillette.com/) (quality varies)
 - [Palladium Magazine](https://palladiummag.com/)
+- [American Affairs](https://americanaffairsjournal.org/)
 - [Bulletin of the Atomic Scientists](https://thebulletin.org/current-issue/)
 - [The Hedgehog Review](https://hedgehogreview.com/)
 - [JBIS](https://www.jbis.org.uk/)

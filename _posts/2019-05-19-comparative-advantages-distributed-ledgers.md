@@ -85,7 +85,7 @@ Bell defines polycentric law as
 
 His essay cites three examples: alternative dispute resolution, private communities, and online adjudicators which have arisen on the internet (the article is a bit dated — a modern take would more likely focus on the differing rule-sets of social networks). I am interested in this essential concept, but with a broader scope and a few additional properties.
 
-*Polycentric law* is the realisation of overlapping, voluntary, and specialised private legal systems, in a manner capable enough to supplant a substantial fraction of the existing domestic & international regulatory regime. Although this is not inherent to the definition, in the distributed ledger context, enforcement is either inherent or effected through control over economic incentive levers instead of a monopoly on the use of force.
+*Polycentric law* is the realisation of overlapping, voluntary, and specialised private legal systems, in a manner capable enough to supplant a substantial fraction of the existing domestic & international regulatory regime. Although this is not inherent to the definition, in the distributed ledger context, enforcement is either inherent in the medium of description or effected through control over economic incentive levers instead of a monopoly on the use of force.
 
 One detailed, albeit fictional, depiction of how a polycentric legal system might function and evolve at global scale can be found in Ada Palmer's Terra Ignota series<sup>[14](#14)</sup>.
 
@@ -167,9 +167,9 @@ The best illustration of the essential game theoretic problem can be found in a 
 cite slatestarcodex libertarianism post on lake fishing
 - cite tragedy of commons - http://science.sciencemag.org/content/162/3859/1243.full
 
-- platform lockin, bad game theoretic equilibria, surveillance capitalism
+- platform lock-in, bad game theoretic equilibria, surveillance capitalism
 
-- stuck in pareto-efficient local optima ~ better: pareto-efficient global optima, even tradeoffs
+- stuck in Pareto-efficient local optima ~ better: Pareto-efficient global optima, even trade-offs
 
 e.g.
 
@@ -177,7 +177,7 @@ e.g.
 - companies adopting carbon tax while avoiding Malthusian trap
 - nations restricting tax competition, legal arbitrage
 - policy compromises
-- us/russia disable nuclear devices
+- us/Russia disable nuclear devices
 - group of people agree to leave a platform (Facebook)
 
 #### Comparative advantage
@@ -214,7 +214,7 @@ What are contingent payments?
 
 *Contingent payments* are the purchase of an expected difference in a future probability distribution such that the price paid can vary contingent on the eventual accuracy of the prediction.
 
-When purchasing medicine (setting aside some signaling value<sup>[?](?)</sup>), we are intending to buy a positive difference in the future probability distribution of our health, and we are willing to pay a price as some increasing function of the magnitude of the difference. At present, this difference can neither be efficiently measured nor easily written into contract law, so we must content ourselves with choosing to either buy or pass on a particular pharmaceutical or treatment at the market price, and rely instead on an costly, inscrutable, and generally inefficient set of institutions to implement studies, review boards, and legislation which enforces some correlation between the future health impact and the price tag. Contingent payments, predicated on the ability to cheaply track individual health outcomes, would have us instead purchase the expected future impact directly, precommiting to pay if and only if it were realized?
+When purchasing medicine (setting aside some signalling value<sup>[?](?)</sup>), we are intending to buy a positive difference in the future probability distribution of our health, and we are willing to pay a price as some increasing function of the magnitude of the difference. At present, this difference can neither be efficiently measured nor easily written into contract law, so we must content ourselves with choosing to either buy or pass on a particular pharmaceutical or treatment at the market price, and rely instead on an costly, inscrutable, and generally inefficient set of institutions to implement studies, review boards, and legislation which enforces some correlation between the future health impact and the price tag. Contingent payments, predicated on the ability to cheaply track individual health outcomes, would have us instead purchase the expected future impact directly, precommiting to pay if and only if it were realised?
 
 one way: two prediction markets
 another way: company paid in future contingent on event, company seeks present funding by investors who bet on the event
@@ -233,7 +233,7 @@ Why might contingent payments be useful, and what are the challenges involved?
 
 Why might distributed ledger technology help, and what role would it serve?
 
-we must subsidize the prediction markets, and this could provide a way to do so - substantial part of payment to prediction markets
+we must subsidise the prediction markets, and this could provide a way to do so - substantial part of payment to prediction markets
 
 - automatic contract creation & enforcement
 - separation of measurement and of computation - one measurement protocol can serve all needs, scales better
@@ -242,7 +242,7 @@ we must subsidize the prediction markets, and this could provide a way to do so 
 relative to
 
 - insurance markets
-- lloyds of london
+- Lloyd's of London
 
 cite
 
@@ -265,7 +265,7 @@ if we accept premise, possible to enforce post hoc subsidies according to ratio 
 
 Why might this approach not be feasible?
 
-> The relevant data cannot be easily or securely verified. Distributed ledgers can notarize data but have no way to verify its authenticity.<sup>??</sup>.
+> The relevant data cannot be easily or securely verified. Distributed ledgers can notarise data but have no way to verify its authenticity.<sup>??</sup>.
 
 not in all cases, but verification just needs to be cost-to-forge, not perfect
 
@@ -279,7 +279,7 @@ mostly automated, there are existing strong correlations which just aren't price
 
 ----
 
-This analysis omits many more mundane usecases for which DLT may be able to accomplish roughly the same functionality at a lower cost or with higher efficacy than existing solutions, including cross-border remittances, internet payments, derivative settlement, data notarization, and censorship-resistant communication, not for lack of potential comparative advantage but rather because I am primarily interested in investigating institutions which present technology cannot realize at all.
+This analysis omits many more mundane use cases for which DLT may be able to accomplish roughly the same functionality at a lower cost or with higher efficacy than existing solutions, including cross-border remittances, internet payments, derivative settlement, data notarisation, and censorship-resistant communication, not for lack of potential comparative advantage but rather because I am primarily interested in investigating institutions which present technology cannot realise at all.
 
 <!--
 Thanks to XYZ for reviews of this post.
@@ -298,7 +298,7 @@ Thanks to XYZ for reviews of this post.
 <span id="5">5</span>: Such that the subset of parties responsible for executing {% ihighlight haskell %} F {% endihighlight %} cannot indefinitely censor any subset of transactions, as might be provided by (threshold decryption).<br />
 <span id="6">6</span>: Such that bandwidth and compute required is proportional only in the size of the query, not the size of state, and that the querying client cannot be fooled. (current examples: TM lite client proofs).<br />
 <span id="7">7</span>: As might be provided by a verifiable-delay function with difficulty adjustment (cite: Wachowski VDF paper). <br />
-<span id="8">8</span>: Meaning that specific transaction details (sender, amount, code) can be private to a user while ruleset verification (supply conservation, invariant fulfillment) is performed on the ledger, as likely will be provided by zero-knowledge proof constructions (current examples: Zerocash, ZEXE).<br />
+<span id="8">8</span>: Meaning that specific transaction details (sender, amount, code) can be private to a user while ruleset verification (supply conservation, invariant fulfilment) is performed on the ledger, as likely will be provided by zero-knowledge proof constructions (current examples: Zerocash, ZEXE).<br />
 <span id="9">9</span>: [List of top ten firms by market capitalization](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization). I count Microsoft, Apple, Amazon, Alphabet, Facebook, Alibaba Group, and Tencent as operating commons.<br />
 <span id="10">10</span>: [The Age of Surveillance Capitalism](https://www.goodreads.com/book/show/26195941-the-age-of-surveillance-capitalism), Shoshana Zuboff - the Marxist ontological frame obscures the argument, but this is still the best detailed expose I've found.<br />
 <span id="11">11</span>: [Blockchains and the Opportunity of the Commons](https://marginalrevolution.com/marginalrevolution/2018/06/blockchains-opportunity-commons.html), Tyler Cowen.<br />
@@ -307,7 +307,7 @@ Thanks to XYZ for reviews of this post.
 <span id="14">14</span>: [Unsolved Problems in Blockchain Sharding](https://medium.com/nearprotocol/unsolved-problems-in-blockchain-sharding-2327d6517f43), Alexander Skidanov.<br />
 <span id="15">15</span>: There is even [a company](https://www.chainalysis.com/) dedicated to tracing user activity on blockchains.<br />
 <span id="16">16</span>: Although few major distributed ledgers are controlled by a single entity, the state of affairs in proof-of-work land is [pretty absymal](https://arewedecentralizedyet.com/). Unfortunately I have not yet found a similar resource for the newest crop of proof-of-stake blockchains.<br />
-<span id="17">17</span>: See this 2017 IRS report - [Declining Resources Have Contributed to Unfavorable Trends in Several Key Criminal Investigation Business Results](https://www.treasury.gov/tigta/auditreports/2017reports/201730073fr.pdf), Treasury Inspector General for Tax Administration.<br />
+<span id="17">17</span>: See this 2017 IRS report - [Declining Resources Have Contributed to Unfavourable Trends in Several Key Criminal Investigation Business Results](https://www.treasury.gov/tigta/auditreports/2017reports/201730073fr.pdf), Treasury Inspector General for Tax Administration.<br />
 <span id="18">18</span>: [Pentagon fails its first-ever audit](https://www.reuters.com/article/us-usa-pentagon-audit/pentagon-fails-its-first-ever-audit-official-says-idUSKCN1NK2MC), Reuters, 2018.<br />
 <span id="19">19</span>: [This article](https://www.nationalreview.com/2019/05/the-first-rule-of-social-media-censorship-is-that-there-are-no-rules/) on Facebook deplatforming illuminates the problem, though I do not expect companies to adopt the proposed solution voluntarily.<br />
 
@@ -319,9 +319,9 @@ Thanks to XYZ for reviews of this post.
 
 <span id="??">??</span>: [The Infinite Dial 2019](https://www.slideshare.net/webby2001/infinite-dial-2019), Edison Research.<br />
 
-<span id="??">??</span>: For those familiar with existing ledgers such as Bitcoin or Ethereum, this may be difficult to conceptualize since most present ledgers do not natively provide transaction introspection, but the limitation is not theoretical. As an example in this direction consider the [Wyvern DEX protocol](https://wyvernprotocol.com/docs).
+<span id="??">??</span>: For those familiar with existing ledgers such as Bitcoin or Ethereum, this may be difficult to conceptualise since most present ledgers do not natively provide transaction introspection, but the limitation is not theoretical. As an example in this direction consider the [Wyvern DEX protocol](https://wyvernprotocol.com/docs).
 
-<span id="??">??</span>: For an amusing illustration of the realpolitik involved, read Pentagon press releases, like [this one](https://www.navy.mil/submit/display.asp?story_id=107669) complaining about a Russian SU-27 flying past an American EP-3 in the Black Sea. The Black Sea is on the Russian coast - for comparision, imagine a Russian or Chinese carrier parked off California. Ape chest-banging incarnate.
+<span id="??">??</span>: For an amusing illustration of the realpolitik involved, read Pentagon press releases, like [this one](https://www.navy.mil/submit/display.asp?story_id=107669) complaining about a Russian SU-27 flying past an American EP-3 in the Black Sea. The Black Sea is on the Russian coast - for comparison, imagine a Russian or Chinese carrier parked off California. Ape chest-banging incarnate.
 
 <span id="??">??</span>: [Hanson on Signalling](https://www.econtalk.org/hanson-on-signalling/), Russ Roberts / Robin Hanson.<br />
 
