@@ -7,7 +7,7 @@ categories: dlt blockchain economics
 
 Why develop distributed ledgers<sup>[1](#1)</sup>?
 
-For the purposes of this analysis, let distributed ledgers be state transition functions executed in a consensus algorithm<sup>[2](#2)</sup> by a distributed set of parties, with arbitrary state complexity<sup>[3](#3)</sup>, unbounded transaction throughput<sup>[4](#4)</sup>, perfect censorship resistance<sup>[5](#5)</sup>, bandwidth-inexpensive queryability<sup>[6](#6)</sup>, oracle access to elapsed time<sup>[7](#7)</sup>, and private data - public rule-set segmentation<sup>[8](#8)</sup>. None of these properties are yet satisfactorily provided by existing implementations, but we have reason enough to expect they may be in time (see references). The present developmental efforts justifiably focus on satisfying these properties, in of itself a challenging and engrossing task — but assume we largely succeed — what then?
+For the purposes of this analysis, let distributed ledgers be state transition functions executed in a consensus algorithm<sup>[2](#2)</sup> by a distributed set of parties, with arbitrary state complexity<sup>[3](#3)</sup>, unbounded transaction throughput<sup>[4](#4)</sup>, perfect censorship resistance<sup>[5](#5)</sup>, bandwidth-inexpensive queryability<sup>[6](#6)</sup>, oracle access to elapsed time<sup>[7](#7)</sup>, and private data - public rule-set segmentation<sup>[8](#8)</sup>. None of these properties are yet satisfactorily provided by existing implementations, but we have reason enough to expect they may be in time (see references). The present developmental efforts justifiably focus on satisfying these properties, in of itself a challenging and engrossing task — but should that effort succeed — what then?
 
 In this post, I focus on *institution design*, where an *institution* is a set of rules, actors, and incentives intentionally designed to realise a particular high-level outcome and persist itself over time in the absence of a singular coordinating entity. I outline four broad areas of institution design where I think we have reason to believe that distributed ledgers may increase the available component set for mechanism designers and thereby enable the creation of radically different institutions from what we have today: public commons, polycentric law, threshold commitment, and contingent payments. For each area, I explain the institution or institutional component reference class, why we might benefit from such institutions or components, and in what way distributed ledgers may provide a significant advantage, then attempt to articulate & address the best arguments against desirability and feasibility.
 
@@ -69,7 +69,7 @@ Since ledgers do not maintain a monopoly on data, the cost of exit is far lower,
 
 > "Smart contracts" and the rule-sets of distributed ledgers more generally are too rigid, and will fail to supplant meatspace systems requiring flexibility and human judgement in adjudication.
 
-Many present "flexible" meatspace institutions — such as the IRS<sup>[17](#17)</sup>, the Pentagon<sup>[18](#18)</sup>, and Facebook<sup>[19](#19)</sup> — seem like they might benefit from a little more rigidity and a little less flexibility in enforcement. In cases where case-by-case human judgement is necessary, distributed ledgers will not replace it, but can instead serve as an immutable, auditable record of the process.
+Many present "flexible" meatspace institutions — such as the IRS<sup>[17](#17)</sup>, the Pentagon<sup>[18](#18)</sup>, and Facebook<sup>[19](#19)</sup> — seem like they might benefit from a little more rigidity and a little less flexibility in enforcement. In cases where case-by-case human judgement is necessary, distributed ledgers will and need not replace it, but can instead serve as an immutable, auditable record of the process.
 
 ### Polycentric law
 
@@ -108,11 +108,21 @@ Why might distributed ledger technology help, and what role would it serve?
   *Ex ante* enforcement is rarely possible to construct with the tool-kits of existing meatspace institutions, and *ex post*
   enforcement tends to have substantial implementation costs which distort accuracy.
 
-- Facilitates codified integration of disparate systems; interoperation where laws are shared
+- Explicit codification of legal systems will facilitate interoperation where laws are shared,
+  through the use of common standards and representational semantics. Transactions costs of treaty
+  negotiation limit diversification — Nebraska cannot negotate an alternative trade agreement with the
+  United Kingdom — and thus confer outsized advantages on larger political blocs even though the
+  policies chosen may be subpar.
 
-- Includes constrained incentive layer which can affect the real world
-
-- Could eventually maintain monopoly on use of force (?) (cite: Nick Bostrom vulnerable world hypothesis)
+- Distributed ledgers, through inclusion and control of algorithmically scarce assets which acquire market value,
+  obtain a programmable incentive lever with which to encourage or discourage particular actions in the real world,
+  insofar as the results of those actions (such as behaviour in a consensus protocol) can later be reflected back to
+  the state of the ledger. This capability is unique and new — the internet protocol, for example, has no such ability
+  to alter the behaviour of its implementors through incentivization, and must content itself with a topology determined
+  primarily by the economic conditions of implementing firms (such as ISPs). This incentive lever is far more constrained
+  than the liberal state's monopoly on the legal use of force, but is comparable to the subsidies and fines imposed
+  through regulation and civil courts, and distributed ledgers can thus plausibly content to supplant significant parts of
+  that body of law.
 
 #### Objections
 
@@ -142,7 +152,6 @@ By the nature of distributed ledgers (which must be verified by many parties), t
 > The threat of physical coercion will prevent voluntary, ledger-based legal systems from supplanting a substantial portion of the role of existing institutions.
 
   The threat of force is indeed a feature of modern geopolitics<sup>force</sup>
-
 
 This may be true, but technology does supplant (banking system), force is a blunt instrument
 
