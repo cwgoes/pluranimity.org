@@ -22,4 +22,4 @@ Previously I cofounded [Stash.ai](https://stash.ai) and led [CUAUV](http://cuauv
 ### Projects
 
 [Juvix](https://github.com/cwgoes/juvix) - Optimizing Idris-to-Michelson smart contract compiler<br />
-[Wyvern](https://wyvernprotocol.com) - Representation-agnostic decentralized asset exchange protocol
+[Wyvern](https://wyvernprotocol.com) - Representation-agnostic decentralised asset exchange protocol

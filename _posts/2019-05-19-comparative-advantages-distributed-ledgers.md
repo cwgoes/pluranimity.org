@@ -185,21 +185,27 @@ e.g.
 - carbon emission commitments, solve tragedies of the commons
 - companies adopting carbon tax while avoiding Malthusian trap
 - nations restricting tax competition, legal arbitrage
-- policy compromises
-- us/Russia disable nuclear devices
-- group of people agree to leave a platform (Facebook)
+- group of people agree to leave a platform (Facebook) or even a ledger
 
 #### Comparative advantage
 
 Why might distributed ledger technology help, and what role would it serve?
 
-- collection of binding commitments - can maintain space of possible contingent actions - "DEX orderbook"
+- The state machine of distributed ledger can realise atomic execution of
+  threshold commitments, by the involved users delegating control of their
+  assets or operations to logic on the ledger (a "smart contract"), which can
+  wait for the agreed-upon threshold before executing all agreed-upon actions
+  atomically at once (or never, should the threshold never be reached).
 
-- indexable commitment stores, data processing
+- The representation of binding commitments necessary to settle on a ledger
+  as transactions can be collected, stored, and indexes as a space of possible
+  contingent actions (a sort of generalized decentralised exchange orderbook).
 
-- atomicization of actions
-
-- could be used to threshold-commit to switch *ledgers*
+- Threshold commitment need not constrain itself to operations expressed on a
+  ledger - with appropriate interblockchain communication protocols, users could
+  in fact threshold-commit to switch *ledgers* (by moving their assets, or delegating
+  control to another ledger) contingent on a modicum of support and perhaps the passage
+  (or lack thereof) of particular alterations by an on-chain governance mechanism.
 
 #### Objections
 
