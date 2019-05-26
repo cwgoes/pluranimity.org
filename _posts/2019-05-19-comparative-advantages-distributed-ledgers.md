@@ -83,7 +83,7 @@ Bell defines polycentric law as
 
 > law arising from a variety of customs and private processes rather than law coercively imposed by a single state authority.
 
-His essay cites three examples: alternative dispute resolution, private communities, and online adjudicators which have arisen on the internet (the article is a bit dated — a modern take would more likely focus on the differing rule-sets of social networks). I am interested in this essential concept, but with a broader scope and a few additional properties.
+His essay cites three examples: alternative dispute resolution, private communities, and online adjudicators which have arisen on the internet (the article is a bit dated; a modern take would more likely focus on the differing rule-sets of social networks). I am interested in this essential concept, but with a broader scope and a few additional properties.
 
 *Polycentric law* is the realisation of overlapping, voluntary, and specialised private legal systems, in a manner capable enough to supplant a substantial fraction of the existing domestic & international regulatory regime. Although this is not inherent to the definition, in the distributed ledger context, enforcement is either inherent in the medium of description or effected through control over economic incentive levers instead of a monopoly on the use of force.
 
@@ -128,20 +128,22 @@ Why might distributed ledger technology help, and what role would it serve?
 
 Why might this approach not be desirable?
 
-> Concentrated political coalitions & supranational bodies emerge because of economies of scale in military & economic geopolitics, which will persist whether or not distributed ledgers are used as a medium of legal enforcement.
+> Concentrated political coalitions & supranational bodies emerge because of economies of scale in geopolitics between military alliances and economic blocs, which will persist whether or not distributed ledgers are used as a medium of legal enforcement.
 
   hard to predict now, but reasons to believe it would be, easier to solve information problem
 
   ledgers by nature do not have monopoly over *data*, or over *land*, "fork threat" real & essential
 
-> *Ex ante* contract enforcement by distributed ledger is dangerous because it fails to preserve the nuance and "learned lessons" of meatspace arbitration systems.
+> *Ex ante* contract enforcement by distributed ledger is dangerous because it fails to preserve the nuance and "learned lessons" of meatspace arbitration systems, as is evident in "smart contract" flaws causing hundreds of millions of dollars in losses.
 
-  initially existing basic legal structures remain in place, more voluntary aspects of trade, commerce, citizenship
+  The state of "smart contract" programming is indeed far from the level of reliability which will be required for high-volume commerce and enforcement of more critical parts of law (such as checking a passport at a border gate),
+  but that problem will be solved in time - ongoing research into formally verifiable contract languages<sup>formality</sup>, and fallback arbitration systems<sup>kleros</sup>.
 
 > Governance mechanisms of distributed ledgers, whether formal or informal, will be capturable just as present governance mechanisms are.
 
-- consensus or ledger governance systems would be just as capturable
-  maybe, but the ledgers can compete, no fundamentally scarce resource (land) and existing ledgers can't threaten with weaponry
+  At present, distributed ledger governance mechanisms are probably far more captured (by a small number of entities) than even the most corrupt democratic institutions today.
+  However, the value of capturing such a system is far lower - unlike countries, which maintain a monopoly over land through force, distributed ledgers have control over no such
+  fundamentally scarce resource, not even data - "fork threat" is real and essential.
 
 Why might this approach not be feasible?
 
