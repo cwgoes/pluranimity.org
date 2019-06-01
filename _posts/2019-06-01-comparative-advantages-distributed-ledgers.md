@@ -248,6 +248,9 @@ Ledgers themselves can also, more simply, retain intermediate computational stat
 > The relevant data (on, say, filter usage) cannot be easily or securely verified. Distributed ledgers can notarise data but have no way to verify its authenticity<sup>[41](#41)</sup>.
 
 not in all cases, but verification just needs to be cost-to-forge, not perfect
+
+Foam Protocol<sup>[42](#42)</sup>, Numerai Erasure<sup>[43](#43)</sup>.
+
 - foam protocol, Numerai Erasure?, others (oracles on data)
 
 ### Contingent payments
@@ -266,7 +269,7 @@ second way: two prediction markets, first on distribution contingent on doing th
 
 Why might contingent payments be useful, and what are the challenges involved?
 
-When purchasing medicine (setting aside some signalling value<sup>[42](#42)</sup>), we are intending to buy a positive difference in the future probability distribution of our health, and we ought to be willing to pay a price as some increasing function of the magnitude and nature of the difference. At present, this difference can neither be efficiently measured nor easily written into contract law, so we must content ourselves with choosing to either buy or pass on a particular pharmaceutical or treatment at the market price, and rely instead on an costly, inscrutable, and generally inefficient set of institutions to implement studies, review boards, and legislation which theoretically enforces some correlation between the future health impact and the price tag. Contingent payments, predicated on the ability to cheaply track individual health outcomes, would have us instead purchase the expected future impact directly, precommiting to pay if and only if it were realised.
+When purchasing medicine (setting aside some signalling value<sup>[44](#44)</sup>), we are intending to buy a positive difference in the future probability distribution of our health, and we ought to be willing to pay a price as some increasing function of the magnitude and nature of the difference. At present, this difference can neither be efficiently measured nor easily written into contract law, so we must content ourselves with choosing to either buy or pass on a particular pharmaceutical or treatment at the market price, and rely instead on an costly, inscrutable, and generally inefficient set of institutions to implement studies, review boards, and legislation which theoretically enforces some correlation between the future health impact and the price tag. Contingent payments, predicated on the ability to cheaply track individual health outcomes, would have us instead purchase the expected future impact directly, precommiting to pay if and only if it were realised.
 
 this applies more generally to any case in which we primarily wish to purchase a difference in a measurable future probability distribution: education (to some degree), also to negative cases - fast food
 
@@ -366,9 +369,6 @@ Thanks to XYZ for reviews of this post.
 
 <span id="42">42</span>: [FOAM: The Consensus-Driven Map of the World](https://www.foam.space/publicAssets/FOAM_Whitepaper.pdf), Foamspace Corp.<br />
 <span id="43">43</span>: [Introducing Erasure](https://medium.com/numerai/numerai-reveals-erasure-unstoppable-peer-to-peer-data-feeds-4fbb8d92820a), Richard Craib.<br /> 
-
-<span id="42">42</span>: [Cut Medicine in Half](https://www.cato-unbound.org/2007/09/10/robin-hanson/cut-medicine-half), Robin Hanson.<br />
-
-<span id="??">??</span>: [The Infinite Dial 2019](https://www.slideshare.net/webby2001/infinite-dial-2019), Edison Research.<br />
+<span id="44">44</span>: [Cut Medicine in Half](https://www.cato-unbound.org/2007/09/10/robin-hanson/cut-medicine-half), Robin Hanson.<br />
 
 [contact]:                          /contact
