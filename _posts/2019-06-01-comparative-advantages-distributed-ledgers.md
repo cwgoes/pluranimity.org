@@ -183,41 +183,44 @@ Scott Alexander puts the essential coordination problem best, as a parable of fi
 
 > The most profitable solution to this problem is for Steve to declare himself King of the Lake and threaten to initiate force against anyone who doesn’t use a filter. This regulatory solution leads to greater total productivity for the thousand fish farms than a free market could.
 
-The term "tragedy of the commons" was first introduced to describe this general game theoretic problem in 1833<sup>[33](#33)</sup>, and later popularized by Garrett Hardin in 1968<sup>[34](#34)</sup> - although both were primarily concerned about rampant population growth, which appears to be less of an issue than originally thought<sup>[35](#35)</sup>.
+The term "tragedy of the commons" was first introduced to describe this general game theoretic predicament by William Lloyd in 1833<sup>[33](#33)</sup>, and later popularized by Garrett Hardin in 1968<sup>[34](#34)</sup> — although both were primarily concerned about exponential population growth in combination with linear food supply growth, which appears to be less of an issue than originally thought<sup>[35](#35)</sup>.
 
-In the world of the parable, threshold commitment would allow this filter-installation pact to be conditionalized on everyone's participation - it's in all the fishermen's best interest to sign a pact that commits them to installing a filter if and only if everyone signs the same pact. Such a "threshold contract" could in theory be enforced by a state - but the transactions costs of legal services may render that route expensive, and imprecise enforcement may dilute the incentive alignment.
+Commons coordination problems under free market competition & selection fall prey to particularly pernicious pathologies. Consider a set of energy suppliers, who individually have the option to substantially reduce their carbon footprint at the expense of slightly higher prices. If energy consumers simply select by price, the suppliers which voluntarily reduce their carbon footprints will be outcompeted by the suppliers which do not (and can thus charge slightly lower prices). Over time, the more ethical suppliers which attempt to price in some of their externalities will die off because they did not optimize for the most proximate goal, leading to an outcome where everyone is eventually worse off.
 
-(distributed ledger, causal flow, pass on to consumer, provenance)
+At a given level, this seems soluble if the consumers voluntarily elect to pay higher prices for cleaner energy, but the incentive problems compound: if one shoe manufacturer elects to pay higher energy prices voluntarily, another which does not will be able to sell slightly cheaper shoes, repeat *ad infinitum*. The transactions costs of detailed research into global supply chains quickly become insurmountable — a comprehensive analysis of the environmental impact of one product produced by a single shoe manufacturer took three graduate students most of a year<sup>[36](#36)</sup> — so end consumers could not in practice price in externalities even if they wanted to.
 
-In the general case, lobbying the state may be more profitable, on the margin, than providing better goods or services - leading to a degenerate cyclical effect<sup>[36](#36)</sup>.
-
-- platform lock-in, bad game theoretic equilibria, surveillance capitalism
-
-- stuck in Pareto-efficient local optima ~ better: Pareto-efficient global optima, even trade-offs
-
-e.g.
-
-- carbon emission commitments, solve tragedies of the commons
-- companies adopting carbon tax while avoiding Malthusian trap
-- nations restricting tax competition, legal arbitrage
-- group of people agree to leave a platform (Facebook) or even a ledger
+Similar challenges apply even at the meta-level of governance design: wherever lobbying the state, on the margin, becomes more profitable than providing better goods or services, a cyclical degeneration into cronyism can occur, as the companies which elect not to lobby the state will be "outcompeted" by those which do<sup>[37](#37)</sup>.
 
 #### Comparative advantage
 
 Why might distributed ledger technology help, and what role would it serve?
 
-- The state machine of distributed ledger can realise atomic execution of
-  threshold commitments, by the involved users delegating control of their
+- In the world of the parable, a threshold commitment would allow this filter-installation pact
+  to be conditionalized on every fisherman's participation — it's in all the fishermen's best interest
+  to sign a pact that commits them to installing a filter if and only if everyone signs the same pact.
+  Such a "threshold contract" could in theory be enforced by a state, but the transactions costs of
+  legal services may render that route expensive, and imprecise enforcement may dilute the incentive alignment.
+  If the fishermen settle their payments through a programmable ledger and can notarize proofs
+  of filter installation in a way that is difficult to forge (or in a way such that it is cheaper
+  to be honest than dishonest in expectation, perhaps with on-chain adjudication and slashing for misbehaviour),
+  they can digitally sign and use the ledger to enforce such a threshold commitment.
+
+- The state machine of a distributed ledger can realise atomic execution of
+  threshold commitments through the involved users delegating control of their
   assets or operations to logic on the ledger (a "smart contract"), which can
   wait for the agreed-upon threshold before executing all agreed-upon actions
-  atomically at once (or never, should the threshold never be reached).
+  atomically at once (or never, should the threshold never be reached), and can
+  programmably reroute or burn funds to alter incentives as the commitment designates.
 
-- The representation of binding commitments necessary to settle on a ledger
-  as transactions can be collected, stored, and indexes as a space of possible
-  contingent actions (a sort of generalized decentralised exchange orderbook).
+- The representations of binding commitments necessary to settle on a ledger
+  as transactions can be collected and stored as a space of possible
+  contingent actions (a sort of generalised decentralised exchange orderbook).
+  Since the cost of generating and storing contingent commitments represented
+  as digitally signed succinct pieces of data is effectively zero, large
+  numbers of commitments can be indexed and a wide incentive space searched through.
 
-- Threshold commitment need not constrain itself to operations expressed on a
-  ledger - with appropriate interblockchain communication protocols, users could
+- Threshold commitment need not constrain itself to operations expressed on a single
+  ledger. With appropriate interblockchain communication protocols, users (or contracts) could
   in fact threshold-commit to switch *ledgers* (by moving their assets, or delegating
   control to another ledger) contingent on a modicum of support and perhaps the passage
   (or lack thereof) of particular alterations by an on-chain governance mechanism.
@@ -230,11 +233,19 @@ Why might this approach not be desirable?
 
 Coordination is really hard (at least at fast speed) - unilateral actions do happen, and eventual "tipping point", but slower. Operative question: how easy to compete with better ruleset.
 
+> maybe the consumers don't actually care
+
+look at where signals do occur: organic foods, non-GMOs - unfortunately not informationally rich
+
 Why might this approach not be feasible?
 
-> Enacting threshold commitments between thousands (or millions) of participants will never fit into a single blockchain transaction, so won't be possible to settle atomically.
+> Threshold commitments between thousands (or millions) of participants will never fit into a single blockchain transaction, so it won't be possible to settle them atomically.
 
-This is currently the case, but computational efficiency can be expected to scale much faster than the number of actors involved in most threshold-commitment systems. One particularly promising technology here may be zero-knowledge proofs, instantiations of which such as SNARKS<sup>[36](#36)</sup> or STARKS<sup>[37](#37)</sup> come with "succinct" proof sizes which are generally sublinear or even constant relative to the size of the input.
+Computational efficiency can be expected to scale much faster than the number of actors involved in most threshold-commitment systems. One particularly promising technology here may be zero-knowledge proofs, instantiations of which such as SNARKS<sup>[36](#36)</sup> or STARKS<sup>[37](#37)</sup> come with "succinct" proof sizes which are generally sublinear or even constant relative to the size of the input. Such constructions can be used for transaction compression by proving the correctness and cumulative effect of many individual transactions in zero-knowledge and submitting the proof to a verifier running on the ledger.
+
+Ledgers themselves can also, more simply, retain intermediate computational states and only "trigger" once a threshold has been met, with the same basic mechanism as the sort of stateful multisignature account common on Ethereum<sup>[38](#38)</sup>.
+
+> oracle / information problem not actually solved
 
 ### Contingent payments
 
@@ -358,7 +369,10 @@ Thanks to XYZ for reviews of this post.
 <span id="33">33</span>: [Two Lectures on the Checks to Population](https://archive.org/details/twolecturesonch00lloygoog/page/n1), William Lloyd.<br />
 <span id="34">34</span>: [The Tragedy of the Commons](https://science.sciencemag.org/content/sci/162/3859/1243.full.pdf), Garrett Hardin.<br />
 <span id="35">35</span>: [World Population Prospects](https://population.un.org/wpp/Graphs/Probabilistic/POP/TOT/), United Nations DESA / Population Division.<br />
-<span id="35">35</span>: [Micheal Munger on Crony Capitalism](https://www.econtalk.org/michael-munger-on-crony-capitalism/), EconTalk / Russ Roberts.<br />
+<span id="36">36</span>: [Analyzing the Environmental Impacts of Simple Shoes](http://www.bren.ucsb.edu/research/documents/SimpleShoesFinalReport.pdf), Kyle Albers, Peter Canepa, Jennifer Miller.<br />
+<span id="37">37</span>: [Micheal Munger on Crony Capitalism](https://www.econtalk.org/michael-munger-on-crony-capitalism/), EconTalk / Russ Roberts.<br />
+<span id="38">38</span>: [Ethereum Multisignature Wallet](https://github.com/gnosis/MultiSigWallet), Gnosis.<br />
+
 
 <span id="36">36</span>: [On the Size of Pairing-based Non-interactive Arguments](https://eprint.iacr.org/2016/260.pdf), Jens Groth.<br />
 <span id="37">37</span>: [Scalable, transparent, and post-quantum-secure computational integrity](https://eprint.iacr.org/2018/046.pdf), Eli Ben-Sasson.<br />
