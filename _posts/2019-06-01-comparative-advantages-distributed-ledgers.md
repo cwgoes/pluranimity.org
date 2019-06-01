@@ -67,7 +67,7 @@ Distributed ledgers enable a kind of credible, binding commitment to future rule
 
 > "Smart contracts" and the rule-sets of distributed ledgers more generally are too rigid, and will fail to supplant meatspace systems requiring flexibility and human judgement in adjudication.
 
-Many present "flexible" meatspace institutions — such as the IRS<sup>[18](#18)</sup>, the Pentagon<sup>[19](#19)</sup>, and Facebook<sup>[20](#20)</sup> — seem like they might benefit from a little more rigidity and a little less flexibility in enforcement. In cases where case-by-case human judgement is necessary, distributed ledgers need not and will not replace it, but can instead serve as an immutable, auditable record of the human decisionmaking process.
+Many present "flexible" meatspace institutions — such as the IRS<sup>[18](#18)</sup>, the Pentagon<sup>[19](#19)</sup>, and Facebook<sup>[20](#20)</sup> — seem like they might benefit from a little more rigidity and a little less flexibility in enforcement. In cases where case-by-case human judgement is necessary, distributed ledgers need not and will not replace it, but can instead serve as an immutable, auditable record of the human decision-making process.
 
 <br />
 
@@ -93,7 +93,7 @@ I have found surprisingly little analytical exploration of this concept in the l
 
 Why might polycentric law be useful, and what challenges are involved?
 
-- Present legal systems are geospacially monopolised: one legislative body & governance process determines the rule-set for an area of physical space. To so determine boundaries of legal systems makes sense only to the degree by which geographical proximity indicates a preference or necessity for shared law — such a shared preference is plausible in theory or at least necessary in practice for physically-mediating legal domains such as the right to bear arms, but seems far less sensible for others like online privacy protections.
+- Present legal systems are spatially monopolised: one legislative body & governance process determines the rule-set for an area of physical space. To so determine boundaries of legal systems makes sense only to the degree by which geographical proximity indicates a preference or necessity for shared law — such a shared preference is plausible in theory or at least necessary in practice for physically-mediating legal domains such as the right to bear arms, but seems far less sensible for others like online privacy protections.
 
 - An extraordinary amount of effort is directed to the effecting of control over the processes which govern changes in our existing legal monopolies. This effort could perhaps better be directed towards realising alternative sets of laws which individuals could voluntarily select from. Unfortunately, there is no unclaimed land (except perhaps extra-terrestrially<sup>[23](#23)</sup>) upon which a consenting group of individuals can voluntarily establish a sovereign nation — but this restriction does not exist in the digital realm.
 
@@ -110,15 +110,15 @@ Why might distributed ledger technology help, and what role would it serve?
 
 - Explicit codification of legal systems will facilitate interoperation where laws are shared,
   through the use of common standards, representations, and semantics. Transactions costs of treaty
-  negotiation limit diversification — Nebraska cannot negotate an alternative trade agreement with the
-  United Kingdom — and thus confer outsized advantages on larger political blocs even though the
+  negotiation limit diversification — Nebraska cannot negotiate an alternative trade agreement with the
+  United Kingdom — and thus confer out-sized advantages on larger political blocs even though the
   policies chosen may be subpar for the smaller constituencies.
 
 - Distributed ledgers, through inclusion and control of algorithmically scarce assets which acquire market value,
   obtain a programmable incentive lever with which to encourage or discourage particular actions in the real world,
   insofar as the results of those actions (such as behaviour in a consensus protocol) can later be reflected back to
   the state of the ledger. This capability is unique and new — the internet protocol, for example, has no such ability
-  to alter the behaviour of its implementors through incentivization, and must content itself with a topology determined
+  to alter the behaviour of its implementers through incentivization, and must content itself with a topology determined
   primarily by the economics of implementing firms (such as ISPs). This incentive lever is far more constrained
   than the modern state's monopoly on the legal use of force, but it is comparable to the subsidies and fines imposed
   through regulation and by civil courts, and distributed ledgers can thus plausibly contend to supplant significant parts of
@@ -138,7 +138,7 @@ Why might this approach not be desirable?
 
   At present, distributed ledger governance mechanisms are probably far more captured, in the sense of being controlled by a small number of entities, than even the most corrupt democratic institutions today.
   However, the value of capturing such a system and thus the amount of extractable rent is far lower. Unlike countries, which maintain a monopoly over the use of force, distributed ledgers have control over no such
-  fundamentally scarce physical resource, not even data. The potency of the postive or negative levers available to a ledger depends directly on public perception of that ledger's value - constraining the behaviour of
+  fundamentally scarce physical resource, not even data. The potency of the positive or negative levers available to a ledger depends directly on public perception of that ledger's value - constraining the behaviour of
   rational stakeholders - and should the stakeholders take action to which the users are opposed, the ledger can be forked.
 
 Why might this approach not be feasible?
@@ -183,9 +183,9 @@ Scott Alexander puts the essential coordination problem best, as a parable of fi
 
 > The most profitable solution to this problem is for Steve to declare himself King of the Lake and threaten to initiate force against anyone who doesn’t use a filter. This regulatory solution leads to greater total productivity for the thousand fish farms than a free market could.
 
-The term "tragedy of the commons" was first introduced to describe this general game theoretic predicament by William Lloyd in 1833<sup>[33](#33)</sup>, and later popularized by Garrett Hardin in 1968<sup>[34](#34)</sup> — although both were primarily concerned about exponential population growth in combination with linear food supply growth, which appears to be less of an issue than originally thought<sup>[35](#35)</sup>.
+The term "tragedy of the commons" was first introduced to describe this general game theoretic predicament by William Lloyd in 1833<sup>[33](#33)</sup>, and later popularised by Garrett Hardin in 1968<sup>[34](#34)</sup> — although both were primarily concerned about exponential population growth in combination with linear food supply growth, which appears to be less of an issue than originally thought<sup>[35](#35)</sup>.
 
-Commons coordination problems under free market competition & selection fall prey to particularly pernicious pathologies. Consider a set of energy suppliers, who individually have the option to substantially reduce their carbon footprint at the expense of slightly higher prices. If energy consumers simply select by price, the suppliers which voluntarily reduce their carbon footprints will be outcompeted by the suppliers which do not (and can thus charge slightly lower prices). Over time, the more ethical suppliers which attempt to price in some of their externalities will die off because they did not optimize for the most proximate goal, leading to an outcome where everyone is eventually worse off.
+Commons coordination problems under free market competition & selection fall prey to particularly pernicious pathologies. Consider a set of energy suppliers, who individually have the option to substantially reduce their carbon footprint at the expense of slightly higher prices. If energy consumers simply select by price, the suppliers which voluntarily reduce their carbon footprints will be out-competed by the suppliers which do not (and can thus charge slightly lower prices). Over time, the more ethical suppliers which attempt to price in some of their externalities will die off because they did not optimise for the most proximate goal, leading to an outcome where everyone is eventually worse off.
 
 At a given level, this seems soluble if the consumers voluntarily elect to pay higher prices for cleaner energy, but the incentive problems compound: if one shoe manufacturer elects to pay higher energy prices voluntarily, another which does not will be able to sell slightly cheaper shoes, repeat *ad infinitum*. The transactions costs of detailed research into global supply chains quickly become insurmountable — a comprehensive analysis of the environmental impact of one product produced by a single shoe manufacturer took three graduate students most of a year<sup>[36](#36)</sup> — so end consumers could not in practice price in externalities even if they wanted to.
 
@@ -200,7 +200,7 @@ Why might distributed ledger technology help, and what role would it serve?
   to sign a pact that commits them to installing a filter if and only if everyone signs the same pact.
   Such a "threshold contract" could in theory be enforced by a state, but the transactions costs of
   legal services may render that route expensive, and imprecise enforcement may dilute the incentive alignment.
-  If the fishermen settle their payments through a programmable ledger and can notarize proofs
+  If the fishermen settle their payments through a programmable ledger and can notarise proofs
   of filter installation in a way that is difficult to forge (or in a way such that it is cheaper
   to be honest than dishonest in expectation, perhaps with on-chain adjudication and slashing for misbehaviour),
   they can digitally sign and use the ledger to enforce such a threshold commitment.
@@ -241,9 +241,14 @@ Why might this approach not be feasible?
 
 > Threshold commitments between thousands (or millions) of participants will never fit into a single blockchain transaction, so it won't be possible to settle them atomically.
 
-Computational efficiency can be expected to scale much faster than the number of actors involved in most threshold-commitment systems. One particularly promising technology here may be zero-knowledge proofs, instantiations of which such as SNARKS<sup>[36](#36)</sup> or STARKS<sup>[37](#37)</sup> come with "succinct" proof sizes which are generally sublinear or even constant relative to the size of the input. Such constructions can be used for transaction compression by proving the correctness and cumulative effect of many individual transactions in zero-knowledge and submitting the proof to a verifier running on the ledger.
+Computational efficiency can be expected to scale much faster than the number of actors involved in most threshold-commitment systems. One particularly promising technology here may be zero-knowledge proofs, instantiations of which such as SNARKS<sup>[38](#38)</sup> or STARKS<sup>[39](#39)</sup> come with "succinct" proof sizes which are generally sublinear or even constant relative to the size of the input. Such constructions can be used for transaction compression by proving the correctness and cumulative effect of many individual transactions in zero-knowledge and submitting the proof to a verifier running on the ledger.
 
-Ledgers themselves can also, more simply, retain intermediate computational states and only "trigger" once a threshold has been met, with the same basic mechanism as the sort of stateful multisignature account common on Ethereum<sup>[38](#38)</sup>.
+Ledgers themselves can also, more simply, retain intermediate computational states and only "trigger" once a threshold has been met, with the same basic mechanism as the sort of stateful multi-signature account common on Ethereum<sup>[40](#40)</sup>.
+
+> The relevant data (on, say, filter usage) cannot be easily or securely verified. Distributed ledgers can notarise data but have no way to verify its authenticity<sup>[41](#41)</sup>.
+
+not in all cases, but verification just needs to be cost-to-forge, not perfect
+
 
 > oracle / information problem not actually solved
 
@@ -253,9 +258,9 @@ Ledgers themselves can also, more simply, retain intermediate computational stat
 
 What are contingent payments?
 
-*Contingent payments* are the purchase of an expected difference in a future probability distribution such that the price paid can vary contingent on the eventual accuracy of the prediction.
+*Contingent payments* are the purchase of an expected difference in a future probability distribution such that the expected price paid can vary contingent on the eventual accuracy of the prediction. (actually paid later? or prediction markets?)
 
-When purchasing medicine (setting aside some signalling value<sup>[?](?)</sup>), we are intending to buy a positive difference in the future probability distribution of our health, and we are willing to pay a price as some increasing function of the magnitude of the difference. At present, this difference can neither be efficiently measured nor easily written into contract law, so we must content ourselves with choosing to either buy or pass on a particular pharmaceutical or treatment at the market price, and rely instead on an costly, inscrutable, and generally inefficient set of institutions to implement studies, review boards, and legislation which enforces some correlation between the future health impact and the price tag. Contingent payments, predicated on the ability to cheaply track individual health outcomes, would have us instead purchase the expected future impact directly, precommiting to pay if and only if it were realised?
+When purchasing medicine (setting aside some signalling value<sup>[42](#42)</sup>), we are intending to buy a positive difference in the future probability distribution of our health, and we ought to be willing to pay a price as some increasing function of the magnitude and nature of the difference. At present, this difference can neither be efficiently measured nor easily written into contract law, so we must content ourselves with choosing to either buy or pass on a particular pharmaceutical or treatment at the market price, and rely instead on an costly, inscrutable, and generally inefficient set of institutions to implement studies, review boards, and legislation which theoretically enforces some correlation between the future health impact and the price tag. Contingent payments, predicated on the ability to cheaply track individual health outcomes, would have us instead purchase the expected future impact directly, precommiting to pay if and only if it were realised.
 
 one way: two prediction markets
 another way: company paid in future contingent on event, company seeks present funding by investors who bet on the event
@@ -305,10 +310,6 @@ not sure about a priori, always an opportunity cost - should work more like tria
 if we accept premise, possible to enforce post hoc subsidies according to ratio of probability distributions or something
 
 Why might this approach not be feasible?
-
-> The relevant data cannot be easily or securely verified. Distributed ledgers can notarise data but have no way to verify its authenticity.<sup>??</sup>.
-
-not in all cases, but verification just needs to be cost-to-forge, not perfect
 
 > Contingent payments are still too complex to contract and will not be efficient at scale.
 
@@ -362,27 +363,22 @@ Thanks to XYZ for reviews of this post.
 <span id="27">27</span>: [Formality](https://github.com/moonad/formality), Victor Maia.<br />
 <span id="28">28</span>: [The Interblockchain Communication Protocol](https://github.com/cosmos/ics/tree/master/ibc), Tendermint/Cosmos.<br />
 <span id="29">29</span>: [Interchain Message Passing](https://wiki.polkadot.network/en/latest/polkadot/learn/interchain/), Polkadot / Web3 Foundation.<br />
-<span id="30">30</span>: For an amusing illustration of the realpolitik involved, read Pentagon press releases, like [this one](https://www.navy.mil/submit/display.asp?story_id=107669) complaining about a Russian SU-27 flying past an American EP-3 in the Black Sea. The Black Sea is on the Russian coast - for comparison, imagine a Russian or Chinese carrier parked off California. Ape chest-banging incarnate.
+<span id="30">30</span>: For an amusing illustration of the realpolitik involved, read Pentagon press releases, like [this one](https://www.navy.mil/submit/display.asp?story_id=107669) complaining about a Russian SU-27 flying past an American EP-3 in the Black Sea. The Black Sea is on the Russian coast — for comparison, imagine a Russian or Chinese carrier parked off California. Ape chest-banging incarnate.
 
 <span id="31">31</span>: For those familiar with existing ledgers such as Bitcoin or Ethereum, this may be difficult to conceptualise since most present ledgers do not natively provide transaction introspection, but the limitation is not theoretical (e.g. the [Wyvern DEX protocol](https://wyvernprotocol.com/docs)).<br />
 <span id="32">32</span>: [The Non-Libertarian FAQ](https://slatestarcodex.com/2017/02/22/repost-the-non-libertarian-faq/), Scott Alexander.<br />
 <span id="33">33</span>: [Two Lectures on the Checks to Population](https://archive.org/details/twolecturesonch00lloygoog/page/n1), William Lloyd.<br />
 <span id="34">34</span>: [The Tragedy of the Commons](https://science.sciencemag.org/content/sci/162/3859/1243.full.pdf), Garrett Hardin.<br />
 <span id="35">35</span>: [World Population Prospects](https://population.un.org/wpp/Graphs/Probabilistic/POP/TOT/), United Nations DESA / Population Division.<br />
-<span id="36">36</span>: [Analyzing the Environmental Impacts of Simple Shoes](http://www.bren.ucsb.edu/research/documents/SimpleShoesFinalReport.pdf), Kyle Albers, Peter Canepa, Jennifer Miller.<br />
+<span id="36">36</span>: [Analyzing the Environmental Impacts of Simple Shoes](http://www.bren.ucsb.edu/research/documents/SimpleShoesFinalReport.pdf), Kyle Albers, Peter Canepa, Jennifer Miller, University of California Santa Barbera.<br />
 <span id="37">37</span>: [Micheal Munger on Crony Capitalism](https://www.econtalk.org/michael-munger-on-crony-capitalism/), EconTalk / Russ Roberts.<br />
-<span id="38">38</span>: [Ethereum Multisignature Wallet](https://github.com/gnosis/MultiSigWallet), Gnosis.<br />
+<span id="38">38</span>: [On the Size of Pairing-based Non-interactive Arguments](https://eprint.iacr.org/2016/260.pdf), Jens Groth.<br />
+<span id="39">39</span>: [Scalable, transparent, and post-quantum-secure computational integrity](https://eprint.iacr.org/2018/046.pdf), Eli Ben-Sasson.<br />
+<span id="40">40</span>: [Ethereum Multisignature Wallet](https://github.com/gnosis/MultiSigWallet), Gnosis.<br />
+<span id="41">41</span>: An amusing illustration: this [phone cradle](https://twitter.com/mbrennanchina/status/1128201958962032641) boosts step counts to reduce insurance premiums.<br />
 
-
-<span id="36">36</span>: [On the Size of Pairing-based Non-interactive Arguments](https://eprint.iacr.org/2016/260.pdf), Jens Groth.<br />
-<span id="37">37</span>: [Scalable, transparent, and post-quantum-secure computational integrity](https://eprint.iacr.org/2018/046.pdf), Eli Ben-Sasson.<br />
+<span id="42">42</span>: [Cut Medicine in Half](https://www.cato-unbound.org/2007/09/10/robin-hanson/cut-medicine-half), Robin Hanson.<br />
 
 <span id="??">??</span>: [The Infinite Dial 2019](https://www.slideshare.net/webby2001/infinite-dial-2019), Edison Research.<br />
-
-
-<span id="??">??</span>: [Hanson on Signalling](https://www.econtalk.org/hanson-on-signalling/), Russ Roberts / Robin Hanson.<br />
-
-
-<span id="??">??</span>: See this [phone cradle](https://twitter.com/mbrennanchina/status/1128201958962032641) for boosting step counts.<br />
 
 [contact]:                          /contact
