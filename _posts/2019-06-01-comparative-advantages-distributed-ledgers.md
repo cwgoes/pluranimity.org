@@ -59,7 +59,7 @@ Why might this approach not be feasible?
 
 > Many unsolved technical problems remain, particularly in the areas of scaling<sup>[15](#15)</sup>, privacy<sup>[16](#16)</sup>, and genuine decentralisation<sup>[17](#17)</sup>.
 
-  The rate of progress is rapid (on a human timescale, not perhaps on the market timescale), and large incentives exist for solutions, so I think we can expect continued rapid progress.
+  The rate of progress is rapid (on a human timescale, perhaps not on the cryptocurrency-market-timescale), and large incentives exist for solutions, so I think we can expect continued rapid progress. No functionality postulated in this analysis has theoretical impossibility results.
 
 > Distributed ledgers will simply switch out the controlling oligarchy for a new one. Google famously committed to "do no evil", and has not succeeded - how are blockchains different? Will not the stakeholders or consensus operators merely fill the same role?
 
@@ -143,21 +143,17 @@ Why might this approach not be desirable?
 
 Why might this approach not be feasible?
 
-> Agglomerative political coalitions & supranational bodies emerge because of economies of scale in geopolitics between military alliances and economic blocs, which will persist whether or not distributed ledgers are used as a medium of legal enforcement.
-
-  hard to predict now, but reasons to believe it would be, easier to solve information problem
-
-  ledgers by nature do not have monopoly over *data*, or over *land*, "fork threat" real & essential
-
 > Computing the intersections between rule-sets necessary to determine how subscribers to different legal systems can interact will be impossible or infeasible, due to complexity or due to the inability of distributed ledgers with separate consensus algorithms to interoperate.
 
 By the nature of distributed ledgers (which must be verified by many parties), the rule-sets being verified must be public & codified, so computing intersections of compatibility should be possible and need consist solely of code (so are free to copy). Cross-consensus-algorithm interoperation protocols are under development<sup>[28](#28), [29](#29)</sup>.
 
-> The threat of physical coercion will prevent voluntary, ledger-based legal systems from supplanting a substantial portion of the role of existing institutions.
+> Agglomerative political coalitions & supranational bodies emerge because of economies of scale in geopolitics between military alliances and economic blocs, which will persist whether or not distributed ledgers are used as a medium of legal enforcement. The threat of physical coercion will prevent voluntary, ledger-based legal systems from supplanting a substantial portion of the role of existing institutions.
 
-  The threat of force is indeed a feature of modern geopolitics<sup>force</sup>
+  Appearances notwithstanding, the threat of force is indeed a salient feature of modern geopolitics<sup>[30](#30)</sup>, and the economies of scale on trade agreements for physical goods will not fade anytime soon. But force as applied by the state is a blunt and expensive instrument,
+  too imprecise to prevent the spread of information and too inefficient to enforce commercial & civil law. Should ledger-based financial & commercial systems be realised at global scale, would-be autocratic states will be forced to choose between market access and tight informational control,
+  as they already are with the internet.
 
-This may be true, but technology does supplant (banking system), force is a blunt instrument
+<br />
 
 ### Threshold commitment
 
@@ -335,21 +331,17 @@ Thanks to XYZ for reviews of this post.
 <span id="22">22</span>: [Terra Ignota (series)](https://en.wikipedia.org/wiki/Terra_Ignota), Ada Palmer.<br />
 <span id="23">23</span>: [The Luxembourg Space Law](https://www.ogier.com/news/the-luxembourg-space-law), Ogier Law.<br />
 <span id="24">24</span>: [Status as a Service](https://www.eugenewei.com/blog/2019/2/19/status-as-a-service), Eugene Wei.<br />
-<span id="25">25</span>: [Counterfactual slashing](https://github.com/tendermint/tendermint/issues/3244).<br />
-
+<span id="25">25</span>: [Counterfactual slashing](https://github.com/tendermint/tendermint/issues/3244), Tendermint/Cosmos.<br />
 <span id="26">26</span>: [Martin-Löf dependent type theory](https://ncatlab.org/nlab/show/Martin-L%C3%B6f+dependent+type+theory), nLab.<br />
 <span id="27">27</span>: [Formality](https://github.com/moonad/formality), Victor Maia.<br />
-
 <span id="28">28</span>: [The Interblockchain Communication Protocol](https://github.com/cosmos/ics/tree/master/ibc), Tendermint/Cosmos.<br />
 <span id="29">29</span>: [Interchain Message Passing](https://wiki.polkadot.network/en/latest/polkadot/learn/interchain/), Polkadot / Web3 Foundation.<br />
+<span id="30">30</span>: For an amusing illustration of the realpolitik involved, read Pentagon press releases, like [this one](https://www.navy.mil/submit/display.asp?story_id=107669) complaining about a Russian SU-27 flying past an American EP-3 in the Black Sea. The Black Sea is on the Russian coast - for comparison, imagine a Russian or Chinese carrier parked off California. Ape chest-banging incarnate.
 
-<span id="??">??</span>: See []() and [counterfactual slashing](https://github.com/tendermint/tendermint/issues/3244).<br />
 
 <span id="??">??</span>: [The Infinite Dial 2019](https://www.slideshare.net/webby2001/infinite-dial-2019), Edison Research.<br />
 
 <span id="??">??</span>: For those familiar with existing ledgers such as Bitcoin or Ethereum, this may be difficult to conceptualise since most present ledgers do not natively provide transaction introspection, but the limitation is not theoretical. As an example in this direction consider the [Wyvern DEX protocol](https://wyvernprotocol.com/docs).
-
-<span id="??">??</span>: For an amusing illustration of the realpolitik involved, read Pentagon press releases, like [this one](https://www.navy.mil/submit/display.asp?story_id=107669) complaining about a Russian SU-27 flying past an American EP-3 in the Black Sea. The Black Sea is on the Russian coast - for comparison, imagine a Russian or Chinese carrier parked off California. Ape chest-banging incarnate.
 
 <span id="??">??</span>: [Hanson on Signalling](https://www.econtalk.org/hanson-on-signalling/), Russ Roberts / Robin Hanson.<br />
 
