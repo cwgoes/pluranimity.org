@@ -161,20 +161,35 @@ By the nature of distributed ledgers (which must be verified by many parties), t
 
 What is threshold commitment?
 
-*Threshold commitment* is the ability to commit to a particular action (on a distributed ledger, a particular transaction) contingent on other parties committing to particular actions (possibly themselves contingent on your commitment). A set of threshold commitments can together realise an atomic transition from one state to another which could not be unilaterally effected by any of the participating parties individually<sup>ledgers</sup>.
+*Threshold commitment* is the ability to commit to a particular action (on a distributed ledger, a particular transaction) contingent on other parties committing to particular actions, possibly themselves contingent on your commitment. A set of threshold commitments can together realise an atomic transition from one state to another which could not be unilaterally effected by any of the participating parties individually<sup>[31](#31)</sup>.
 
 Threshold commitment may prove particularly useful since it can be used to jump between Nash equilibria in incentive space: players in a game can commit to change their strategies (restricting their own future actions) contingent on other players agreeing to do likewise, and the underlying ledger can realise this transition atomically such that no individual player can defect.
 
-In very limited form today, threshold commitments are realised by crowdfunding platforms such as Kickstarter, where producers commit to produce a product or service given sufficient demand, and consumers commit to pay a certain amount given sufficient demand to provide the necessary capital for production costs. Kickstarter is a very limited threshold commitment platform, however — the information provided to participants is quite minimal, the conditionals which can be committed to are very limited, and contract enforcement requires trust in a corporate intermediary (and is thus limited to low-stakes games: Kickstarter cannot fund public infrastructure or enforce multiparty nuclear deproliferation). 
+In very limited form today, threshold commitments are realised by crowdfunding platforms such as Kickstarter, where producers commit to produce a product or service and consumers commit to pay a certain amount given sufficient aggregate demand to provide the necessary capital for production costs. Kickstarter is a very limited threshold commitment platform, however — the information provided to participants is minimal, the conditionals which can be committed to are limited to small-scale consumer goods manufacturing, and contract enforcement requires trust in a corporate intermediary (and is thus limited to low-stakes games: Kickstarter cannot fund public infrastructure or enforce multiparty nuclear deproliferation). 
 
 #### Why
 
 Why might threshold commitment be useful, and what are the challenges involved?
 
-The best illustration of the essential game theoretic problem can be found in a parable of fishermen upon a lake.
+Scott Alexander puts the essential coordination problem best, as a parable of fishermen<sup>[32](#32)</sup>:
 
-cite slatestarcodex libertarianism post on lake fishing
-- cite tragedy of commons - http://science.sciencemag.org/content/162/3859/1243.full
+> As a thought experiment, let’s consider aquaculture (fish farming) in a lake. Imagine a lake with a thousand identical fish farms owned by a thousand competing companies. Each fish farm earns a profit of $1000/month. For a while, all is well.
+
+> But each fish farm produces waste, which fouls the water in the lake. Let’s say each fish farm produces enough pollution to lower productivity in the lake by $1/month. A thousand fish farms produce enough waste to lower productivity by $1000/month, meaning none of the fish farms are making any money. Capitalism to the rescue: someone invents a complex filtering system that removes waste products. It costs $300/month to operate. All fish farms voluntarily install it, the pollution ends, and the fish farms are now making a profit of $700/month – still a respectable sum.
+
+> But one farmer (let’s call him Steve) gets tired of spending the money to operate his filter. Now one fish farm worth of waste is polluting the lake, lowering productivity by $1. Steve earns $999 profit, and everyone else earns $699 profit. Everyone else sees Steve is much more profitable than they are, because he’s not spending the maintenance costs on his filter. They disconnect their filters too. Once four hundred people disconnect their filters, Steve is earning $600/month – less than he would be if he and everyone else had kept their filters on! And the poor virtuous filter users are only making $300. Steve goes around to everyone, saying “Wait! We all need to make a voluntary pact to use filters! Otherwise, everyone’s productivity goes down.”
+
+> Everyone agrees with him, and they all sign the Filter Pact, except one person who is sort of a jerk. Let’s call him Mike. Now everyone is back using filters again, except Mike. Mike earns $999/month, and everyone else earns $699/month. Slowly, people start thinking they too should be getting big bucks like Mike, and disconnect their filter for $300 extra profit… A self-interested person never has any incentive to use a filter. A self-interested person has some incentive to sign a pact to make everyone use a filter, but in many cases has a stronger incentive to wait for everyone else to sign such a pact but opt out himself. This can lead to an undesirable equilibrium in which no one will sign such a pact.
+
+> The most profitable solution to this problem is for Steve to declare himself King of the Lake and threaten to initiate force against anyone who doesn’t use a filter. This regulatory solution leads to greater total productivity for the thousand fish farms than a free market could.
+
+The term "tragedy of the commons" was first introduced to describe this general game theoretic problem in 1833<sup>[33](#33)</sup>, and later popularized by Garrett Hardin in 1968<sup>[34](#34)</sup> - although both were primarily concerned about rampant population growth, which appears to be less of an issue than originally thought<sup>[35](#35)</sup>.
+
+In the world of the parable, threshold commitment would allow this filter-installation pact to be conditionalized on everyone's participation - it's in all the fishermen's best interest to sign a pact that commits them to installing a filter if and only if everyone signs the same pact. Such a "threshold contract" could in theory be enforced by a state - but the transactions costs of legal services may render that route expensive, and imprecise enforcement may dilute the incentive alignment.
+
+(distributed ledger, causal flow, pass on to consumer, provenance)
+
+In the general case, lobbying the state may be more profitable, on the margin, than providing better goods or services - leading to a degenerate cyclical effect<sup>[36](#36)</sup>.
 
 - platform lock-in, bad game theoretic equilibria, surveillance capitalism
 
@@ -219,7 +234,7 @@ Why might this approach not be feasible?
 
 > Enacting threshold commitments between thousands (or millions) of participants will never fit into a single blockchain transaction, so won't be possible to settle atomically.
 
-This is currently the case, but computational efficiency can be expected to scale much faster than the number of actors involved in most threshold-commitment systems. One particularly promising technology here may be zero-knowledge proofs, instantiations of which such as SNARKS<sup>?</sup> or STARKS<sup>?</sup> come with "succinct" proof sizes which are generally sublinear or even constant relative to the size of the input.
+This is currently the case, but computational efficiency can be expected to scale much faster than the number of actors involved in most threshold-commitment systems. One particularly promising technology here may be zero-knowledge proofs, instantiations of which such as SNARKS<sup>[36](#36)</sup> or STARKS<sup>[37](#37)</sup> come with "succinct" proof sizes which are generally sublinear or even constant relative to the size of the input.
 
 ### Contingent payments
 
@@ -306,14 +321,14 @@ Thanks to XYZ for reviews of this post.
 
 *Footnotes*
 
-<span id="1">1</span>: I prefer the term to "blockchain" — the salience is in the replication mechanism, that the blocks are kept in a linked list is an implementation detail.<br />
+<span id="1">1</span>: I prefer the term "distributed ledger" to "blockchain" — the salience is in the replication mechanism, that the blocks are kept in a linked list is an implementation detail.<br />
 <span id="2">2</span>: Fulfilling *agreement* and *termination* in roughly their usual BFT senses, possibly the combined view of separate parallel consensus processes, but necessarily such that the cost of breaking safety or progress is high.<br />
 <span id="3">3</span>: Or rather than storage capacity could grow faster than storage usage, as is the case with cloud-provisioned storage now.<br />
 <span id="4">4</span>: Or rather that transaction throughput capacity is not a bottleneck on demand, as is the case with EMV (card) payments now.<br />
 <span id="5">5</span>: Such that the subset of parties responsible for executing {% ihighlight haskell %} F {% endihighlight %} cannot indefinitely censor any subset of transactions, as might be provided by (threshold decryption).<br />
 <span id="6">6</span>: Such that bandwidth and compute required is proportional only in the size of the query, not the size of state, and that the querying client cannot be fooled. (current examples: TM lite client proofs).<br />
-<span id="7">7</span>: As might be provided by a verifiable-delay function with difficulty adjustment (cite: Wachowski VDF paper). <br />
-<span id="8">8</span>: Meaning that specific transaction details (sender, amount, code) can be private to a user while ruleset verification (supply conservation, invariant fulfilment) is performed on the ledger, as likely will be provided by zero-knowledge proof constructions (current examples: Zerocash, ZEXE).<br />
+<span id="7">7</span>: As might be provided by a [verifiable-delay function](https://eprint.iacr.org/2018/601.pdf) with difficulty adjustment.<br />
+<span id="8">8</span>: Meaning that specific transaction details (sender, amount, code) can be private to a user while ruleset verification (supply conservation, invariant fulfilment) is performed on the ledger, as likely will be provided by zero-knowledge proof constructions (e.g. [Zerocash](http://zerocash-project.org/media/pdf/zerocash-extended-20140518.pdf), [ZEXE](https://eprint.iacr.org/2018/962.pdf)).<br />
 <span id="9">9</span>: [List of top ten firms by market capitalization](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization). I count Microsoft, Apple, Amazon, Alphabet, Facebook, Alibaba Group, and Tencent as operating commons.<br />
 <span id="10">10</span>: [The Age of Surveillance Capitalism](https://www.goodreads.com/book/show/26195941-the-age-of-surveillance-capitalism), Shoshana Zuboff - the Marxist ontological frame obscures the argument, but this is still the best detailed expose I've found.<br />
 <span id="11">11</span>: [Blockchains and the Opportunity of the Commons](https://marginalrevolution.com/marginalrevolution/2018/06/blockchains-opportunity-commons.html), Tyler Cowen.<br />
@@ -325,7 +340,7 @@ Thanks to XYZ for reviews of this post.
 <span id="17">17</span>: Although few major distributed ledgers are controlled by a single entity, the state of affairs in proof-of-work land is [pretty absymal](https://arewedecentralizedyet.com/). Unfortunately I have not yet found a similar resource for the newest crop of proof-of-stake blockchains.<br />
 <span id="18">18</span>: See this 2017 IRS report - [Declining Resources Have Contributed to Unfavourable Trends in Several Key Criminal Investigation Business Results](https://www.treasury.gov/tigta/auditreports/2017reports/201730073fr.pdf), Treasury Inspector General for Tax Administration.<br />
 <span id="19">19</span>: [Pentagon fails its first-ever audit](https://www.reuters.com/article/us-usa-pentagon-audit/pentagon-fails-its-first-ever-audit-official-says-idUSKCN1NK2MC), Reuters, 2018.<br />
-<span id="20">20</span>: [This article](https://www.nationalreview.com/2019/05/the-first-rule-of-social-media-censorship-is-that-there-are-no-rules/) on Facebook deplatforming illuminates the problem, though I do not expect companies to adopt the proposed solution voluntarily.<br />
+<span id="20">20</span>: [This article](https://www.nationalreview.com/2019/05/the-first-rule-of-social-media-censorship-is-that-there-are-no-rules/) on Facebook deplatforming illuminates the problem, though I see little reason to expect companies to adopt the proposed solution voluntarily.<br />
 
 <span id="21">21</span>: [Polycentric Law in a New Century](https://www.cis.org.au/app/uploads/2015/04/images/stories/policy-magazine/1999-autumn/1999-15-1-tom-bell.pdf), Tom Bell.<br />
 <span id="22">22</span>: [Terra Ignota (series)](https://en.wikipedia.org/wiki/Terra_Ignota), Ada Palmer.<br />
@@ -338,10 +353,18 @@ Thanks to XYZ for reviews of this post.
 <span id="29">29</span>: [Interchain Message Passing](https://wiki.polkadot.network/en/latest/polkadot/learn/interchain/), Polkadot / Web3 Foundation.<br />
 <span id="30">30</span>: For an amusing illustration of the realpolitik involved, read Pentagon press releases, like [this one](https://www.navy.mil/submit/display.asp?story_id=107669) complaining about a Russian SU-27 flying past an American EP-3 in the Black Sea. The Black Sea is on the Russian coast - for comparison, imagine a Russian or Chinese carrier parked off California. Ape chest-banging incarnate.
 
+<span id="31">31</span>: For those familiar with existing ledgers such as Bitcoin or Ethereum, this may be difficult to conceptualise since most present ledgers do not natively provide transaction introspection, but the limitation is not theoretical (e.g. the [Wyvern DEX protocol](https://wyvernprotocol.com/docs)).<br />
+<span id="32">32</span>: [The Non-Libertarian FAQ](https://slatestarcodex.com/2017/02/22/repost-the-non-libertarian-faq/), Scott Alexander.<br />
+<span id="33">33</span>: [Two Lectures on the Checks to Population](https://archive.org/details/twolecturesonch00lloygoog/page/n1), William Lloyd.<br />
+<span id="34">34</span>: [The Tragedy of the Commons](https://science.sciencemag.org/content/sci/162/3859/1243.full.pdf), Garrett Hardin.<br />
+<span id="35">35</span>: [World Population Prospects](https://population.un.org/wpp/Graphs/Probabilistic/POP/TOT/), United Nations DESA / Population Division.<br />
+<span id="35">35</span>: [Micheal Munger on Crony Capitalism](https://www.econtalk.org/michael-munger-on-crony-capitalism/), EconTalk / Russ Roberts.<br />
+
+<span id="36">36</span>: [On the Size of Pairing-based Non-interactive Arguments](https://eprint.iacr.org/2016/260.pdf), Jens Groth.<br />
+<span id="37">37</span>: [Scalable, transparent, and post-quantum-secure computational integrity](https://eprint.iacr.org/2018/046.pdf), Eli Ben-Sasson.<br />
 
 <span id="??">??</span>: [The Infinite Dial 2019](https://www.slideshare.net/webby2001/infinite-dial-2019), Edison Research.<br />
 
-<span id="??">??</span>: For those familiar with existing ledgers such as Bitcoin or Ethereum, this may be difficult to conceptualise since most present ledgers do not natively provide transaction introspection, but the limitation is not theoretical. As an example in this direction consider the [Wyvern DEX protocol](https://wyvernprotocol.com/docs).
 
 <span id="??">??</span>: [Hanson on Signalling](https://www.econtalk.org/hanson-on-signalling/), Russ Roberts / Robin Hanson.<br />
 
