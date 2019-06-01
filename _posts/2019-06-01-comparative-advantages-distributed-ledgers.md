@@ -1,13 +1,13 @@
 ---
 layout:     post
 title:      "Comparative Advantages of Distributed Ledgers"
-date:       2019-05-19 00:00:00 +0000
+date:       2019-06-01 00:00:00 +0000
 categories: dlt blockchain economics
 ---
 
 Why develop distributed ledgers<sup>[1](#1)</sup>?
 
-For the purposes of this analysis, let distributed ledgers be state transition functions executed in a consensus algorithm<sup>[2](#2)</sup> by a distributed set of parties, with arbitrary state complexity<sup>[3](#3)</sup>, unbounded transaction throughput<sup>[4](#4)</sup>, perfect censorship resistance<sup>[5](#5)</sup>, bandwidth-inexpensive queryability<sup>[6](#6)</sup>, oracle access to elapsed time<sup>[7](#7)</sup>, and private data - public rule-set segmentation<sup>[8](#8)</sup>. None of these properties are yet satisfactorily provided by existing implementations, but we have reason enough to expect they may be in time (see references). The present developmental efforts justifiably focus on satisfying these properties, in of itself a challenging and engrossing task — but should that effort succeed — what then?
+For the purposes of this analysis, let distributed ledgers be state transition functions executed in a consensus algorithm<sup>[2](#2)</sup> by a distributed set of parties, with arbitrary state complexity<sup>[3](#3)</sup>, unbounded transaction throughput<sup>[4](#4)</sup>, censorship resistance<sup>[5](#5)</sup>, bandwidth-inexpensive queryability<sup>[6](#6)</sup>, oracle access to elapsed time<sup>[7](#7)</sup>, and private data / public rule-set segmentation<sup>[8](#8)</sup>. None of these properties are yet satisfactorily provided by existing implementations, but we have reason enough to expect they may be in time (see references). The present developmental efforts justifiably focus on satisfying these properties, in of itself a challenging and engrossing task — but should that effort succeed — what then?
 
 In this post, I focus on *institution design*, where an *institution* is a set of rules, actors, and incentives intentionally designed to realise a particular high-level outcome and persist itself over time in the absence of a singular coordinating entity. I outline four broad areas of institution design where I think we have reason to believe that distributed ledgers may increase the available component set for mechanism designers and thereby enable the creation of radically different institutions from what we have today: public commons, polycentric law, threshold commitment, and contingent payments. For each area, I explain the institution or institutional component reference class, why we might benefit from such institutions or components, and in what way distributed ledgers may provide a significant advantage, then attempt to articulate & address the best arguments against desirability and feasibility.
 
@@ -19,23 +19,23 @@ What are public commons?
 
 *Public commons* are platforms which create economic surplus by connecting buyers and sellers & providing a medium through which they can transact, where the platform operator, if distinct from the userbase, is not manufacturing the product or providing the service. The US dollar (value), Airbnb (housing), Uber (transportation), Ebay (goods), Github (code, bug reports), Microsoft Windows (desktop applications), and search engines (information) are all public commons to varying degrees. Public commons tend to possess strong network effects, since the utility provided to any particular user is proportional to the number of other users, and thus they often result in natural monopolies, especially in the absence of prior open standards for product representation (present in the case of websites, for example, but not in the case of transportation or housing).
 
-Perhaps the most successful (by both user count and economic utility) — and most decentralised — existing such commons is the English language, a medium for the exchange of information. Languages as commons have several convenient properties: the size of their state does not scale linearly with the number of users, approximate agreement on most of the present state is sufficient for usage (as any natural language contains many different possible encodings of the same semantics), and our mental facilities and social institutions are well-adapted to track their states and provide the high-throughput gossip required for loosely coordinated state changes.
+Perhaps the most successful (by both user count and economic utility) and most decentralised existing such commons is the English language, a medium for the exchange of information. Languages as commons have several convenient properties: the size of their state does not scale linearly with the number of users, approximate agreement on most of the present state is sufficient for usage (as any natural language contains many different possible encodings of the same semantics), and our mental facilities and social institutions are well-adapted to track their states and provide the high-throughput gossip required for loosely coordinated state changes.
 
 #### Why
 
 Why are public commons valuable, and what are their challenges?
 
 - Public commons provide an enormous amount of utility. Seven of the ten largest global firms by market capitalisation operate commons of sorts<sup>[9](#9)</sup>, and they capture but a small fraction (although perhaps a larger fraction than necessary) of the created utility. The English language provides far more utility than all of them combined, but — and partially because (imagine if the English vocabulary were owned by a company) — it captures none of it.
-- Control of commons by companies often tends to be sub-optimal, since the profit motive of the company (generally enshrined in law) is not necessarily aligned with the best interests of the commons' userbase. Especially once they attain a dominant agglomeration effect, companies may find it more profitable to extract rent far in excess of their costs, deprive users of alternative interfaces and algorithms through the use of proprietary standards and siloed data, deplatform users instead of respecting a notion of minority rights, and optimise content & information for attention and behavioural surplus capture even when it is clearly against the best interest of the user<sup>[10](#10)</sup>.
-- The immense possible utility seems to justify incentivizing the creation of commons by allowing a capture by the creators of some fraction of the future value, but preferably in a way where the creators can credibly commit to a particular rule-set which curtails their power as an operator of the commons. At the moment, the only way to incentivize creation is for firms to own the commons and control all of the rules, which frequently leads to incentive misalignment.
+- Control of commons by companies often tends to be sub-optimal, since the profit motive of the company (generally enshrined in law) is not necessarily aligned with the best interests of the commons' userbase. Especially once they attain a dominant agglomeration effect, companies may find it more profitable to extract rent far in excess of their costs, deprive users of alternative interfaces and algorithms through the use of proprietary standards and siloed data, deplatform users instead of respecting a notion of minority rights, and optimise content & information for attention and behavioural surplus capture even when it is clearly against the best interest of their userbase<sup>[10](#10)</sup>.
+- The immense possible utility seems to justify incentivizing the creation of commons by allowing a capture by the creators of some fraction of the future value, but preferably in a way where the creators can credibly commit to a particular rule-set which curtails their future power over the commons should the enterprise succeed. At the moment, the only way to incentivize creation is for firms to own the commons and control all of the rules, which frequently leads to incentive misalignment.
 
 #### Comparative advantage
 
 Why might distributed ledger technology help, and what role would it serve?
 
-- Distributed ledger technology can serve as the backbone of a decentralised commons, enforcing the rule-set (accepting user input, matching counterparties, settling payment, operating rating algorithms, etc.) by encoding the actors, rules, and incentives in the state machine.
+- Distributed ledger technology can serve as the backend of a decentralised commons, enforcing the rule-set (accepting user input, matching counterparties, settling payment, operating rating algorithms, etc.) by encoding the actors, rules, and incentives in the state machine.
 - Creators of a decentralised commons can capture a portion of the future economic value by assigning themselves a fraction of future revenue or an apportionment of a network-associated token, but credibly commit not to extract rent or arbitrarily alter the rules against users' interest once the platform becomes dominant (as noted by Tyler Cowen<sup>[11](#11)</sup>).
-- Decentralised commons can facilitate scalable permissionless innovation and interoperation with other services and interfaces since interactions with the system are not bottlenecked by trusted organisational relationships.
+- Decentralised commons can facilitate scalable permissionless innovation and interoperation with other services and interfaces to a degree which privately operated commons cannot since interactions with the system are not bottlenecked by trusted organisational relationships.
 - Distributed ledgers, by construction, cannot own and control access to data in the same sense as Google or Facebook, so the cost of exit (were the decentralised commons to ramp up fees, say) and correspondingly the degree of possible rent extraction is lower.
 - Commons operated on distributed ledgers are likely to be more resilient to legal & geopolitical adversaries, since they must be constructed to function on open networks, build cryptographic authentication & Sybil resistance into their design, and do not require specialised hardware or expertise to operate.
 
@@ -47,29 +47,29 @@ Scott Alexander has expressed concern<sup>[12](#12)</sup> about the risks of too
 
 > The latest development in the brave new post-Bitcoin world is crypto-equity. At this point I’ve gone from wanting to praise these inventors as bold libertarian heroes to wanting to drag them in front of a blackboard and making them write a hundred times “I WILL NOT CALL UP THAT WHICH I CANNOT PUT DOWN” (...) People are using the contingent stupidity of our current government to replace lots of human interaction with mechanisms that cannot be coordinated even in principle.
 
-I admit this possibility, but consider it remote.
+I admit this possibility, but consider the dangers (comparatively) remote.
 
-- I suspect whether "unstoppable markets" which prevent censorship of funding for human trafficking or terrorism are realised hinges on whether the "hard libertarian" aspect of distributed ledgers is primarily endemic to the technology or primarily contingent on founder effects, and I think it is mostly the latter. Nothing about the decentralised nature of the infrastructure prevents vendor blacklists, legal enforcement, or even the incorporation of human oversight for dispute-resolution<sup>[13](#13)</sup>.
-- I don't think that decentralised commons cannot be coordinated. English language social norms around acceptable words and honorifics are shifting rapidly all the time. Existing distributed ledgers such as Bitcoin and Ethereum have seen frequent forks on occasions of political disagreement, and recent projects have integrated explicit governance mechanisms.
-- Platform (brand) reputation of decentralised ledgers is extremely important, and the costs of exit are low, so the threat of association with socially disapproved activity may motivate ledger stakeholders to construct preventative mechanisms.
+- Whether "unstoppable markets" which prevent censorship of funding for human trafficking or terrorism are realised hinges on whether the "hard libertarian" aspect of distributed ledgers is primarily endemic to the technology or primarily contingent on founder effects, and I think it is mostly the latter. Nothing about the decentralised nature of the infrastructure prevents vendor blacklists, legal enforcement, or even the incorporation of human oversight for dispute-resolution<sup>[13](#13)</sup>.
+- It is not the case that decentralised commons cannot be coordinated. English language social norms around acceptable words and honorifics are shifting rapidly all the time. Existing distributed ledgers such as Bitcoin and Ethereum have seen frequent forks on occasions of political disagreement, and recent projects have integrated explicit governance mechanisms.
+- Platform (brand) reputation of decentralised ledgers is extremely important for wide-market adoption, and the costs of exit are low, so the threat of association with socially disapproved activity may motivate ledger stakeholders to construct preventative mechanisms — or at minimum, the reputational effects will select for the ledgers which do construct such mechanisms.
 
-Likely a far worse danger is governmental agencies or less scrupulous companies co-opting parts of the technology and branding around distributed ledgers to realise their own, often totalitarian, ends, while using their monopolies on the use of force or existing social graphs to raise the cost of exit. 
+Likely a far worse danger is governmental agencies or less scrupulous companies co-opting parts of the technology and branding around distributed ledgers to realise their own, often totalitarian, ends, while using their monopolies on the use of force or existing social graphs to raise the cost of exit. Attempts are already in progress<sup>[14](#14)</sup>.
 
 Why might this approach not be feasible?
 
-> Many unsolved technical problems remain, particularly in the areas of scaling<sup>[14](#14)</sup>, privacy<sup>[15](#15)</sup>, and genuine decentralisation<sup>[16](#16)</sup>.
+> Many unsolved technical problems remain, particularly in the areas of scaling<sup>[15](#15)</sup>, privacy<sup>[16](#16)</sup>, and genuine decentralisation<sup>[17](#17)</sup>.
 
-  The rate of progress is rapid (on a human timescale, not perhaps on the market timescale) and I think we can expect these to be solved in time.
+  The rate of progress is rapid (on a human timescale, not perhaps on the market timescale), and large incentives exist for solutions, so I think we can expect continued rapid progress.
 
 > Distributed ledgers will simply switch out the controlling oligarchy for a new one. Google famously committed to "do no evil", and has not succeeded - how are blockchains different? Will not the stakeholders or consensus operators merely fill the same role?
 
-Distributed ledgers enable a kind of credible, binding commitment to future rule-sets & restrictions that for-profit companies simply cannot make.
-
-Since ledgers do not maintain a monopoly on data, the cost of exit is far lower, so consensus participants and stakeholders have far less power than shareholders of current technology companies with data monopolies.
+Distributed ledgers enable a kind of credible, binding commitment to future rule-sets & restrictions that for-profit companies simply cannot make, and since ledgers do not maintain a monopoly on data, the cost of exit is far lower, so consensus participants and stakeholders have far less power than shareholders (or executives) of current technology companies with data monopolies.
 
 > "Smart contracts" and the rule-sets of distributed ledgers more generally are too rigid, and will fail to supplant meatspace systems requiring flexibility and human judgement in adjudication.
 
-Many present "flexible" meatspace institutions — such as the IRS<sup>[17](#17)</sup>, the Pentagon<sup>[18](#18)</sup>, and Facebook<sup>[19](#19)</sup> — seem like they might benefit from a little more rigidity and a little less flexibility in enforcement. In cases where case-by-case human judgement is necessary, distributed ledgers will and need not replace it, but can instead serve as an immutable, auditable record of the process.
+Many present "flexible" meatspace institutions — such as the IRS<sup>[18](#18)</sup>, the Pentagon<sup>[19](#19)</sup>, and Facebook<sup>[20](#20)</sup> — seem like they might benefit from a little more rigidity and a little less flexibility in enforcement. In cases where case-by-case human judgement is necessary, distributed ledgers need not and will not replace it, but can instead serve as an immutable, auditable record of the human decisionmaking process.
+
+<br />
 
 ### Polycentric law
 
@@ -77,79 +77,81 @@ Many present "flexible" meatspace institutions — such as the IRS<sup>[17](#17)
 
 What is polycentric law?
 
-I borrow the term from a 1999 essay<sup>[13](#13)</sup> by Tom Bell, although I use it somewhat differently.
+I borrow the term from a 1999 essay<sup>[21](#21)</sup> by Tom Bell, although I use it somewhat differently.
 
-Bell defines polycentric law as
+Bell defines *polycentric law* as
 
 > law arising from a variety of customs and private processes rather than law coercively imposed by a single state authority.
 
 His essay cites three examples: alternative dispute resolution, private communities, and online adjudicators which have arisen on the internet (the article is a bit dated; a modern take would more likely focus on the differing rule-sets of social networks). I am interested in this essential concept, but with a broader scope and a few additional properties.
 
-*Polycentric law* is the realisation of overlapping, voluntary, and specialised private legal systems, in a manner capable enough to supplant a substantial fraction of the existing domestic & international regulatory regime. Although this is not inherent to the definition, in the distributed ledger context, enforcement is either inherent in the medium of description or effected through control over economic incentive levers instead of a monopoly on the use of force.
+*Polycentric law* is the realisation of overlapping, voluntary, and specialised private legal systems, in a manner capable enough to supplant a substantial fraction of the existing domestic & international regulatory regime. In the context of distributed ledger institutional design, enforcement is either *ex ante* inherent in the medium of contract description or effected *ex post* through control over economic incentive levers.
 
-One detailed, albeit fictional, depiction of how a polycentric legal system might function and evolve at global scale can be found in Ada Palmer's Terra Ignota series<sup>[14](#14)</sup>.
+I have found surprisingly little analytical exploration of this concept in the literature. One detailed, albeit fictional, depiction of how a polycentric legal system might function and evolve at global scale can be found in Ada Palmer's Terra Ignota series<sup>[22](#22)</sup>.
 
 #### Why
 
 Why might polycentric law be useful, and what challenges are involved?
 
-- Present legal systems are regionally monopolised: one legislative body & governance process determines the rule-set for an area of physical space. To so determine boundaries of legal systems makes sense only to the degree by which geographical proximity indicates a preference or necessity for shared law — such a shared preference is plausible or at least necessary for physically-mediating domains such as the right to bear arms, but seems far less sensible for others like online privacy protections.
+- Present legal systems are geospacially monopolised: one legislative body & governance process determines the rule-set for an area of physical space. To so determine boundaries of legal systems makes sense only to the degree by which geographical proximity indicates a preference or necessity for shared law — such a shared preference is plausible in theory or at least necessary in practice for physically-mediating legal domains such as the right to bear arms, but seems far less sensible for others like online privacy protections.
 
-- An extraordinary amount of effort is directed to the effecting of control over the processes which govern changes in our existing legal monopolies. This effort could perhaps better be directed towards realising alternative sets of laws which individuals could voluntarily select from. Unfortunately, there is no unclaimed land (except perhaps extra-terrestrially) upon which a consenting group of individuals can voluntarily establish a sovereign nation — but this restriction does not exist in the digital realm.
+- An extraordinary amount of effort is directed to the effecting of control over the processes which govern changes in our existing legal monopolies. This effort could perhaps better be directed towards realising alternative sets of laws which individuals could voluntarily select from. Unfortunately, there is no unclaimed land (except perhaps extra-terrestrially<sup>[23](#23)</sup>) upon which a consenting group of individuals can voluntarily establish a sovereign nation — but this restriction does not exist in the digital realm.
 
-- The closest analogue may be existing internet communities such as social networks, sub-Reddits, private chat groups, and blogs, but these communities are limited in the kinds of rule-sets - primarily content moderation and ranking - and methods of enforcement by positive & negative incentive levers - primarily social capital<sup>[15](#15)</sup> or shaming - that they can implement.
+- The closest analogue may be existing internet communities such as social networks, sub-Reddits, private chat groups, and blogs, but these communities are limited in the kinds of rule-sets - primarily content moderation and ranking - which they can implement, and limited to enforcement by reputation-based positive & negative incentive levers - primarily social capital<sup>[24](#24)</sup> and shaming/deplatforming. Furthermore, their content ranking algorithms and incentive levers are warped by opaque for-profit control, and rarely reflect anything like a Rawlsian veil.
 
 #### Comparative advantage
 
 Why might distributed ledger technology help, and what role would it serve?
 
 - Distributed ledgers can enforce contracts in two distinct ways: *ex ante*, by embedding the logic directly into the ledger,
-  or *ex post* through economic incentives or penalties for attributable behaviours<sup>counterfactual-slashing</sup>.
+  or *ex post*, through economic incentives or penalties for attributable behaviours<sup>[25](#25)</sup>.
   *Ex ante* enforcement is rarely possible to construct with the tool-kits of existing meatspace institutions, and *ex post*
-  enforcement tends to have substantial implementation costs which distort accuracy.
+  enforcement tends to have substantial implementation costs which distort accuracy and limit precision.
 
 - Explicit codification of legal systems will facilitate interoperation where laws are shared,
-  through the use of common standards and representational semantics. Transactions costs of treaty
+  through the use of common standards, representations, and semantics. Transactions costs of treaty
   negotiation limit diversification — Nebraska cannot negotate an alternative trade agreement with the
   United Kingdom — and thus confer outsized advantages on larger political blocs even though the
-  policies chosen may be subpar.
+  policies chosen may be subpar for the smaller constituencies.
 
 - Distributed ledgers, through inclusion and control of algorithmically scarce assets which acquire market value,
   obtain a programmable incentive lever with which to encourage or discourage particular actions in the real world,
   insofar as the results of those actions (such as behaviour in a consensus protocol) can later be reflected back to
   the state of the ledger. This capability is unique and new — the internet protocol, for example, has no such ability
   to alter the behaviour of its implementors through incentivization, and must content itself with a topology determined
-  primarily by the economic conditions of implementing firms (such as ISPs). This incentive lever is far more constrained
-  than the liberal state's monopoly on the legal use of force, but is comparable to the subsidies and fines imposed
-  through regulation and civil courts, and distributed ledgers can thus plausibly content to supplant significant parts of
+  primarily by the economics of implementing firms (such as ISPs). This incentive lever is far more constrained
+  than the modern state's monopoly on the legal use of force, but it is comparable to the subsidies and fines imposed
+  through regulation and by civil courts, and distributed ledgers can thus plausibly contend to supplant significant parts of
   that body of law.
 
 #### Objections
 
 Why might this approach not be desirable?
 
-> Concentrated political coalitions & supranational bodies emerge because of economies of scale in geopolitics between military alliances and economic blocs, which will persist whether or not distributed ledgers are used as a medium of legal enforcement.
+> *Ex ante* contract enforcement by distributed ledger is dangerous because it fails to preserve the nuance and "learned lessons" of meatspace arbitration systems, as is evident in "smart contract" flaws causing hundreds of millions of dollars in losses.
+
+  The state of "smart contract" (an unfortunate misnomer) programming is indeed far from the level of reliability which will be required for high-volume commerce and enforcement of more critical parts of law such as checking a passport at a border gate,
+  but that problem will be solved in time. Contemporary type theories<sup>[26](#26)</sup> can prove arbitrary properties about the behaviour of programs, and research on translating these theories into formally verifiable contract languages is ongoing<sup>[27](#27)</sup>.
+  Where necessary, fallback arbitration systems<sup>[13](#13)</sup> can also be used.
+
+> Governance mechanisms of distributed ledgers, whether formal or informal, will be capturable just as present governance mechanisms are.
+
+  At present, distributed ledger governance mechanisms are probably far more captured, in the sense of being controlled by a small number of entities, than even the most corrupt democratic institutions today.
+  However, the value of capturing such a system and thus the amount of extractable rent is far lower. Unlike countries, which maintain a monopoly over the use of force, distributed ledgers have control over no such
+  fundamentally scarce physical resource, not even data. The potency of the postive or negative levers available to a ledger depends directly on public perception of that ledger's value - constraining the behaviour of
+  rational stakeholders - and should the stakeholders take action to which the users are opposed, the ledger can be forked.
+
+Why might this approach not be feasible?
+
+> Agglomerative political coalitions & supranational bodies emerge because of economies of scale in geopolitics between military alliances and economic blocs, which will persist whether or not distributed ledgers are used as a medium of legal enforcement.
 
   hard to predict now, but reasons to believe it would be, easier to solve information problem
 
   ledgers by nature do not have monopoly over *data*, or over *land*, "fork threat" real & essential
 
-> *Ex ante* contract enforcement by distributed ledger is dangerous because it fails to preserve the nuance and "learned lessons" of meatspace arbitration systems, as is evident in "smart contract" flaws causing hundreds of millions of dollars in losses.
+> Computing the intersections between rule-sets necessary to determine how subscribers to different legal systems can interact will be impossible or infeasible, due to complexity or due to the inability of distributed ledgers with separate consensus algorithms to interoperate.
 
-  The state of "smart contract" programming is indeed far from the level of reliability which will be required for high-volume commerce and enforcement of more critical parts of law (such as checking a passport at a border gate),
-  but that problem will be solved in time - ongoing research into formally verifiable contract languages<sup>formality</sup>, and fallback arbitration systems<sup>kleros</sup>.
-
-> Governance mechanisms of distributed ledgers, whether formal or informal, will be capturable just as present governance mechanisms are.
-
-  At present, distributed ledger governance mechanisms are probably far more captured (by a small number of entities) than even the most corrupt democratic institutions today.
-  However, the value of capturing such a system is far lower - unlike countries, which maintain a monopoly over land through force, distributed ledgers have control over no such
-  fundamentally scarce resource, not even data - "fork threat" is real and essential.
-
-Why might this approach not be feasible?
-
-> Computing the intersections between rule-sets necessary to determine how subscribers to different legal systems can interact will be impossible, due to complexity or due to the inability of distributed ledgers with separate consensus algorithms to interoperate.
-
-By the nature of distributed ledgers (which must be verified by many parties), the rule-sets being verified must be public & codified, so computing intersections of compatibility should be possible. Cross-consensus-algorithm interoperation protocols are under development<sup>polkadot,cosmosibc</sup>.
+By the nature of distributed ledgers (which must be verified by many parties), the rule-sets being verified must be public & codified, so computing intersections of compatibility should be possible and need consist solely of code (so are free to copy). Cross-consensus-algorithm interoperation protocols are under development<sup>[28](#28), [29](#29)</sup>.
 
 > The threat of physical coercion will prevent voluntary, ledger-based legal systems from supplanting a substantial portion of the role of existing institutions.
 
@@ -321,16 +323,25 @@ Thanks to XYZ for reviews of this post.
 <span id="11">11</span>: [Blockchains and the Opportunity of the Commons](https://marginalrevolution.com/marginalrevolution/2018/06/blockchains-opportunity-commons.html), Tyler Cowen.<br />
 <span id="12">12</span>: [Meditations on Moloch](https://slatestarcodex.com/2014/07/30/meditations-on-moloch/), Scott Alexander.<br />
 <span id="13">13</span>: [Kleros - The Blockchain Dispute Resolution Layer](https://kleros.io/assets/whitepaper.pdf), Federico Ast & Clément Lesaege.<br />
-<span id="14">14</span>: [Unsolved Problems in Blockchain Sharding](https://medium.com/nearprotocol/unsolved-problems-in-blockchain-sharding-2327d6517f43), Alexander Skidanov.<br />
-<span id="15">15</span>: There is even [a company](https://www.chainalysis.com/) dedicated to tracing user activity on blockchains.<br />
-<span id="16">16</span>: Although few major distributed ledgers are controlled by a single entity, the state of affairs in proof-of-work land is [pretty absymal](https://arewedecentralizedyet.com/). Unfortunately I have not yet found a similar resource for the newest crop of proof-of-stake blockchains.<br />
-<span id="17">17</span>: See this 2017 IRS report - [Declining Resources Have Contributed to Unfavourable Trends in Several Key Criminal Investigation Business Results](https://www.treasury.gov/tigta/auditreports/2017reports/201730073fr.pdf), Treasury Inspector General for Tax Administration.<br />
-<span id="18">18</span>: [Pentagon fails its first-ever audit](https://www.reuters.com/article/us-usa-pentagon-audit/pentagon-fails-its-first-ever-audit-official-says-idUSKCN1NK2MC), Reuters, 2018.<br />
-<span id="19">19</span>: [This article](https://www.nationalreview.com/2019/05/the-first-rule-of-social-media-censorship-is-that-there-are-no-rules/) on Facebook deplatforming illuminates the problem, though I do not expect companies to adopt the proposed solution voluntarily.<br />
+<span id="14">14</span>: [Facebook plans to launch 'GlobalCoin' cryptocurrency in 2020](https://www.theguardian.com/technology/2019/may/24/facebook-plans-to-launch-globalcoin-cryptocurrency-in-2020), The Guardian.<br />
+<span id="15">15</span>: [Unsolved Problems in Blockchain Sharding](https://medium.com/nearprotocol/unsolved-problems-in-blockchain-sharding-2327d6517f43), Alexander Skidanov.<br />
+<span id="16">16</span>: There is even [a company](https://www.chainalysis.com/) dedicated to tracing user activity on blockchains.<br />
+<span id="17">17</span>: Although few major distributed ledgers are controlled by a single entity, the state of affairs in proof-of-work land is [pretty absymal](https://arewedecentralizedyet.com/). Unfortunately I have not yet found a similar resource for the newest crop of proof-of-stake blockchains.<br />
+<span id="18">18</span>: See this 2017 IRS report - [Declining Resources Have Contributed to Unfavourable Trends in Several Key Criminal Investigation Business Results](https://www.treasury.gov/tigta/auditreports/2017reports/201730073fr.pdf), Treasury Inspector General for Tax Administration.<br />
+<span id="19">19</span>: [Pentagon fails its first-ever audit](https://www.reuters.com/article/us-usa-pentagon-audit/pentagon-fails-its-first-ever-audit-official-says-idUSKCN1NK2MC), Reuters, 2018.<br />
+<span id="20">20</span>: [This article](https://www.nationalreview.com/2019/05/the-first-rule-of-social-media-censorship-is-that-there-are-no-rules/) on Facebook deplatforming illuminates the problem, though I do not expect companies to adopt the proposed solution voluntarily.<br />
 
-<span id="13">13</span>: [Polycentric Law in a New Century](https://www.cis.org.au/app/uploads/2015/04/images/stories/policy-magazine/1999-autumn/1999-15-1-tom-bell.pdf), Tom Bell.<br />
-<span id="14">14</span>: [Terra Ignota (series)](https://en.wikipedia.org/wiki/Terra_Ignota), Ada Palmer.<br />
-<span id="15">15</span>: [Status as a Service](https://www.eugenewei.com/blog/2019/2/19/status-as-a-service), Eugene Wei.<br />
+<span id="21">21</span>: [Polycentric Law in a New Century](https://www.cis.org.au/app/uploads/2015/04/images/stories/policy-magazine/1999-autumn/1999-15-1-tom-bell.pdf), Tom Bell.<br />
+<span id="22">22</span>: [Terra Ignota (series)](https://en.wikipedia.org/wiki/Terra_Ignota), Ada Palmer.<br />
+<span id="23">23</span>: [The Luxembourg Space Law](https://www.ogier.com/news/the-luxembourg-space-law), Ogier Law.<br />
+<span id="24">24</span>: [Status as a Service](https://www.eugenewei.com/blog/2019/2/19/status-as-a-service), Eugene Wei.<br />
+<span id="25">25</span>: [Counterfactual slashing](https://github.com/tendermint/tendermint/issues/3244).<br />
+
+<span id="26">26</span>: [Martin-Löf dependent type theory](https://ncatlab.org/nlab/show/Martin-L%C3%B6f+dependent+type+theory), nLab.<br />
+<span id="27">27</span>: [Formality](https://github.com/moonad/formality), Victor Maia.<br />
+
+<span id="28">28</span>: [The Interblockchain Communication Protocol](https://github.com/cosmos/ics/tree/master/ibc), Tendermint/Cosmos.<br />
+<span id="29">29</span>: [Interchain Message Passing](https://wiki.polkadot.network/en/latest/polkadot/learn/interchain/), Polkadot / Web3 Foundation.<br />
 
 <span id="??">??</span>: See []() and [counterfactual slashing](https://github.com/tendermint/tendermint/issues/3244).<br />
 
