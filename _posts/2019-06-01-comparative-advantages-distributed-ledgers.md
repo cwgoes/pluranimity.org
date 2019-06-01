@@ -248,9 +248,7 @@ Ledgers themselves can also, more simply, retain intermediate computational stat
 > The relevant data (on, say, filter usage) cannot be easily or securely verified. Distributed ledgers can notarise data but have no way to verify its authenticity<sup>[41](#41)</sup>.
 
 not in all cases, but verification just needs to be cost-to-forge, not perfect
-
-
-> oracle / information problem not actually solved
+- foam protocol, Numerai Erasure?, others (oracles on data)
 
 ### Contingent payments
 
@@ -258,43 +256,29 @@ not in all cases, but verification just needs to be cost-to-forge, not perfect
 
 What are contingent payments?
 
-*Contingent payments* are the purchase of an expected difference in a future probability distribution such that the expected price paid can vary contingent on the eventual accuracy of the prediction. (actually paid later? or prediction markets?)
+*Contingent payments* are the purchase of an expected difference in a probability distribution over future world states such that the expected price paid can vary contingent on the eventual accuracy of the prediction.
 
-When purchasing medicine (setting aside some signalling value<sup>[42](#42)</sup>), we are intending to buy a positive difference in the future probability distribution of our health, and we ought to be willing to pay a price as some increasing function of the magnitude and nature of the difference. At present, this difference can neither be efficiently measured nor easily written into contract law, so we must content ourselves with choosing to either buy or pass on a particular pharmaceutical or treatment at the market price, and rely instead on an costly, inscrutable, and generally inefficient set of institutions to implement studies, review boards, and legislation which theoretically enforces some correlation between the future health impact and the price tag. Contingent payments, predicated on the ability to cheaply track individual health outcomes, would have us instead purchase the expected future impact directly, precommiting to pay if and only if it were realised.
+These can be implemented in a few ways. first way: actually paid later, company paid in future contingent on event, company seeks present funding by investors who bet on the event, right of future payment tokenized and traded
 
-one way: two prediction markets
-another way: company paid in future contingent on event, company seeks present funding by investors who bet on the event
-
-this applies more generally to any case in which we primarily wish to purchase a difference in a future probability distribution
-
-also e.g. negative externalities - fast food
-
-~ another possible implementation: payment escrowed, settled in future based on measurement, rights of future payment can be tokenized & traded
+second way: two prediction markets, first on distribution contingent on doing thing (taking medicine), second on distribution contingent on not doing thing
 
 #### Why
 
 Why might contingent payments be useful, and what are the challenges involved?
 
+When purchasing medicine (setting aside some signalling value<sup>[42](#42)</sup>), we are intending to buy a positive difference in the future probability distribution of our health, and we ought to be willing to pay a price as some increasing function of the magnitude and nature of the difference. At present, this difference can neither be efficiently measured nor easily written into contract law, so we must content ourselves with choosing to either buy or pass on a particular pharmaceutical or treatment at the market price, and rely instead on an costly, inscrutable, and generally inefficient set of institutions to implement studies, review boards, and legislation which theoretically enforces some correlation between the future health impact and the price tag. Contingent payments, predicated on the ability to cheaply track individual health outcomes, would have us instead purchase the expected future impact directly, precommiting to pay if and only if it were realised.
+
+this applies more generally to any case in which we primarily wish to purchase a difference in a measurable future probability distribution: education (to some degree), also to negative cases - fast food
+
 #### Comparative advantage
 
 Why might distributed ledger technology help, and what role would it serve?
 
-we must subsidise the prediction markets, and this could provide a way to do so - substantial part of payment to prediction markets
+- automatic contract creation & enforcement, reduce transactions costs of contracting ~ relative to Lloyd's of London, insurance markets
 
-- automatic contract creation & enforcement
 - separation of measurement and of computation - one measurement protocol can serve all needs, scales better
-- consumers can create bespoke contracts more easily
 
-relative to
-
-- insurance markets
-- Lloyd's of London
-
-cite
-
-- foam protocol, Numerai Erasure?, others (oracles on data)
-- oracle research
-- oracle markets
+- we must subsidise the prediction markets, and this could provide a way to do so - substantial part of payment to prediction markets
 
 #### Objections
 
@@ -318,6 +302,9 @@ information from smart devices, doesn't need to be that complex (e.g. time of de
 > The transaction costs of operating prediction markets will be too high, and the markets will be too illiquid to generate correct prices.
 
 mostly automated, there are existing strong correlations which just aren't priced in
+
+> data hard to obtain
+
 
 ----
 
@@ -376,6 +363,9 @@ Thanks to XYZ for reviews of this post.
 <span id="39">39</span>: [Scalable, transparent, and post-quantum-secure computational integrity](https://eprint.iacr.org/2018/046.pdf), Eli Ben-Sasson.<br />
 <span id="40">40</span>: [Ethereum Multisignature Wallet](https://github.com/gnosis/MultiSigWallet), Gnosis.<br />
 <span id="41">41</span>: An amusing illustration: this [phone cradle](https://twitter.com/mbrennanchina/status/1128201958962032641) boosts step counts to reduce insurance premiums.<br />
+
+<span id="42">42</span>: [FOAM: The Consensus-Driven Map of the World](https://www.foam.space/publicAssets/FOAM_Whitepaper.pdf), Foamspace Corp.<br />
+<span id="43">43</span>: [Introducing Erasure](https://medium.com/numerai/numerai-reveals-erasure-unstoppable-peer-to-peer-data-feeds-4fbb8d92820a), Richard Craib.<br /> 
 
 <span id="42">42</span>: [Cut Medicine in Half](https://www.cato-unbound.org/2007/09/10/robin-hanson/cut-medicine-half), Robin Hanson.<br />
 
