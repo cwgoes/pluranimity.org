@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <generator uri="http://jekyllrb.com" version="3.8.5">Jekyll</generator>
+  
+  
+  <link href="https://pluranimity.org/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://pluranimity.org/" rel="alternate" type="text/html" />
+  <updated>2019-04-11T18:31:08+02:00</updated>
+  <id>https://pluranimity.org//</id>
+
+  
+    <title type="html">Pluranimity</title>
+  
+
+  
+    <subtitle>Pluranimity is the personal blog of Christopher Goes.&lt;br /&gt; &lt;br /&gt; As befitting the name, I explicitly disavow any topical continuity.&lt;br /&gt; Check your guess of cultural reference against `b1f23e6c01` (SHA256, first ten characters).&lt;br/&gt; &lt;br /&gt; Opinions expressed herein are my own and not necessarily those of any employer or future self.&lt;br /&gt;</subtitle>
+  
+
+  
+    <author>
+        <name>Christopher Goes</name>
+      
+      
+    </author>
+  
+
+  
+</feed>
