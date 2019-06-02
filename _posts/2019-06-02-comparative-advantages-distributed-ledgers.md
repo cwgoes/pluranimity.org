@@ -229,13 +229,16 @@ Why might distributed ledger technology help, and what role would it serve?
 
 Why might this approach not be desirable?
 
-> Are centrally controlled platforms really extracting that much rent? If they are, why aren't humans coordinating to leave Facebook et al.?
+> In the shoe manufactuer example, do consumers really want the carbon impacts priced in? Why don't shoe manufacturers label their shoes with "carbon rating" tags?
 
-Coordination is really hard (at least at fast speed) — unilateral actions do happen, and eventual "tipping point", but slower. Operative question: how easy to compete with better ruleset.
+Such signals do occur in limited areas, particularly food — "organic" and "non-GMO" labels can command higher prices — although unfortunately
+the information ecosystem behind those labels tends not to be robust. The provenance of food production, as compared to shoe manufacturing, is
+likely much easier to track (except in the case of complex processed foods), and the kind of public health scares that prompt
+food chain auditing don't have a clear parallel for most goods.
 
-> maybe the consumers don't actually care
-
-look at where signals do occur: organic foods, non-GMOs — unfortunately not informationally rich
+Were consumer goods manufacturers to start to label their products with "carbon output" tags,
+it probably would help, but instead allowing the manufacturers to collectively coordinate may be a simpler
+solution to implement — and is in any case complementary.
 
 Why might this approach not be feasible?
 
