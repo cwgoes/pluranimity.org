@@ -229,7 +229,7 @@ Why might distributed ledger technology help, and what role would it serve?
 
 Why might this approach not be desirable?
 
-> In the shoe manufactuer example, do consumers really want the carbon impacts priced in? Why don't shoe manufacturers label their shoes with "carbon rating" tags?
+> In the shoe manufacturer example, do consumers really want the carbon impacts priced in? Why don't shoe manufacturers label their shoes with "carbon rating" tags?
 
 Such signals do occur in limited areas, particularly food — "organic" and "non-GMO" labels can command higher prices — although unfortunately
 the information ecosystem behind those labels tends not to be robust. The provenance of food production, as compared to shoe manufacturing, is
