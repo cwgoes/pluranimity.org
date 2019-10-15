@@ -340,9 +340,7 @@ are positive<sup>[47](#47)</sup>.
 
 This analysis omits many more mundane use cases for which DLT may be able to accomplish roughly the same functionality at a lower cost or with higher efficacy than existing solutions, including cross-border remittances, internet payments, derivative settlement, data notarisation, and censorship-resistant communication, not for lack of potential comparative advantage but rather because I am primarily interested in investigating institutions which present technology cannot realise at all.
 
-<!--
-Thanks to XYZ for reviews of this post.
--->
+Thanks to Tomáš Zemanovic & Zhanna Sharipova for reviews of this post.
 
 *Working draft — [feedback welcome][contact]*.
 
