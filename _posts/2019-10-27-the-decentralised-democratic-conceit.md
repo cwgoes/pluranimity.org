@@ -5,14 +5,21 @@ date:       2019-10-27 00:00:00 +0000
 categories: dlt blockchain governance
 ---
 
-a memetic miasma of ontological confusion on the topics of governance &
-democracy has descended upon the blockchain ecosystem.
-in this post I will aim to offer some inoculants
+A memetic miasma of ontological confusion has descended upon the blockchain ecosystem,
+centred on the topics of governance, democracy, and decentralised autonomous organisations.
+Governance, and especially a certain flavor of democracy, is being invoked as a panacea for
+the hard problems of architecting secure software systems, a method of efficient ideation &
+decision-making, and even a raison d'etre for blockchain systems in and of itself. The real
+causes of its popularity are rather less ideological than pragmatic, and not necessarily nefarious,
+but the confusion of purposes risks misleading well-intentioned actors.
 
-trace the origins of popularity of governance
-democracy for purposes for which it is not suitable
+In this post I will define the democratic conceit which I wish to dispel,
+aim to offer some inoculants to the appeal of its nebulous promises,
+analyse the proximate & distal causes of its popularity,
+enumerate the genuinely compelling but particular & restricted advantages of decentralised organisations,
+and touch on the strategic implications of this analysis.
 
-governance is being invoked as a solution to a problem which is not clear
+> Note: Although I usually prefer to cite specific examples rather than deal only in abstractions, in this post I shall generally refrain from doing so out of the concern that if I did it would be read as a partisan or motivated argument. My concern is not with particular instantiations, but rather with misconstrued ideas and repeated patterns, and their bearing on the future of the ecosystem as a whole.
 
 ### The democratic conceit
 
@@ -22,14 +29,18 @@ be used to change the rules on a small number of dominant public ledgers.
 These are necessary tied because democracy won't scale to many ledgers,
 and if there can be many ledgers it isn't necessary.
 
+Often implicit.
+
 #### Fundamental limitations of "governance"
 
  Governance issues:
 - Conservative, does not create innovation
 - Can only try one variant at once
 - Attention costs are difficult to scale
-Governance will be subject to capture if allowed to monopolize.
+Governance will be subject to capture if allowed to monopolise.
 Governance does not create innovation.
+
+Governance cannot respond quickly to bugs. The DAO was an exception.
 
 #### Ledger upgrade decision theory
 
@@ -44,6 +55,15 @@ Attention, good will (eventually), time.
 Delegation (liquid democracy) alleviates some of the attention costs,
 but offers no protection against bribery.
 
+It does confer legitimacy
+
+#### Architectural decentralisation vs. democracy
+
+Architectural decentralisation prevents individual entities from gaining too much power.
+
+Democracy is not a substitute and not necessarily an improvement. Often it may make it
+*easier* for individual entities to wield large amounts of influence.
+
 ### Proximate & distal causes
 
 #### Path-dependent memetics
@@ -52,14 +72,18 @@ Ethereum DAO fork inspired governance.
 
 #### Decentralisation theatre
 
-Difference between architectural decentralization & "democracy".
+Difference between architectural decentralisation & "democracy".
 Separate concerns of platform control and platform development.
+
+makes it look decentralised to the SEC
 
 cite Jaron Lanier
 
 #### Abdication of responsibility
 
 convenient for companies which ICO'd and now want to do something else
+turns out the token didn't make any sense after all
+
 no one at fault, no legal contract
 'the community' can do it!
 some of this is genuine, participation is good, permissionless collaboration too,
@@ -90,6 +114,10 @@ legal contracts have really high transactions costs
 small individual contributions towards funding public goods
 replacements for kickstarter, patreon, etc.
 
+#### Architectural decentralisation of data feeds
+
+When no better oracle option is available.
+
 ### The polycentric alternative
 
 Why pluralism & compatible interfaces are better.
@@ -107,8 +135,9 @@ Work to decrease these so that changing rules doesn't have high coordination cos
 
 IBC!
 
-End user support, communication.
+End user support in tooling, communication. Exit costs have to be *really* low.
 
+Coordination mechanisms for switching?
 
 ### Strategic considerations
 
