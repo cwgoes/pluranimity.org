@@ -29,6 +29,11 @@ be used to change the rules on a small number of dominant public ledgers.
 These are necessary tied because democracy won't scale to many ledgers,
 and if there can be many ledgers it isn't necessary.
 
+note - logical ledgers only, not shards, e.g. tied by a token
+
+are they really? there could be a few ledgers without democracy, conceivably
+(but the rate of change won't be fast enough)
+
 Often implicit.
 
 #### Fundamental limitations of "governance"
@@ -47,6 +52,8 @@ Governance cannot respond quickly to bugs. The DAO was an exception.
 No a priori reason to expect that democracy will lead to good decisions.
 
 Individuals have little personally at stake and aren't experts.
+
+Alignment is naturally asymmetric, voting power should be as well.
 
 #### The costs of democracy
 
@@ -93,6 +100,8 @@ but not usually well aligned incentive wise
 
 Gives the appearance of action.
 
+Attention is relevant to many things e.g. price.
+
 ### What are DAOs good for anyways?
 
 #### Aligned status hierarchies
@@ -103,6 +112,8 @@ what can daos actually do? create status
 align the status created with the outcomes
 
 not altogether dissimilar from the AI alignment problem
+
+status, in a sense, is *free* and not really zero-sum, this is a huge asset, mechanism designers should use it
 
 #### Inter-company contracting
 
@@ -117,6 +128,10 @@ replacements for kickstarter, patreon, etc.
 #### Architectural decentralisation of data feeds
 
 When no better oracle option is available.
+
+#### Option to remove people from power
+
+Like real governments. Is this really necessary though? What underlying networks have high enough exit costs?
 
 ### The polycentric alternative
 
