@@ -19,6 +19,7 @@ In English unless otherwise indicated.
 - [Schtetl-Optimized](https://www.scottaaronson.com/blog/)
 - [The Last Psychiatrist](https://thelastpsychiatrist.com/)
 - [Effective Altruism Forum](https://forum.effectivealtruism.org/)
+- [The Scholar's Stage](https://scholars-stage.blogspot.com/)
 
 ### Magazines / Periodicals
 
@@ -36,6 +37,8 @@ In English unless otherwise indicated.
 - [80,000 Hours Newsletter / Career Guide](https://80000hours.org/)
 - [AI Alignment Newsletter](https://rohinshah.com/alignment-newsletter/)
 - [EA Newsletter](https://www.effectivealtruism.org/ea-newsletter-archives/)
+- [The Browser](https://thebrowser.com/)
+- [Netzpolitik](https://netzpolitik.org/newsletter) (German)
 
 ## Audio
 
@@ -52,3 +55,7 @@ In English unless otherwise indicated.
 ## Video
 
 - [Cedille Cast](https://www.youtube.com/channel/UCfV0BJz4nltlj-4yWNZ34lw)
+
+## Miscellaneous
+
+- [Wanderers](https://vimeo.com/108650530)

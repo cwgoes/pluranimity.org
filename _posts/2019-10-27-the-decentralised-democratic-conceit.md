@@ -19,7 +19,16 @@ analyse the proximate & distal causes of its popularity,
 enumerate the genuinely compelling but particular & restricted advantages of decentralised organisations,
 and touch on the strategic implications of this analysis.
 
+democracy is not a font of ideas
+
+not against spirit of local democracy & collective action - but this must not be confused with voting
+
+rather than seeking *democracy*, we should seek *liberalism* - design for power & information
+dynamics to protect individual rights, build equality of access & opportunity into these systems,
+and maximise polycentrism / ease of exit
+
 > Note: Although I usually prefer to cite specific examples rather than deal only in abstractions, in this post I shall generally refrain from doing so out of the concern that if I did it would be read as a partisan or motivated argument. My concern is not with particular instantiations, but rather with misconstrued ideas and repeated patterns, and their bearing on the future of the ecosystem as a whole.
+
 
 ### The democratic conceit
 
@@ -36,6 +45,18 @@ are they really? there could be a few ledgers without democracy, conceivably
 
 Often implicit.
 
+in *particular* - democracy as a form of ideological gestation and as a
+mechanism to explore the search space of design options
+
+'governance as a feature'
+
+overemphasis on *process* of voting as a mechanism to generate decisions vs
+creating process for discussion & deliberation
+
+confusion of architectural decentralisation (validators/miners),
+political decentralisation (who controls decisions),
+and architectural (who actually does the development) decentralisation
+
 #### Fundamental limitations of "governance"
 
  Governance issues:
@@ -45,7 +66,7 @@ Often implicit.
 Governance will be subject to capture if allowed to monopolise.
 Governance does not create innovation.
 
-Governance cannot respond quickly to bugs. The DAO was an exception.
+Governance cannot respond quickly to bugs. The DAO was an exception, most bugs are not gradually exploitable.
 
 #### Ledger upgrade decision theory
 
@@ -55,6 +76,8 @@ Individuals have little personally at stake and aren't experts.
 
 Alignment is naturally asymmetric, voting power should be as well.
 
+Market pricing is a reason?
+
 #### The costs of democracy
 
 Attention, good will (eventually), time.
@@ -62,7 +85,11 @@ Attention, good will (eventually), time.
 Delegation (liquid democracy) alleviates some of the attention costs,
 but offers no protection against bribery.
 
+Democratic disputes create tension, teams.
+
 It does confer legitimacy
+
+(talk about advantages: legitimate way to remove leaders without elite infighting)
 
 #### Architectural decentralisation vs. democracy
 
@@ -71,11 +98,17 @@ Architectural decentralisation prevents individual entities from gaining too muc
 Democracy is not a substitute and not necessarily an improvement. Often it may make it
 *easier* for individual entities to wield large amounts of influence.
 
+(also: no good constitutionalism, restrictions on future upgrades)
+
+Company could build a blockchain but it could be operated in a decentralised fashion.
+
 ### Proximate & distal causes
 
 #### Path-dependent memetics
 
 Ethereum DAO fork inspired governance.
+
+Western misattribution of democracy, not liberalism, as the cause of societal success (may be a contributing factor).
 
 #### Decentralisation theatre
 
@@ -133,6 +166,8 @@ When no better oracle option is available.
 
 Like real governments. Is this really necessary though? What underlying networks have high enough exit costs?
 
+this should be the last resort
+
 ### The polycentric alternative
 
 Why pluralism & compatible interfaces are better.
@@ -153,6 +188,18 @@ IBC!
 End user support in tooling, communication. Exit costs have to be *really* low.
 
 Coordination mechanisms for switching?
+
+### Liberalism & power dynamics in decentralised systems
+
+protection of individual rights & individual right to choose
+
+this is *not* intrinsic, in general, any more than the internet was
+
+requires careful incentive design at multiple levels to avoid collective action traps
+
+information asymmetry
+
+must also build better mechanisms for collaboration (e.g. threshold commitment)
 
 ### Strategic considerations
 
