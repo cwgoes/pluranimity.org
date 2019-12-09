@@ -39,6 +39,7 @@ In English unless otherwise indicated.
 - [EA Newsletter](https://www.effectivealtruism.org/ea-newsletter-archives/)
 - [The Browser](https://thebrowser.com/)
 - [Netzpolitik](https://netzpolitik.org/newsletter) (German)
+- [Claire's Invariably Interesting Thoughts](https://claireberlinski.substack.com/)
 
 ## Audio
 

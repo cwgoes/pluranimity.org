@@ -27,8 +27,15 @@ rather than seeking *democracy*, we should seek *liberalism* - design for power 
 dynamics to protect individual rights, build equality of access & opportunity into these systems,
 and maximise polycentrism / ease of exit
 
-> Note: Although I usually prefer to cite specific examples rather than deal only in abstractions, in this post I shall generally refrain from doing so out of the concern that if I did it would be read as a partisan or motivated argument. My concern is not with particular instantiations, but rather with misconstrued ideas and repeated patterns, and their bearing on the future of the ecosystem as a whole.
+liberalism specifics
+where is the data
+who holds the keys
+who holds leverage over network effects
+what are the exit costs
+do matching mechanisms exist for coordinating on rule changes
+are users at an unfair UI/UX disadvantage, can they understand what is happening
 
+> Note: Although I usually prefer to cite specific examples rather than deal only in abstractions, in this post I shall generally refrain from doing so out of the concern that if I did it would be read as a partisan or motivated argument. My concern is not with particular instantiations, but rather with misconstrued ideas and repeated patterns, and their bearing on the future of the ecosystem as a whole.
 
 ### The democratic conceit
 
@@ -102,6 +109,10 @@ Democracy is not a substitute and not necessarily an improvement. Often it may m
 
 Company could build a blockchain but it could be operated in a decentralised fashion.
 
+#### Conservatism
+
+cite Jaron Lanier
+
 ### Proximate & distal causes
 
 #### Path-dependent memetics
@@ -116,8 +127,6 @@ Difference between architectural decentralisation & "democracy".
 Separate concerns of platform control and platform development.
 
 makes it look decentralised to the SEC
-
-cite Jaron Lanier
 
 #### Abdication of responsibility
 
@@ -191,6 +200,8 @@ Coordination mechanisms for switching?
 
 ### Liberalism & power dynamics in decentralised systems
 
+liberalism - let individuals choose, minimise exit costs, think about power asymmetries of technology
+
 protection of individual rights & individual right to choose
 
 this is *not* intrinsic, in general, any more than the internet was
@@ -207,6 +218,9 @@ The enemies are not people, they are bad ideas
 The salient contest, the one the outcome of which historians will care about,
 is not between competing sharding approaches, zero-knowledge proof systems,
 blockchains, or tokens. It is not even between public blockchains and Facebook.
+
+note that the hierarchy of Facebook - works! problem is not internal company structure
+if Facebook had instead build a uesr-rights-preserving system we wouldn't have to
 
 The salient contest is between ideas, and their reifications:
 
