@@ -6,3 +6,5 @@ categories: philosophy mechanism-design
 ---
 
 As title.
+
+Social media, exercise of power, social bonds.
