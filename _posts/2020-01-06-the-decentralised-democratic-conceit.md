@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "The Decentralised Democratic Conceit"
-date:       2019-10-27 00:00:00 +0000
+date:       2020-01-06 00:00:00 +0000
 categories: dlt blockchain governance
 ---
 
@@ -234,6 +234,8 @@ Execute swaps of tokens, acquire projects.
 dissociate assets from ledgers
 
 attract talent
+
+how to create incentives for mergers, currently no one can negotiate, this is not great
 
 Thanks to () for reviews of this post.
 
