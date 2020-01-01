@@ -47,43 +47,74 @@ where does democracy appear in dlt?
 the conceit
 
 - central conceit: that democratic *decision-making processes* will lead to realisation of a democratic *value system*
-- sub-conceit: that democratic decision-making processes are an effective method of idealogical gestation / exploring design space
+- sub-conceit: that democratic decision-making processes are an effective method of idealogical gestation / exploring design space / font of ideas
 - sub-conceit: that democratic decision-making processes are an effective method of fund disbursement / system development
 - sub-conceit: confusion of decentralisation of power with democracy (voting), they are different things, usually at cross-purposes
 - sub-conceit: that democracy itself *is* the goal (raison d'etre, "governance experiments")
 - sub-conceit: confusion of operational decentralisation (validators/miners), political decentralisation (upgrade decisions), and architectural decentralisation (who does the development)
+- sub-conceit: that democracy should be used to change the rules on a small # of dominant public ledgers
+  - necessarily tied: won't scale to many ledgers, not enough attenion? is this really true?
 
 why did democracy emerge in these areas, historically?
 
+- confusion between senses
 - ideological popularity (cite Hanson forager values)
 - path-dependent memetics (DAO fork)
 - decentralisation theatre, abdication of responsibility
+  - make it sec-compliant
+  - companies which ICO'd and now want to do something else
+  - turns out the token didn't make sense after all
 - competition for attention, appearance of action
+  - zero-sum competition
+  - relevant to price?
 
 advantages of democracy
 
 - way to agree on changes
-- legitimate method that can be used to remove leaders
+- legitimate method that can be used to remove leaders without infighting
+  - but this should be the last resort, better to reduce exit costs
 - can help avoid the tyranny of structurelessness
 - allows irregular state changes but makes them tricky
 
 disadvantages of democracy
 
 - conservative, does not create innovation, design-by-committee
+  - not a "font of ideas"
+  - can only try one variant at once
+  - difficult to scale
+  - cite jaron lanier
 - subject to capture if given power
+- cannot respond quickly to bugs
+  - dao was an exception, most bugs are not "gradually exploitable"
 - not aligned decision-making-wise
+  - no a priori reason to expect good decisions
+  - individuals have little personally at stake, aren't experts
 - high attention costs (somewhat mitigable)
+- creates interpersonal tension
+- often a substitute for actually decentralising power
+  - may make it easier for individual entities to wield large amounts of influence
 
 an aside: what about daos?
 
 - create aligned status hierarchies
+  - status a dirty word in common parlane, does not deserve
+  - what can daos actually do? create status, align the status w/outcomes
+  - more status is "free", just make a new DAO, this is great
 - low-cost inter-company contracting & coordination
+  - threshold commitment
+  - fancy multisignature
+  - legal contracts have high transactions costs
 - architectural decentralisation of data feeds
+  - when no better oracle is available
 
 an alternative guiding philosophy
 
 - minimise atomic decision unit
+  - individual rights & right to choose
 - minimise exit costs
+  - currently can sell assets, but not port (Dapp) data
+  - work to decrease these costs
+  - coordination mechanisms for switching
 - think about information asymmetry
 - think about group power dynamics
 - must also build better mechanisms for collaboration (e.g. threshold commitment)
@@ -99,11 +130,16 @@ an alternative guiding philosophy
 
 strategic considerations & trade-offs
 
+- salient contest is between protocol structures
 - logically centralising decision-making power enables faster movement
 - dissociate assets from ledgers?
 - create incentives for mergers, negotiation
+- attract talent from "centralised" world
 
 conclusion: there is no high-level, easily implementable ideology or process that will cause web 3.0 to go better than web 2.0 - it's in the details
+not intrinsic any more than the internet was
+groups of people in buildings typing on computers will naturally lead to power dynamics which favour them
+requires careful incentive design at multiple levels to avoid collective action traps
 
 Thanks to () for reviews of this post.
 
