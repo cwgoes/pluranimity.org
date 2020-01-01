@@ -1,31 +1,20 @@
----
-layout:     post
-title:      "The Decentralised Democratic Conceit"
-date:       2020-01-06 00:00:00 +0000
-categories: dlt blockchain governance
----
-
-A memetic miasma of ontological confusion has descended upon the blockchain ecosystem,
-centred on the topics of governance, democracy, and decentralised autonomous organisations.
-Governance, and especially a certain flavor of democracy, is being invoked as a panacea for
-the hard problems of architecting secure software systems, a method of efficient ideation &
-decision-making, and even a raison d'etre for blockchain systems in and of itself. The real
-causes of its popularity are rather less ideological than pragmatic, and not necessarily nefarious,
-but the confusion of purposes risks misleading well-intentioned actors.
-
-In this post I will define the democratic conceit which I wish to dispel,
-aim to offer some inoculants to the appeal of its nebulous promises,
-analyse the proximate & distal causes of its popularity,
-enumerate the genuinely compelling but particular & restricted advantages of decentralised organisations,
-and touch on the strategic implications of this analysis.
+areas of impact
+- decision-making structure for protocol upgrades
+- idealogically generative structure for feature design/selection
+- (human) organisational structure & funding models
+- system design for governance instead of liberalism/polycentrism
 
 democracy is not a font of ideas
 
 not against spirit of local democracy & collective action - but this must not be confused with voting
 
-rather than seeking *democracy*, we should seek *liberalism* - design for power & information
-dynamics to protect individual rights, build equality of access & opportunity into these systems,
-and maximise polycentrism / ease of exit
+that which must be decentralised, in the *end*, is *power*
+
+the tyranny of structurelessness
+
+but liberalism with attention to the power dynamics of large user groups
+
+logical centralisation is good for agility
 
 liberalism specifics
 where is the data
@@ -34,8 +23,6 @@ who holds leverage over network effects
 what are the exit costs
 do matching mechanisms exist for coordinating on rule changes
 are users at an unfair UI/UX disadvantage, can they understand what is happening
-
-> Note: Although I usually prefer to cite specific examples rather than deal only in abstractions, in this post I shall generally refrain from doing so out of the concern that if I did it would be read as a partisan or motivated argument. My concern is not with particular instantiations, but rather with misconstrued ideas and repeated patterns, and their bearing on the future of the ecosystem as a whole.
 
 ### The democratic conceit
 
@@ -205,6 +192,8 @@ liberalism - let individuals choose, minimise exit costs, think about power asym
 protection of individual rights & individual right to choose
 
 this is *not* intrinsic, in general, any more than the internet was
+
+groups of people in buildings typing on computers will naturally lead to power dynamics which favour them
 
 requires careful incentive design at multiple levels to avoid collective action traps
 
