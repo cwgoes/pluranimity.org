@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "The Decentralised Democratic Conceit"
-date:       2020-01-07 00:00:00 +0000
+date:       2020-02-01 00:00:00 +0000
 categories: dlt blockchain governance
 ---
 
@@ -28,6 +28,11 @@ avoid asymmetries of information, protect minority rights, and maximise ease of 
 In order to succeed in realising this ideal, I argue, the blockchain ecosystem
 must choose both the correct tactics and the correct strategy, and there may be trade-offs,
 and so I will touch on the strategic implications of this line of analysis.
+
+deletrious ways in which the conceit manifests
+- fund disbursement
+- systems design (power but democratic processes)
+- systems design (democracy esp. voting as goal, ideation)
 
 terminology
 
@@ -93,6 +98,9 @@ disadvantages of democracy
 - creates interpersonal tension
 - often a substitute for actually decentralising power
   - may make it easier for individual entities to wield large amounts of influence
+- dispersed organisational structures cannot internalise costs as well
+  - transactions costs
+  - high degree of dependence on "value capture" at all layers
 
 an aside: what about daos?
 
@@ -106,9 +114,11 @@ an aside: what about daos?
   - legal contracts have high transactions costs
 - architectural decentralisation of data feeds
   - when no better oracle is available
+- perhaps better internalise transactions costs
 
 an alternative guiding philosophy
 
+- cite https://www.eff.org/deeplinks/2019/10/adversarial-interoperability/
 - minimise atomic decision unit
   - individual rights & right to choose
 - minimise exit costs
@@ -127,6 +137,7 @@ an alternative guiding philosophy
 - what are the exit costs
 - do matching mechanisms exist for coordinating on rule changes
 - are users at an unfair UI/UX disadvantage, do they understand what is happening
+- allow centralised structures to build the systems
 
 strategic considerations & trade-offs
 
@@ -141,8 +152,24 @@ not intrinsic any more than the internet was
 groups of people in buildings typing on computers will naturally lead to power dynamics which favour them
 requires careful incentive design at multiple levels to avoid collective action traps
 
+~
+somewhere
+
+better negotiation method between protocols & development teams
+credible neutrality, cite vitalik nakamoto post
+everyone votes in a sort of assurance contract fashion
+what is the central problem? human organisational coordination
+cite zooko's forum post on incentive alignment
+cite edgeware "governance as a feature"
+cite theory of the firm
+  where do blockchains reduce transactions costs? on chain stuff, not software dev
+democracy, forager values, works well in small groups because info is accurate
+cite separation of powers
+  government: personal ambition
+  validators, e.g.: rational self-interest
+~
+
 Thanks to () for reviews of this post.
 
 *Footnotes*
-
 
