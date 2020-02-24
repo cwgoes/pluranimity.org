@@ -15,11 +15,10 @@ Opinions expressed herein are my own and not necessarily those of any employer o
 
 ### Work
 
-I presently work as a researcher for [Tendermint/Cosmos](https://cosmos.network) and as a cofounder of [Cryptium Labs](https://cryptium.ch/).
+I presently work as a researcher for [Interchain GmbH](https://interchain.berlin) and as a cofounder of [Metastate](https://metastate.ch/).
 
 Previously I cofounded [Stash.ai](https://stash.ai) and led [CUAUV](http://cuauv.org).
 
 ### Projects
 
-[Juvix](https://github.com/cwgoes/juvix) - Optimizing Idris-to-Michelson smart contract compiler<br />
 [Wyvern](https://wyvernprotocol.com) - Representation-agnostic decentralised asset exchange protocol
