@@ -22,3 +22,7 @@ Previously I cofounded [Stash.ai](https://stash.ai) and led [CUAUV](http://cuauv
 ### Projects
 
 [Wyvern](https://wyvernprotocol.com) - Representation-agnostic decentralised asset exchange protocol
+
+### Publications
+
+See [arXiv](https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=Goes%2C+C&terms-0-field=author&classification-computer_science=y&classification-physics=y&classification-physics_archives=astro-ph&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first).
