@@ -395,5 +395,6 @@ Thanks to Tomáš Zemanovic & Zhanna Sharipova for reviews of this post.
 <span id="45">45</span>: [Cut Medicine in Half](https://www.cato-unbound.org/2007/09/10/robin-hanson/cut-medicine-half), Robin Hanson.<br />
 <span id="46">46</span>: [DistroWatch](https://distrowatch.com/dwres.php?resource=major), Atea Ataroa Limited.<br />
 <span id="47">47</span>: [Explore Augur](https://exploreaugur.com/).<br />
+<span id="48">48</span>: [Allegro?](/allegro).</br />
 
 [contact]:                          /contact
