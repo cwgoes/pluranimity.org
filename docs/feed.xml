@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <generator uri="http://jekyllrb.com" version="4.2.0">Jekyll</generator>
+  <generator uri="http://jekyllrb.com" version="4.2.1">Jekyll</generator>
   
   
   <link href="https://pluranimity.org/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://pluranimity.org/" rel="alternate" type="text/html" />
-  <updated>2021-06-18T18:28:12+02:00</updated>
+  <updated>2021-11-05T13:53:39+01:00</updated>
   <id>https://pluranimity.org//</id>
 
   
