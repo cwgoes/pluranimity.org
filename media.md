@@ -4,7 +4,7 @@ title: "Media"
 permalink: /media/
 ---
 
-Resources I have found particularly informative or illuminative, sorted in no particular order.
+Resources I have enjoyed, sorted in no particular order.
 
 In English unless otherwise indicated.
 
