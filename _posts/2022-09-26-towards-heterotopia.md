@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Towards heterotopia - the prerequisite cultural and technological substrate for a return to a world of credit money"
+title:      "Towards heterotopia - the prerequisite cultural and technological substrate for a return to a world of scale-free credit money"
 date:       2022-09-26 00:00:00 +0000
 categories: dlt economics cryptography
 ---
